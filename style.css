@@ -90,8 +90,9 @@ section {
 /* --- Navigation --- */
 nav {
     padding: 20px 0;
-    position: absolute; /* Keeps it over the content */
+    position: fixed; /* Keep navbar visible while scrolling */
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
     background: rgba(249, 249, 247, 0.95);
@@ -609,7 +610,21 @@ footer {
         left: 0%;
     }
 
+    /* Make nav links visible and stack on small screens */
     .nav-links {
-        display: none; /* Simplify nav for mobile for this demo */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        background: rgba(249, 249, 247, 0.95);
+        padding: 8px 12px;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        padding: 6px 10px;
+        color: var(--text-main);
     }
 }
