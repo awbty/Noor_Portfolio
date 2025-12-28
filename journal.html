@@ -142,55 +142,68 @@
 </div>
 
 <script>
+    // --- MODAL LOGIC ---
     function openModal(id) {
         document.getElementById(id).style.display = "block";
         setTimeout(() => document.getElementById(id).classList.add('show'), 10);
     }
+
     function closeModal(id) {
-        document.getElementById(id).classList.remove('show');
-        setTimeout(() => document.getElementById(id).style.display = "none", 300);
-    }
-    window.onclick = function(e) {
-        if (e.target.classList.contains('modal')) {
-            e.target.classList.remove('show');
-            setTimeout(() => e.target.style.display = "none", 300);
-        }
+        const modal = document.getElementById(id);
+        modal.classList.remove('show');
+        setTimeout(() => modal.style.display = "none", 300);
     }
 
-    // Mobile nav toggle (hamburger)
-    (function(){
+    // --- UNIFIED CLICK HANDLER (Fixes the conflict) ---
+    document.addEventListener('click', (e) => {
+        
+        // 1. Handle Clicking OUTSIDE the Modal (to close it)
+        const modals = document.querySelectorAll('.modal.show');
+        modals.forEach(modal => {
+            // If the click target is NOT inside the modal, close it
+            if (!modal.contains(e.target)) {
+                closeModal(modal.id);
+            }
+        });
+
+        // 2. Handle Clicking OUTSIDE the Nav (to close the hamburger menu)
+        const nav = document.querySelector('nav');
         const navToggle = document.getElementById('navToggle');
-        if (!navToggle) return;
+        
+        if (nav && navToggle && nav.classList.contains('nav-open')) {
+            // If the click is NOT inside the nav, close the menu
+            if (!nav.contains(e.target)) {
+                nav.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        }
+    });
 
-        const getNav = () => navToggle.closest('nav') || document.querySelector('nav');
-
+    // --- TOGGLE BUTTON LOGIC ---
+    const navToggle = document.getElementById('navToggle');
+    if (navToggle) {
         navToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            const nav = getNav();
+            // We removed 'stopPropagation' and 'preventDefault' because they were causing the button to fail.
+            
+            const nav = document.querySelector('nav');
             if (!nav) return;
+
             const opened = nav.classList.toggle('nav-open');
             navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
         });
+    }
 
-        document.addEventListener('click', (e) => {
-            const nav = getNav();
-            if (!nav) return;
-            if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
-                nav.classList.remove('nav-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-
-        window.addEventListener('resize', () => {
-            const nav = getNav();
-            if (!nav) return;
-            if (window.innerWidth > 768 && nav.classList.contains('nav-open')) {
-                nav.classList.remove('nav-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-    })();
+    // --- WINDOW RESIZE LOGIC ---
+    window.addEventListener('resize', () => {
+        const nav = document.querySelector('nav');
+        const navToggle = document.getElementById('navToggle');
+        
+        // If window is big again, ensure menu is closed and reset state
+        if (window.innerWidth > 768 && nav && nav.classList.contains('nav-open')) {
+            nav.classList.remove('nav-open');
+            if(navToggle) navToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
 </script>
 </body>
 </html>
