@@ -465,7 +465,6 @@ nav {
 .project-item {
     position: relative;
     cursor: pointer;
-    group: project;
 }
 
 .project-visuals {

@@ -159,17 +159,23 @@
 
     // Mobile nav toggle (hamburger)
     (function(){
-        const nav = document.querySelector('nav');
         const navToggle = document.getElementById('navToggle');
         if (!navToggle) return;
 
+        const getNav = () => navToggle.closest('nav') || document.querySelector('nav');
+
         navToggle.addEventListener('click', (e) => {
             e.stopPropagation();
+            e.preventDefault();
+            const nav = getNav();
+            if (!nav) return;
             const opened = nav.classList.toggle('nav-open');
             navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
         });
 
         document.addEventListener('click', (e) => {
+            const nav = getNav();
+            if (!nav) return;
             if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
                 nav.classList.remove('nav-open');
                 navToggle.setAttribute('aria-expanded', 'false');
@@ -177,6 +183,8 @@
         });
 
         window.addEventListener('resize', () => {
+            const nav = getNav();
+            if (!nav) return;
             if (window.innerWidth > 768 && nav.classList.contains('nav-open')) {
                 nav.classList.remove('nav-open');
                 navToggle.setAttribute('aria-expanded', 'false');
