@@ -18,6 +18,11 @@
             <div class="logo-text">Noor Al-huwaidi</div>
         </a>
 
+        <!-- Hamburger toggle (visible on mobile) -->
+        <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+        </button>
+
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -309,6 +314,34 @@
             setTimeout(() => event.target.style.display = "none", 300);
         }
     }
+</script>
+<script>
+    // Mobile nav toggle (hamburger)
+    (function(){
+        const nav = document.querySelector('nav');
+        const navToggle = document.getElementById('navToggle');
+        if (!navToggle) return;
+
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const opened = nav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
+                nav.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && nav.classList.contains('nav-open')) {
+                nav.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    })();
 </script>
 </body>
 </html>
