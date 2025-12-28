@@ -136,9 +136,7 @@ nav {
 .nav-open .nav-toggle span::before { transform: translateY(7px) rotate(45deg); }
 .nav-open .nav-toggle span::after { transform: translateY(-7px) rotate(-45deg); }
 
-.nav--small { padding: 8px 0; }
-.nav--small .logo-img { height: 30px; }
-.nav--small .logo-text { font-size: 1.1rem; }
+.nav-inner { position: relative; }
 
 /* --- 1. The Container (Holds Image + Text side-by-side) --- */
 .logo-container {
@@ -263,7 +261,7 @@ nav {
 
 .timeline {
     position: relative;
-    max-width: 1400px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -644,27 +642,30 @@ footer {
         left: 0%;
     }
 
-    /* On mobile hide links by default and show via `.nav-open` */
+    /* On mobile: show hamburger, hide links until opened */
     .nav-toggle { display: flex; }
 
     .nav-links {
         display: none;
         position: absolute;
-        right: 20px;
+        left: 0;
+        right: 0;
         top: 64px;
         flex-direction: column;
         background: var(--white);
-        border-radius: 8px;
-        padding: 12px;
+        padding: 12px 16px;
         box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        min-width: 160px;
+        border-top: 1px solid rgba(0,0,0,0.04);
+        gap: 6px;
+        z-index: 200;
     }
 
     nav.nav-open .nav-links { display: flex; }
 
     .nav-links a {
         margin-left: 0;
-        padding: 8px 10px;
+        padding: 10px 12px;
         color: var(--text-main);
+        width: 100%;
     }
 }

@@ -384,44 +384,32 @@
         });
     });
 
-    // Mobile nav toggle + shrink-on-scroll
+    // Mobile nav toggle (simple hamburger-only behavior on small screens)
     (function(){
         const nav = document.querySelector('nav');
         const navToggle = document.getElementById('navToggle');
+        if (!navToggle) return;
 
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                const opened = nav.classList.toggle('nav-open');
-                navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
-            });
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const opened = nav.classList.toggle('nav-open');
+            navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+        });
 
-            // close when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
-                    nav.classList.remove('nav-open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            // ensure menu resets when resizing to desktop
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 768 && nav.classList.contains('nav-open')) {
-                    nav.classList.remove('nav-open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                }
-            });
-        }
-
-        // shrink-on-scroll (reduce nav height for dynamic feel)
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const current = window.scrollY;
-            if (current > 80) {
-                nav.classList.add('nav--small');
-            } else {
-                nav.classList.remove('nav--small');
+        // close when clicking outside of the nav
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
+                nav.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', 'false');
             }
-            lastScroll = current;
+        });
+
+        // close on resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && nav.classList.contains('nav-open')) {
+                nav.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
         });
     })();
 </script>
