@@ -106,6 +106,40 @@ nav {
     align-items: center;
 }
 
+/* Hamburger button (hidden on desktop) and small-nav state */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+    display: block;
+    background: var(--text-main);
+    height: 2px;
+    width: 22px;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+}
+.nav-toggle span::before,
+.nav-toggle span::after { content: ''; position: absolute; left: 0; }
+.nav-toggle span::before { top: -7px; }
+.nav-toggle span::after { top: 7px; }
+.nav-open .nav-toggle span { background: transparent; }
+.nav-open .nav-toggle span::before { transform: translateY(7px) rotate(45deg); }
+.nav-open .nav-toggle span::after { transform: translateY(-7px) rotate(-45deg); }
+
+.nav--small { padding: 8px 0; }
+.nav--small .logo-img { height: 30px; }
+.nav--small .logo-text { font-size: 1.1rem; }
+
 /* --- 1. The Container (Holds Image + Text side-by-side) --- */
 .logo-container {
     display: flex;           /* Makes image and text sit in a row */
@@ -610,21 +644,27 @@ footer {
         left: 0%;
     }
 
-    /* Make nav links visible and stack on small screens */
+    /* On mobile hide links by default and show via `.nav-open` */
+    .nav-toggle { display: flex; }
+
     .nav-links {
-        display: flex;
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 64px;
         flex-direction: column;
-        gap: 10px;
-        align-items: flex-end;
-        background: rgba(249, 249, 247, 0.95);
-        padding: 8px 12px;
-        border-radius: 6px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        background: var(--white);
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        min-width: 160px;
     }
+
+    nav.nav-open .nav-links { display: flex; }
 
     .nav-links a {
         margin-left: 0;
-        padding: 6px 10px;
+        padding: 8px 10px;
         color: var(--text-main);
     }
 }

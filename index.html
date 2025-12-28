@@ -19,6 +19,11 @@
             <div class="logo-text">Noor Al-huwaidi</div>
         </a>
 
+        <!-- Hamburger toggle (visible on mobile) -->
+        <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+        </button>
+
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="cv.html">CV</a>
@@ -378,6 +383,47 @@
             });
         });
     });
+
+    // Mobile nav toggle + shrink-on-scroll
+    (function(){
+        const nav = document.querySelector('nav');
+        const navToggle = document.getElementById('navToggle');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const opened = nav.classList.toggle('nav-open');
+                navToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+            });
+
+            // close when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
+                    nav.classList.remove('nav-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // ensure menu resets when resizing to desktop
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && nav.classList.contains('nav-open')) {
+                    nav.classList.remove('nav-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // shrink-on-scroll (reduce nav height for dynamic feel)
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const current = window.scrollY;
+            if (current > 80) {
+                nav.classList.add('nav--small');
+            } else {
+                nav.classList.remove('nav--small');
+            }
+            lastScroll = current;
+        });
+    })();
 </script>
 </body>
 </html>
