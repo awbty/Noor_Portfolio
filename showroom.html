@@ -48,10 +48,10 @@
             <!-- Project 1 -->
             <div class="project-item" data-category="residential" onclick="openModal('modal1')">
                 <div class="project-visuals">
-                    <img src="https://picsum.photos/seed/project_living/600/800" alt="Desert Villa">
+                    <img src="images/Coffee_shop_final/5.jpg" alt="Desert Villa">
                 </div>
                 <div class="project-info">
-                    <h3>Desert Minimalist Villa</h3>
+                    <h3>Clay Chai Caffee Shop</h3>
                     <span class="project-link">View Project Gallery →</span>
                 </div>
             </div>
@@ -103,30 +103,36 @@
    MODALS WITH DYNAMIC TEXT
 -->
 
-<!-- Modal 1: Desert Villa -->
+<!-- Modal 1: Clay Cha
+ i Coffee shop -->
 <div id="modal1" class="modal">
     <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <div class="modal-content">
+    <div class="modal-content modal-layout-showroom">
         <!-- Image Gallery Area -->
-        <div class="modal-gallery">
+        <div class="showroom-gallery">
             <button class="gallery-btn gallery-prev" onclick="changeImage('modal1', -1)">&#10094;</button>
-            <img id="modal1-img" src="https://picsum.photos/seed/project_living/1000/1000" alt="Project View">
+            <img id="modal1-img" src="images/Coffee_shop_final/5.jpg" alt="Project View">
             <button class="gallery-btn gallery-next" onclick="changeImage('modal1', 1)">&#10095;</button>
         </div>
         <!-- Description Area -->
-        <div class="modal-details">
-            <h2>Desert Minimalist Villa</h2>
-            <p class="inspiration-text"><strong>Inspiration:</strong> The shifting sands of the Rub' al Khali.</p>
+        <div class="showroom-details">
+            <h2>Clay Chai Coffee Shop</h2>
+            <p class="inspiration-text"><strong>Inspiration:</strong> The design is a serene sanctuary balancing the crispness of a winter landscape with the innate warmth of natural materials, where the luxurious contrast of plum velvet meets the tranquil elegance of light oak and organic textures.</p>
 
             <!-- This paragraph ID is what gets updated by JS -->
             <p id="modal1-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
                 <!-- Default text (loaded via JS on open) -->
             </p>
 
-            <div class="feedback-section">
+            <!-- <div class="feedback-section">
                 <p class="feedback-quote">"Alex transformed our chaotic space into a sanctuary of peace."</p>
                 <p class="feedback-author">- Mr. Al-Faisal, Homeowner</p>
-            </div>
+            </div> -->
+            <!--THIS SECTION IS FOR CAD-DRAWINGS-->
+            <img id="modal1-img" src="images\Coffee_shop_final\Section A.jpg" alt="Project View">
+            <img id="modal1-img" src="images\Coffee_shop_final\Plan_page.jpg" alt="Project View">
+            <img id="modal1-img" src="images\Coffee_shop_final\Section B.jpg" alt="Project View">
+            
         </div>
     </div>
 </div>
@@ -134,13 +140,13 @@
 <!-- Modal 2: Urban Penthouse -->
 <div id="modal2" class="modal">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <div class="modal-content">
-        <div class="modal-gallery">
+    <div class="modal-content modal-layout-showroom">
+        <div class="showroom-gallery">
             <button class="gallery-btn gallery-prev" onclick="changeImage('modal2', -1)">&#10094;</button>
             <img id="modal2-img" src="https://picsum.photos/seed/project_kitchen/1000/1000" alt="Project View">
             <button class="gallery-btn gallery-next" onclick="changeImage('modal2', 1)">&#10095;</button>
         </div>
-        <div class="modal-details">
+        <div class="showroom-details">
             <h2>Urban Penthouse</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> Industrial chic meets Scandinavian comfort.</p>
             <p id="modal2-desc"></p>
@@ -151,13 +157,13 @@
 <!-- Modal 3: Riyadh Tech Hub -->
 <div id="modal3" class="modal">
     <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <div class="modal-content">
-        <div class="modal-gallery">
+    <div class="modal-content modal-layout-showroom">
+        <div class="showroom-gallery">
             <button class="gallery-btn gallery-prev" onclick="changeImage('modal3', -1)">&#10094;</button>
             <img id="modal3-img" src="https://picsum.photos/seed/project_office/1000/1000" alt="Project View">
             <button class="gallery-btn gallery-next" onclick="changeImage('modal3', 1)">&#10095;</button>
         </div>
-        <div class="modal-details">
+        <div class="showroom-details">
             <h2>Riyadh Tech Hub</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> Connectivity and transparency.</p>
             <p id="modal3-desc"></p>
@@ -168,13 +174,13 @@
 <!-- Modal 4: Boutique Hotel Lobby -->
 <div id="modal4" class="modal">
     <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <div class="modal-content">
-        <div class="modal-gallery">
+    <div class="modal-content modal-layout-showroom">
+        <div class="showroom-gallery">
             <button class="gallery-btn gallery-prev" onclick="changeImage('modal4', -1)">&#10094;</button>
             <img id="modal4-img" src="https://picsum.photos/seed/project_lounge/1000/1000" alt="Project View">
             <button class="gallery-btn gallery-next" onclick="changeImage('modal4', 1)">&#10095;</button>
         </div>
-        <div class="modal-details">
+        <div class="showroom-details">
             <h2>Boutique Hotel Lobby</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> The Arabian Nights.</p>
             <p id="modal4-desc"></p>
@@ -187,17 +193,65 @@
     const galleryData = {
         'modal1': [
             {
-                src: 'https://picsum.photos/seed/project_living/1000/1000',
-                desc: 'This is the main living area. We utilized locally sourced limestone and beige textiles to create a warm, breathable atmosphere that contrasts with the harsh exterior heat.'
+                src: 'images/Coffee_shop_final/1.jpg',
+                desc: 'This view highlights the luxurious contrast between the deep plum velvet banquette and the soft, neutral palette of the surroundings. Above the seating, a natural, textural screen of dried pampas grass adds an organic touch, complemented by the warm glow of unique, woven-style pendant lights.'
             },
             {
-                src: 'https://picsum.photos/seed/project_living2/1000/1000',
-                desc: 'Detail shot of the custom-made limestone coffee table. Notice how the texture mimics the desert dunes.'
+                src: 'images/Coffee_shop_final/2.jpg',
+                desc: 'A close-up perspective showcases the dramatic curve of the channel-tufted velvet seating, defining an intimate, yet open, corner arrangement. Individual small side tables, each featuring a flickering candle, are paired with elegant, minimalist cream chairs, enhancing the spaces sophisticated ambiance.'
             },
             {
-                src: 'https://picsum.photos/seed/project_living3/1000/1000',
-                desc: 'Evening view. The lighting scheme uses warm 3000K LEDs to mimic the sunset glow of the desert.'
-            }
+                src: 'images/Coffee_shop_final/3.jpg',
+                desc: 'The composition focuses on a central cluster of seating, emphasizing the interplay of light textures, from the woven pendant lamps to the pale, patterned wooden wall panels. The rich color of the curved velvet sofa anchors the foreground, creating a warm, inviting separation from the light wood doors in the background.'
+            },
+            {
+                src: 'images/Coffee_shop_final/4.jpg',
+                desc: 'The interior space is elegantly set against a large picture window offering a serene, snow-covered outdoor view, bridging the cozy warmth inside with the winter landscape. Various seating zones are illuminated by dazzling crystal basket pendants, while the ribbed purple banquette and pampas grass create a focal point of texture and color.'
+            },
+            {
+                src: 'images/Coffee_shop_final/5.jpg',
+                desc: 'This wider shot illustrates the designs commitment to balanced elegance, featuring multiple seating arrangements for different group sizes against a backdrop of sophisticated paneled dividers. Overhead, a sculptural cluster of organic, woven pendant lights draws the eye, radiating a soft, golden warmth across the rooms neutral tones.'
+            },
+            {
+                src: 'images/Coffee_shop_final/6.jpg',
+                desc: 'This high-angle shot captures the intimate window seating area, defined by the rich, channel-tufted plum velvet banquette that curves around the corner. The pairing of light, textured fabric chairs with small, wooden side tables creates a cozy spot for enjoying a beverage while overlooking the snowy exterior.'
+            },
+            {
+                src: 'images/Coffee_shop_final/7.jpg',
+                desc: 'A harmonious mix of light wood paneling and large windows anchors this space, offering a balanced blend of natural light and texture. The lounge features distinct seating arrangements, including low wooden armchairs and an elevated bar table, all centered around a serene view of the winter landscape.'
+            },
+            {
+                src: 'images/Coffee_shop_final/8.jpg',
+                desc: 'This aerial perspective showcases the central lounge area, featuring contemporary wooden sofas upholstered in a soft, light neutral fabric. The grouping is illuminated by an organic cluster of woven pendant lights, which cast beautiful shadows and texture onto the terrazzo-style floor.'
+            },
+            {
+                src: 'images/Coffee_shop_final/9.jpg',
+                desc: 'The floor-to-ceiling windows bathe this dining area in sunlight, highlighting the warm, natural materials used throughout the space. A combination of low banquette-style tables with built-in seating and conventional round tables offers varied dining experiences under decorative, open-weave pendant lighting.'
+            },
+            {
+                src: 'images/Coffee_shop_final/10.jpg',
+                desc: 'A detailed vignette focuses on a low coffee table setting, styled with simple floral accents and glowing pillar candles for a warm effect. The clean lines of the wooden sofa and table are contrasted by the soft, curved upholstery and metal detailing of the accompanying guest chairs.'
+            },
+            {
+                src: 'images/Coffee_shop_final/11.jpg',
+                desc: 'This wide perspective showcases the cafés blend of functional and lounge seating, with high-top tables near the service counter balancing the central low sofas and coffee tables. The repetition of woven pendant lights and vertical wood paneling creates a unified, serene design aesthetic across the entire space.'
+            },
+            {
+                src: 'images/Coffee_shop_final/12.jpg',
+                desc: 'The detailed service counter features a recessed bar area with illuminated shelving that prominently displays the cafés offerings and branding, "Clay Chai." The use of warm, integrated lighting under the counter and shelves enhances the natural wood tones and highlights the displayed baked goods and beverages.'
+            },
+            {
+                src: 'images/Coffee_shop_final/13.jpg',
+                desc: 'A macro shot focuses on the elegant tabletop styling, featuring a freshly baked pastry and coffee cup alongside a cluster of gently flickering candles and small vessels with dried lavender. The curve of the neutral-toned dining chairs and the oval table profile adds a sense of approachable sophistication.'
+            },
+            {
+                src: 'images/Coffee_shop_final/14.jpg',
+                desc: 'This isometric floor plan rendering provides a comprehensive overview of the spatial layout, illustrating the dedicated bar area, various dining tables, and the distinctive curved purple banquette lounge. The organized flow and diverse seating options, highlighted by glowing pendant lights, are clearly presented.'
+            },
+            {
+                src: 'images/Coffee_shop_final/15.jpg',
+                desc: 'An overhead floor plan view highlights the efficiency and variety of the seating configuration, from the large curved sofa on the left to the rectangular bar counter on the right. The arrangement includes multiple four-person dining tables and low lounge groupings, showcasing the designs flexible use of the available space.'
+            },
         ],
         'modal2': [
             {

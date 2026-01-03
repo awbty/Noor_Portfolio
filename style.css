@@ -496,7 +496,7 @@ nav {
     font-size: 0.8rem;
 }
 
-/* --- Modals (Pop-ups) --- */
+/* --- GENERAL MODAL STYLES --- */
 .modal {
     display: none;
     position: fixed;
@@ -505,10 +505,9 @@ nav {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.85);
+    overflow: hidden; /* Prevents scrolling the body behind */
+    background-color: rgba(0,0,0,0.9);
     backdrop-filter: blur(5px);
-    padding-top: 60px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -517,47 +516,263 @@ nav {
     opacity: 1;
 }
 
-/* New Modal Layout: Slider on Left, Content on Right */
+/* The main box */
 .modal-content {
     background-color: var(--white);
-    margin: 3% auto;
-    width: 90%;
-    max-width: 1100px; /* Wider modal */
+    margin: 0 auto;
+    /* Height is locked to 85% of the screen height */
+    height: 85vh; 
+    max-height: 85vh;
+    
+    /* Centering tricks */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     border-radius: 4px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
     animation: slideUp 0.4s ease;
 }
 
 @keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from { transform: translate(-50%, -40%); opacity: 0; }
+    to { transform: translate(-50%, -50%); opacity: 1; }
 }
 
-.modal-gallery {
-    flex: 1.5;
+.close {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.close:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+
+/* =========================================
+   LAYOUT 1: SHOWROOM (Side by Side)
+   ========================================= */
+
+/* We apply this layout specifically to Showroom Modals */
+.modal-layout-showroom {
+    display: flex;
+    flex-direction: row;
+    width: 90vw; /* Width is 90% of the screen width */
+    max-width: 1400px; /* But never wider than 1400px */
+}
+
+/* Left Side: The Image */
+.showroom-gallery {
+    flex: 1; /* Takes up all remaining space */
     background: #000;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.modal-gallery img {
+.showroom-gallery img {
+    /* This is the magic line: Ensures image fits without stretching/cropping */
+    width: 100%; 
+    height: 100%;
+    object-fit: contain; 
+    object-position: center;
+}
+
+/* Right Side: The Text */
+.showroom-details {
+    /* FIX: Fixed width ensures text is never squished */
+    flex: 0 0 400px; 
+    overflow-y: auto; /* Scroll text if it is too long */
+    padding: 50px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gallery Controls */
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 5;
+    font-size: 24px;
+    transition: 0.2s;
+}
+.gallery-prev { left: 20px; }
+.gallery-next { right: 20px; }
+.gallery-btn:hover { background: rgba(0,0,0,0.8); }
+
+
+/* =========================================
+   LAYOUT 2: JOURNAL (Top to Bottom)
+   ========================================= */
+
+/* We apply this layout specifically to Journal Modals */
+.modal-layout-journal {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 700px; /* Journal text reads better in narrower columns */
+}
+
+.journal-img-wrapper {
+    width: 100%;
+    /* FIX: Image is max 40% of screen height, not fixed pixels */
+    height: 40vh; 
+    overflow: hidden;
+    flex: 0 0 auto; /* Don't grow */
+}
+
+.journal-img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Show full image */
+    object-fit: cover; /* Crop image to fill area like a banner */
+    object-position: center;
 }
 
-.modal-details {
+.journal-text-wrapper {
     flex: 1;
-    padding: 50px;
-    overflow-y: auto;
-    max-height: 85vh;
+    overflow-y: auto; /* Scroll text */
+    padding: 40px;
     background: var(--white);
 }
+
+/* =========================================
+   GENERIC MODAL STYLES (Used in index.html)
+   ========================================= */
+
+/* Default Layout: Side by Side on Desktop */
+.modal-content {
+    /* Ensure flex is active so text stays to the right */
+    display: flex;
+    flex-direction: row; 
+    width: 90vw;
+    max-width: 1400px;
+    height: 85vh;
+}
+
+/* Left Side: The Image */
+.modal-img {
+    flex: 1; /* Takes up remaining space */
+    background: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Desktop: Show whole image without cropping */
+    object-position: center;
+}
+
+/* Right Side: The Text */
+.modal-details {
+    /* 
+       FIX 1: The text was "shifted left" because it had no padding.
+       We give it fixed width + padding.
+    */
+    flex: 0 0 400px; 
+    overflow-y: auto;
+    padding: 50px; /* <--- THIS FIXES THE LEFT SHIFT */
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   MOBILE FIXES (for index.html)
+   ========================================= */
+
+@media (max-width: 900px) {
+    
+    /* Force vertical stack on mobile */
+    .modal-content {
+        flex-direction: column;
+        height: 90vh;
+        width: 95vw;
+    }
+
+    .modal-img {
+        /* 
+           FIX 2 (Option 2): Make image BIG on mobile.
+           We force it to be 60% of the screen height.
+        */
+        height: 60vh; 
+        flex: none;
+    }
+
+    .modal-img img {
+        /* 
+           FIX 3: Crop the image so it fills that big space.
+           It will look dynamic and cinematic.
+        */
+        object-fit: cover; 
+    }
+
+    .modal-details {
+        height: 40vh; /* Text takes the remaining space */
+        flex: none;
+        width: 100%;
+        padding: 30px;
+    }
+}
+/* =========================================
+   RESPONSIVE DESIGN (Mobile View)
+   ========================================= */
+
+@media (max-width: 900px) {
+    
+    /* Force Showroom to stack on mobile */
+    .modal-layout-showroom {
+        flex-direction: column;
+        height: 90vh;
+        width: 95vw;
+    }
+
+    .showroom-gallery {
+        height: 50%; /* Image takes top half */
+        flex: none;
+    }
+
+    .showroom-details {
+        flex: none;
+        width: 100%;
+        height: 50%; /* Text takes bottom half */
+        padding: 30px;
+    }
+    
+    /* Journal adjustments */
+    .journal-img-wrapper {
+        height: 30vh; /* Smaller image on mobile */
+    }
 
 .close {
     color: #aaa;
