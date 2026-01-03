@@ -48,7 +48,7 @@
             <!-- Project 1 -->
             <div class="project-item" data-category="residential" onclick="openModal('modal1')">
                 <div class="project-visuals">
-                    <img src="images/Coffee_shop_final/5.jpg" alt="Desert Villa">
+                    <img src="images/Coffee_shop_final/1.jpg" alt="Desert Villa">
                 </div>
                 <div class="project-info">
                     <h3>Clay Chai Caffee Shop</h3>
@@ -291,11 +291,12 @@
 
     let currentIndex = { 'modal1': 0, 'modal2': 0, 'modal3': 0, 'modal4': 0 };
 
-    // Gallery Logic
+    // Gallery Logic with Preloading
     function changeImage(modalId, direction) {
         const images = galleryData[modalId];
         currentIndex[modalId] += direction;
 
+        // Loop back to start or end
         if (currentIndex[modalId] >= images.length) {
             currentIndex[modalId] = 0;
         } else if (currentIndex[modalId] < 0) {
@@ -304,22 +305,21 @@
 
         const imgElement = document.getElementById(modalId + '-img');
         const descElement = document.getElementById(modalId + '-desc');
+        
+        // Create a new image object to load in the background
+        const nextImg = new Image();
+        nextImg.src = images[currentIndex[modalId]].src;
 
-        // Add fade effect
-        imgElement.style.opacity = 0.5;
-        descElement.style.opacity = 0.5;
-
-        setTimeout(() => {
-            // Update Image
-            imgElement.src = images[currentIndex[modalId]].src;
-
-            // Update Text
+        // Only update the view once the new image is fully loaded
+        // This prevents the "blank white box" flash
+        nextImg.onload = function() {
+            imgElement.src = this.src; // Swap the source
             descElement.innerText = images[currentIndex[modalId]].desc;
+        };
 
-            // Remove fade effect
-            imgElement.style.opacity = 1;
-            descElement.style.opacity = 1;
-        }, 200);
+        // Optional: You can keep the opacity transition if you want
+        imgElement.style.opacity = 0.8; // Slight dim while loading
+        imgElement.style.opacity = 1; // Reset opacity
     }
 
     // Filter Logic
