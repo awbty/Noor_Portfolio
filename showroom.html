@@ -48,10 +48,10 @@
             <!-- Project 1 -->
             <div class="project-item" data-category="residential" onclick="openModal('modal1')">
                 <div class="project-visuals">
-                    <img src="images/Coffee_shop_final/1.webp" alt="Desert Villa">
+                    <img src="images/Coffee_shop_final/1.webp" alt="Clay Chai Coffee Shop">
                 </div>
                 <div class="project-info">
-                    <h3>Clay Chai Caffee Shop</h3>
+                    <h3>Clay Chai Coffee Shop</h3>
                     <span class="project-link">View Project Gallery →</span>
                 </div>
             </div>
@@ -59,10 +59,10 @@
             <!-- Project 2 -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal2')">
                 <div class="project-visuals">
-                    <img src="https://picsum.photos/seed/project_kitchen/600/800" alt="Urban Penthouse">
+                    <img src="images\Japandi_Style\1.webp" alt="Japandi Style Living Room">
                 </div>
                 <div class="project-info">
-                    <h3>Urban Penthouse</h3>
+                    <h3>Japandi Style Living Room</h3>
                     <span class="project-link">View Project Gallery →</span>
                 </div>
             </div>
@@ -70,10 +70,10 @@
             <!-- Project 3 -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal3')">
                 <div class="project-visuals">
-                    <img src="https://picsum.photos/seed/project_office/600/800" alt="Tech Hub">
+                    <img src="images\Modern_Bedroom\1.webp" alt="Modern Room">
                 </div>
                 <div class="project-info">
-                    <h3>Riyadh Tech Hub</h3>
+                    <h3>Modern Bedroom</h3>
                     <span class="project-link">View Project Gallery →</span>
                 </div>
             </div>
@@ -81,10 +81,10 @@
             <!-- Project 4 -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal4')">
                 <div class="project-visuals">
-                    <img src="https://picsum.photos/seed/project_lounge/600/800" alt="Hotel Lobby">
+                    <img src="images\Boy_room\2.webp" alt="Boy Room">
                 </div>
                 <div class="project-info">
-                    <h3>Boutique Hotel Lobby</h3>
+                    <h3>Boy Room</h3>
                     <span class="project-link">View Project Gallery →</span>
                 </div>
             </div>
@@ -95,7 +95,7 @@
 
 <footer>
     <div class="container">
-        <p class="copyright">&copy; 2023 Alex Design. All rights reserved.</p>
+        <p class="copyright">&copy; 2026 Noor Alhowidy. All rights reserved.</p>
     </div>
 </footer>
 
@@ -148,7 +148,7 @@
             <button class="gallery-btn gallery-next" onclick="changeImage('modal2', 1)">&#10095;</button>
         </div>
         <div class="showroom-details">
-            <h2>Urban Penthouse</h2>
+            <h2>Japandi Style Living Room</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> Industrial chic meets Scandinavian comfort.</p>
             <p id="modal2-desc"></p>
         </div>
@@ -165,9 +165,12 @@
             <button class="gallery-btn gallery-next" onclick="changeImage('modal3', 1)">&#10095;</button>
         </div>
         <div class="showroom-details">
-            <h2>Riyadh Tech Hub</h2>
+            <h2>Modern Bedroom</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> Connectivity and transparency.</p>
             <p id="modal3-desc"></p>
+            <!--THIS SECTION IS FOR CAD-DRAWINGS-->
+            <img class="cad-img" src="images\Modern_Bedroom\CAD1.webp" alt="Project View">
+            <img class="cad-img" src="images\Modern_Bedroom\CAD2.webp" alt="Project View">
         </div>
     </div>
 </div>
@@ -182,9 +185,13 @@
             <button class="gallery-btn gallery-next" onclick="changeImage('modal4', 1)">&#10095;</button>
         </div>
         <div class="showroom-details">
-            <h2>Boutique Hotel Lobby</h2>
+            <h2>Boy Room</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> The Arabian Nights.</p>
             <p id="modal4-desc"></p>
+            <!--THIS SECTION IS FOR CAD-DRAWINGS-->
+            <img class="cad-img" src="images\Boy_room\section1.webp" alt="Project View">
+            <img class="cad-img" src="images\Boy_room\section2.webp" alt="Project View">
+            <img class="cad-img" src="images\Boy_room\section3.webp" alt="Project View">
         </div>
     </div>
 </div>
@@ -256,36 +263,52 @@
         ],
         'modal2': [
             {
-                src: 'https://picsum.photos/seed/project_kitchen/1000/1000',
-                desc: 'The open-plan kitchen features brushed steel appliances and dark wood cabinetry.'
+                src: 'images/Japandi_Style/1.webp',
+                desc: 'Space for image 1'
             },
             {
-                src: 'https://picsum.photos/seed/project_kitchen2/1000/1000',
-                desc: 'Close up of the marble island. We chose Calacatta Gold for its dramatic veining.'
+                src: 'images/Japandi_Style/2.webp',
+                desc: 'Space for image 2'
+            },
+            {
+                src: 'images/Japandi_Style/3.webp',
+                desc: 'Space for image 3'
+            },
+            {
+                src: 'images/Japandi_Style/4.webp',
+                desc: 'Space for image 4'
             }
         ],
         'modal3': [
             {
-                src: 'https://picsum.photos/seed/project_office/1000/1000',
+                src: 'images/Modern_Bedroom/1.webp',
                 desc: 'General workspace area. Acoustic panels are integrated into the ceiling design to reduce noise.'
             },
             {
-                src: 'https://picsum.photos/seed/project_office2/1000/1000',
+                src: 'images/Modern_Bedroom/2.webp',
                 desc: 'The biophilic vertical garden wall. It houses over 200 native plant species to improve air quality.'
             },
             {
-                src: 'https://picsum.photos/seed/project_office3/1000/1000',
+                src: 'images/Modern_Bedroom/3.webp',
                 desc: 'Ergonomic focus pods for private calls and deep work sessions.'
             }
         ],
         'modal4': [
             {
-                src: 'https://picsum.photos/seed/project_lounge/1000/1000',
-                desc: 'Grand entrance view. The chandelier is a custom brass installation inspired by local geometry.'
+                src: 'images/Boy_room/2.webp',
+                desc: 'Desc for image 2'
             },
             {
-                src: 'https://picsum.photos/seed/project_lounge2/1000/1000',
-                desc: 'Seating area detail. The velvet fabric is stain-resistant and fire-retardant, meeting all commercial safety codes.'
+                src: 'images/Boy_room/1.webp',
+                desc: 'Desc for image 1'
+            },
+            {
+                src: 'images/Boy_room/3.webp',
+                desc: 'Desc for image 3'
+            },
+            {
+                src: 'images/Boy_room/4.webp',
+                desc: 'Desc for image 4'
             }
         ]
     };
