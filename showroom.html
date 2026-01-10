@@ -27,7 +27,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="cv.html">CV</a>
-            <a href="journal.html">Journal</a>
+            <!--a href="journal.html">Journal</a-->
             <a href="showroom.html">Showroom</a>
         </div>
     </div>
@@ -48,44 +48,66 @@
             <!-- Project 1 -->
             <div class="project-item" data-category="residential" onclick="openModal('modal1')">
                 <div class="project-visuals">
-                    <img src="images/Coffee_shop_final/1.webp" alt="Clay Chai Coffee Shop">
+                    <img src="images/Clay_Chai/1.webp" alt="Japandi Style Coffee Shop">
                 </div>
                 <div class="project-info">
-                    <h3>Clay Chai Coffee Shop</h3>
-                    <span class="project-link">View Project Gallery →</span>
+                    <h3>Clay Chai</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
                 </div>
             </div>
 
             <!-- Project 2 -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal2')">
                 <div class="project-visuals">
-                    <img src="images\Japandi_Style\1.webp" alt="Japandi Style Living Room">
+                    <img src="images/Oasis_of_Serenity/1.webp" alt="Japandi Style Living Room">
                 </div>
                 <div class="project-info">
-                    <h3>Japandi Style Living Room</h3>
-                    <span class="project-link">View Project Gallery →</span>
+                    <h3>Oasis of Serenity</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal3')">
                 <div class="project-visuals">
-                    <img src="images\Modern_Bedroom\1.webp" alt="Modern Room">
+                    <img src="images/Warm_Aura/2.webp" alt="Modern Room">
                 </div>
                 <div class="project-info">
-                    <h3>Modern Bedroom</h3>
-                    <span class="project-link">View Project Gallery →</span>
+                    <h3>Warm Aura</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
                 </div>
             </div>
 
             <!-- Project 4 -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal4')">
                 <div class="project-visuals">
-                    <img src="images\Boy_room\2.webp" alt="Boy Room">
+                    <img src="images/Modern_Retreat/2.webp" alt="Boy Room">
                 </div>
                 <div class="project-info">
-                    <h3>Boy Room</h3>
-                    <span class="project-link">View Project Gallery →</span>
+                    <h3>Modern Retreat</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-item" data-category="residential" onclick="openModal('modal5')">
+                <div class="project-visuals">
+                    <img src="images/Crimson_Haven/1.webp" alt="Crimson Haven">
+                </div>
+                <div class="project-info">
+                    <h3>Crimson Haven</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-item" data-category="commercial" onclick="openModal('modal6')">
+                <div class="project-visuals">
+                    <img src="images/The_Symphony_of_Warm_Elegance/1.webp" alt="The Symphony of Warm Elegance">
+                </div>
+                <div class="project-info">
+                    <h3>The Symphony of Warm Elegance</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
                 </div>
             </div>
 
@@ -95,7 +117,7 @@
 
 <footer>
     <div class="container">
-        <p class="copyright">Designed and Developed by Awwab Mohammed &copy; 2026 Noor Al-Hwaidi. All rights reserved.</p>
+        <p class="copyright">Designed and Developed by Awwab Mohammed &copy; 2026 Noor Al-Huwaidi. All rights reserved.</p>
     </div>
 </footer>
 
@@ -103,42 +125,62 @@
    MODALS WITH DYNAMIC TEXT
 -->
 
-<!-- Modal 1: Clay Cha
- i Coffee shop -->
+<!-- Modal 1: Clay Chai -->
 <div id="modal1" class="modal">
     <span class="close" onclick="closeModal('modal1')">&times;</span>
     <div class="modal-content modal-layout-showroom">
         <!-- Image Gallery Area -->
         <div class="showroom-gallery">
             <button class="gallery-btn gallery-prev" onclick="changeImage('modal1', -1)">&#10094;</button>
-            <img id="modal1-img" src="images/Coffee_shop_final/5.webp" alt="Project View">
+            <img id="modal1-img" src="images/Clay_Chai/5.webp" alt="Project View">
             <button class="gallery-btn gallery-next" onclick="changeImage('modal1', 1)">&#10095;</button>
         </div>
         <!-- Description Area -->
         <div class="showroom-details">
-            <h2>Clay Chai Coffee Shop</h2>
-            <p class="inspiration-text"><strong>Inspiration:</strong> The design is a serene sanctuary balancing the crispness of a winter landscape with the innate warmth of natural materials, where the luxurious contrast of plum velvet meets the tranquil elegance of light oak and organic textures.</p>
+            <h2>Clay Chai</h2>
+            
 
-            <!-- This paragraph ID is what gets updated by JS -->
-            <p id="modal1-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                <!-- Default text (loaded via JS on open) -->
-            </p>
+            <!-- Static project description (moved from JS) -->
+            <div id="modal1-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                <h3>Design Style</h3>
+<p>Pure Organic Modernism. The design adopts a Pure Modernism approach yet incorporates a warm, organic touch derived from nature. It represents a refined fusion between the architectural purity of clean lines and the tactile richness of natural materials. This ethos is manifested in the Monochromatic Harmony of earthy colors and a complete reliance on multi-layered warm lighting to create a serene Identity for the space. The design intentionally moves away from visual clutter in favor of spatial clarity and the quality of palpable materials.</p>
+<h3>Space Analysis</h3>
+<p><strong>Main Seating Area:</strong> This space was designed as a Sensory Retreat, balancing social comfort with organic tranquility. Walls, whether clad in fluted wooden panels or finished with a clay-textured paint, function as more than mere backdrops; they are architectural compositions integrating the warmth of the material with interspersed dried botanical elements, establishing a calm focal point for coffee enjoyment.</p>
+<p><strong>Service Bar Area:</strong> The focus here was on achieving a Sculptural Presence and seamless, streamlined function. The service counter is elevated to a Luxurious Focal Point through concealed shelving lighting that artfully displays products. Clean lines are maintained throughout to enhance a sense of order and refined craftsmanship.</p>
+<h3>Color Palette</h3>
+<p>The color palette is founded upon a Warm Earthy Harmony to foster a pervasive sense of belonging and tranquility.</p>
+<p><strong>Primary Colors:</strong> Gradients of sandy beige, creamy off-white, and Light Oak woods for the walls, ceilings, and main furniture pieces, creating an enveloping, bright, and warm backdrop.</p>
+<p><strong>Soft Contrast Colors:</strong> Slightly deeper tones of natural wood or oatmeal-colored woven fabrics in the seating are used to add visual depth without disrupting the overall monochromatic calm.</p>
+<p><strong>Lighting as Color:</strong> Golden Warm Light is the essential connecting chromatic element, generating a Solar Aura that highlights the aesthetics of the surfaces and provides necessary warmth throughout the space.</p>
+<h3>Materials and Furniture</h3>
+<p>Materials were selected to establish a dialogue between contemporary architectural rigor and artisanal warmth.</p>
+<p><strong>Surfaces and Walls:</strong> A reliance on Matte Textured Surfaces, such as fluted woods and clay-finished walls, reinforces a sense of authenticity and palpable depth.</p>
+<p><strong>Complementary Materials:</strong> Dried wheat stalks and botanicals are used as architectural elements to ground the design, alongside subtle brass or gold accents in the lighting to introduce an understated gleam of luxury.</p>
+<p><strong>Fabrics and Fibers:</strong> The selection includes light, soft upholstery fabrics, integrated with hand-woven elements like Rattan or straw in lighting fixtures and chairs, adding a layer of sensory comfort and connection to the natural world.</p>
+<h3>Lighting Engineering</h3>
+<p>The lighting scheme is not just functional; it acts as an Atmospheric Sculptor that defines the spatial contours.</p>
+<p><strong>Drawing with Light:</strong> Primary emphasis is placed on continuous Cove and Shelf Architectural Lighting integrated within display niches and behind fixed seating. This warm light flows as luminous lines, defining edges and highlighting the texture of the walls.</p>
+<p><strong>Dramatic/Intimate Ambiance:</strong> Large pendant units crafted from woven fibers are designed as Luminous Sculptures, casting soft, artistic shadows and defining seating zones. This adds a unique, handcrafted touch, creating an overhead visual anchor.</p>
+<h3>Conclusion</h3>
+<p>In this project, the cafe is transformed into a symphony of earthen gradients and natural textures, where the warmth of light wood blends seamlessly with the softness of sandy colors. It represents a refined dialogue between clean architectural lines and warm organic touches, forging an atmosphere of Serene Modernism. Here, luxury resides in sensory tranquility and in the delicate balance between contemporary simplicity and the enveloping warmth the space offers its visitor.</p>
+
+            </div>
 
             <!-- <div class="feedback-section">
                 <p class="feedback-quote">"Alex transformed our chaotic space into a sanctuary of peace."</p>
                 <p class="feedback-author">- Mr. Al-Faisal, Homeowner</p>
             </div> -->
             <!--THIS SECTION IS FOR CAD-DRAWINGS-->
-            <img class="cad-img" src="images/Coffee_shop_final/Section A.jpg" alt="Project View">
-            <img class="cad-img" src="images/Coffee_shop_final/Plan_page.jpg" alt="Project View">
-            <img class="cad-img" src="images/Coffee_shop_final/Section B.jpg" alt="Project View">
-            <img class="cad-img" src="images\Coffee_shop_final\Light Plan.jpg" alt="Project View">
+            <img class="cad-img" src="images/Clay_Chai/Section A.webp" alt="Project View">
+            <img class="cad-img" src="images/Clay_Chai/Plan_page.webp" alt="Project View">
+            <img class="cad-img" src="images/Clay_Chai/Section B.webp" alt="Project View">
+            <img class="cad-img" src="images/Clay_Chai\Light Plan.webp" alt="Project View">
             
         </div>
     </div>
 </div>
 
-<!-- Modal 2: Urban Penthouse -->
+<!-- Modal 2: Oasis of Serenity -->
 <div id="modal2" class="modal">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
     <div class="modal-content modal-layout-showroom">
@@ -148,9 +190,31 @@
             <button class="gallery-btn gallery-next" onclick="changeImage('modal2', 1)">&#10095;</button>
         </div>
         <div class="showroom-details">
-            <h2>Japandi Style Living Room</h2>
-            <p class="inspiration-text"><strong>Inspiration:</strong> Industrial chic meets Scandinavian comfort.</p>
-            <p id="modal2-desc"></p>
+            <h2>Oasis of Serenity</h2>
+            <div id="modal2-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+            <h3>Design Style</h3>
+<p>Contemporary Zen Japandi. The design is a captivating blend of Japanese Minimalism (Zen) and Scandinavian functionality. This spirit is evident in the selection of clean lines, low-profile furniture, and a deep connection to nature through wood, botanicals, and natural light.</p>
+<h3>Space Analysis</h3>
+<p><strong>Living Room:</strong> This space was designed as a <strong>"Breathing Space."</strong> The built-in wooden library is not just a storage unit but an architectural component that adds depth to the room. The horizontal arrangement of the furniture enhances the sense of spaciousness and balance.</p>
+<p><strong>Bedroom:</strong> The focus here was on <strong>Symmetry</strong> to create an immediate sense of psychological ease. The textured <strong>Accent Wall</strong> subtly breaks the softness and adds a sensory dimension to the room.</p>
+<h3>Color Palette</h3>
+<p>A warm, earth-inspired <strong>Monochromatic</strong> color palette was adopted:</p>
+<p><strong>Primary Colors:</strong> Sandy beige, creamy off-white, and warm gray.</p>
+<p><strong>Contrast Colors:</strong> Dark brown (walnut or teak wood) used to provide definition and sophistication to corners.</p>
+<p><strong>Lighting as Color:</strong> Warm lighting (3000K) is utilized as a chromatic element, adding a golden glow to the materials.</p>
+<h3>Materials and Furniture</h3>
+<p>Materials were selected to engage the senses:</p>
+<p><strong>Woods:</strong> Natural wood is the protagonist, featured in the flooring, walls, and the <strong>"Wooden Mass"</strong> that forms the unique coffee table.</p>
+<p><strong>Fabrics:</strong> <strong>Bouclé</strong> and raw linen were chosen for the sofas and the bed ottoman, selected for their ability to deliver a rich, soft texture.</p>
+<p><strong>Metals:</strong> Subtle touches of <strong>Brushed Brass</strong> in the wall sconces are used to add a quiet shimmer of luxury.</p>
+<p><strong>Stones/Pottery:</strong> Earthenware vessels and artifacts with a stoneware texture enhance the <strong>Zen</strong> character.</p>
+<h3>Lighting Engineering and Natural Light</h3>
+<p><strong>Light as a Structural Element:</strong> In the living room, the curtains were designed to be semi-sheer, allowing <strong>"Filtered Light"</strong> to pass through, painting soft shadows onto the furniture.</p>
+<p><strong>Dramatic Lighting:</strong> In the bedroom, <strong>Backlit</strong> elements above the bed and vertical illuminated lines act as threads of light, defining the wall's contours and emphasizing its texture.</p>
+<h3>Conclusion</h3>
+<p>In this design, the unity of spirit and material converges; the generous creamy sofas embrace the warmth of natural wood, and the shadows of plants dance on walls that narrate a never-ending story of peace. Every piece of furniture is designed to be part of a visual symphony that redefines luxury as a state of psychological comfort and aesthetic elevation.</p>    
+                
+            </div>
         </div>
     </div>
 </div>
@@ -165,12 +229,34 @@
             <button class="gallery-btn gallery-next" onclick="changeImage('modal3', 1)">&#10095;</button>
         </div>
         <div class="showroom-details">
-            <h2>Modern Bedroom</h2>
-            <p class="inspiration-text"><strong>Inspiration:</strong> Connectivity and transparency.</p>
-            <p id="modal3-desc"></p>
+            <h2>Warm Aura</h2>
+            
+            <div id="modal3-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+             <h3>Design Style</h3>
+<p>Contemporary Quiet Luxury. The design adopts the Quiet Luxury approach with a contemporary and dramatic touch. It is a refined blend of architectural sobriety and profound sensory warmth. This ethos is evident in the bold contrast between materials, a complete reliance on concealed architectural lighting to establish the <strong>"Mood,"</strong> and a focus on the richness of textures and quality of execution over ostentation.</p>
+<h3>Space Analysis</h3>
+<p><strong>Bedroom:</strong> This space was designed as a <strong>"Cocoon"</strong> for complete isolation and rest. The main wall behind the bed is not merely a backdrop but an architectural tableau that harmonizes the coolness of the stone texture with the warmth of the wood panels, creating visual depth and a powerful focal point for the sleeping area.</p>
+<p><strong>Dressing Area:</strong> The focus here was on <strong>Visual Continuity</strong> by extending the main room's material palette, enhancing the feeling of unity and expanse. The vanity and closet corridor are transformed into a luxurious, serene nook that complements the overall hotel-suite experience.</p>
+<h3>Color Palette</h3>
+<p>A color palette based on <strong>High Contrast</strong> was chosen to enhance the sense of luxury and depth:</p>
+<p><strong>Primary Colors:</strong> Light <strong>Greige</strong> or stone-like beige for the textured walls, creating a serene and sober backdrop.</p>
+<p><strong>Contrast Colors:</strong> Deep, dark brown (such as smoked walnut wood) in the vertical wood panels to assert character and add warmth.</p>
+<p><strong>Lighting as Color:</strong> <strong>Ultra Warm Light</strong> is the most crucial chromatic element, blurring the distinctions between materials and enveloping the space in a golden, poetic glow.</p>
+<h3>Materials and Furniture</h3>
+<p>Materials were selected to establish a sensory dialogue between structure and softness:</p>
+<p><strong>Woods and Walls:</strong> The deliberate pairing of <strong>dark wood panels</strong> with strict vertical lines and <strong>Textured Plaster</strong> with an organic, prominent finish is the core of the design.</p>
+<p><strong>Fabrics:</strong> Rich and plush upholstery fabrics (such as heavy linen or matte velvet) were chosen for the bed and bench to break the rigidity of the walls and enhance the feeling of hotel-level comfort.</p>
+<p><strong>Metals:</strong> The use of <strong>Brushed Gold/Brass</strong> in the sculptural lighting units acts as precise <strong>"Jewelry,"</strong> adding a modern, luxurious shimmer.</p>
+<h3>Lighting Engineering</h3>
+<p>The lighting scheme is not just functional; it is the <strong>"Sculptor"</strong> that shapes the space:</p>
+<p><strong>Sculpting with Light:</strong> Near-total reliance on <strong>Cove & Architectural Lighting</strong> in the ceilings and along the walls, flowing like luminous cascades that expertly highlight the rough textures of the stone and the depth of the wood.</p>
+<p><strong>Dramatic Ambiance:</strong> Lighting levels are designed to be dim, warm, and focused, creating soft shadows and transforming the room into an intimate and enchanting retreat at night, with sculptural wall and floor fixtures serving as visual anchors.</p>
+<h3>Conclusion</h3>
+<p>In this project, the room transforms into an ode to shadow and light, where the clamor of the outside world dissolves at the threshold of this sanctuary. It is a masterful dialogue between the sobriety of dark wood and the softness of stone texture, immersed in warm lighting that crafts an atmosphere of luxurious serenity. Here, luxury is not just in what the eye sees but in the profound feeling of containment and tranquility the space grants its occupant.</p>   
+            </div>
             <!--THIS SECTION IS FOR CAD-DRAWINGS-->
-            <img class="cad-img" src="images\Modern_Bedroom\CAD1.webp" alt="Project View">
-            <img class="cad-img" src="images\Modern_Bedroom\CAD2.webp" alt="Project View">
+            <img class="cad-img" src="images/Warm_Aura/4.webp" alt="Project View">
+            <img class="cad-img" src="images/Warm_Aura/5.webp" alt="Project View">
         </div>
     </div>
 </div>
@@ -185,135 +271,174 @@
             <button class="gallery-btn gallery-next" onclick="changeImage('modal4', 1)">&#10095;</button>
         </div>
         <div class="showroom-details">
-            <h2>Boy Room</h2>
+            <h2>Modern Retreat</h2>
             <p class="inspiration-text"><strong>Inspiration:</strong> The Arabian Nights.</p>
-            <p id="modal4-desc"></p>
+            <div id="modal4-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+            <h3>Design Style</h3>
+<p>Pure Contemporary Modernism. The design adopts the Pure Modernism approach with a bold, dramatic touch. It is a refined blend of the architectural purity of clean white lines and a daring chromatic depth. This ethos is evident in the strong contrast between colors, a complete reliance on <strong>Linear Architectural Lighting</strong> to create the space's <strong>"Identity,"</strong> and a shift away from ornamentation in favor of spatial purity and quality of execution.</p>
+<h3>Space Analysis</h3>
+<p><strong>Bedroom:</strong> This space was designed as an <strong>"Organized Retreat,"</strong> combining comfort with modern function. The main wall behind the bed is not just a backdrop but an architectural composition integrating the purity of the upholstered white panels with the warmth of hidden lighting, creating a calm focal point for the sleeping area with a seamlessly integrated office nook.</p>
+<p><strong>Closet & Corridor:</strong> The focus here was on <strong>Visual Continuity</strong> and clean lines. The closet corridor is transformed into a <strong>"Luxury Gallery Corridor"</strong> through continuous overhead lighting and mirrors that double the sense of expanse. The monotony is broken by an open display corner featuring a dramatic blue background for private collections.</p>
+<h3>Color Palette</h3>
+<p>A color palette based on <strong>Bold and Pure Contrast</strong> was adopted to enhance the sense of modernity and depth:</p>
+<p><strong>Primary Colors:</strong> Pure white or <strong>Off-White</strong> for the walls, architectural millwork, and cabinetry, creating an extremely bright, clean, and spacious backdrop.</p>
+<p><strong>Contrast Colors:</strong> Deep <strong>Sapphire Blue</strong> in the textiles (bedding, chair) and open shelf recesses, used to assert character and add a dramatic and vital dimension that breaks the white stillness.</p>
+<p><strong>Lighting as Color:</strong> <strong>Warm Light</strong> is the binding chromatic element here, generating a golden glow that balances the coolness of the white and blue and adds necessary warmth to the space.</p>
+<h3>Materials and Furniture</h3>
+<p>Materials were selected to establish a dialogue between architectural rigor and functional comfort:</p>
+<p><strong>Surfaces and Walls:</strong> Reliance on <strong>Matte Smooth Surfaces</strong> in the floor-to-ceiling white architectural millwork enhances the feeling of cleanliness and visual order.</p>
+<p><strong>Fabrics:</strong> Rich blue upholstery fabrics were chosen for the bed and office chair, adding a touch of sensory and chromatic comfort that breaks the rigidity of the large white surfaces.</p>
+<p><strong>Complementary Materials:</strong> Longitudinal mirrors are integrated to visually expand the space, and a warm wooden surface is used for the desk to connect the design to a natural touch, completed by a playful modern accent like a <strong>Neon Sign</strong>.</p>
+<h3>Lighting Engineering</h3>
+<p>The lighting scheme is not just functional; it is the <strong>"Definer of Features"</strong> that outlines the boundaries of the space:</p>
+<p><strong>Drawing with Light:</strong> Primary emphasis is placed on continuous <strong>Linear Architectural Lighting</strong> above the cabinets and behind the headboard panel, flowing as lines of warm light that define the architectural edges and highlight the purity of the design.</p>
+<p><strong>Dramatic Ambiance:</strong> Hidden lighting within the shelves is designed to spot-light collections and create depth in the blue recesses, while the neon sign above the desk adds a unique, personal, and modern touch, creating a visual focal point.</p>
+<h3>Conclusion</h3>
+<p>In this project, the room transforms into a symphony of purity and color, where serene white stillness blends with dramatic blue depth. It is a masterful dialogue between strict architectural lines and warm luminous touches that craft an atmosphere of refined modernity. Here, luxury lies in visual order and in the delicate balance between function and beauty that the space grants its occupant.</p>    
+            </div>
             <!--THIS SECTION IS FOR CAD-DRAWINGS-->
-            <img class="cad-img" src="images\Boy_room\section1.webp" alt="Project View">
-            <img class="cad-img" src="images\Boy_room\section2.webp" alt="Project View">
-            <img class="cad-img" src="images\Boy_room\section3.webp" alt="Project View">
+            <img class="cad-img" src="images/Modern_Retreat/section1.webp" alt="Project View">
+            <img class="cad-img" src="images/Modern_Retreat/section2.webp" alt="Project View">
+            <img class="cad-img" src="images/Modern_Retreat/section3.webp" alt="Project View">
         </div>
     </div>
 </div>
 
+        <!-- Modal 5: Crimson Haven -->
+        <div id="modal5" class="modal">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-content modal-layout-showroom">
+                <div class="showroom-gallery">
+                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal5', -1)">&#10094;</button>
+                    <img id="modal5-img" src="images/Crimson_Haven/1.webp" alt="Project View">
+                    <button class="gallery-btn gallery-next" onclick="changeImage('modal5', 1)">&#10095;</button>
+                </div>
+                <div class="showroom-details">
+                    <h2>Crimson Haven</h2>
+                    
+                    <div id="modal5-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                        <h3>Design Style</h3>
+<p>Pure Contemporary Modernism. The design adopts the Pure Modernism approach with a bold, dramatic touch. It is a refined blend of the architectural purity of clean white lines and a daring chromatic depth. This ethos is evident in the strong contrast between colors, a complete reliance on <strong>Linear Architectural Lighting</strong> to create the space's <strong>"Identity,"</strong> and a shift away from ornamentation in favor of spatial purity and quality of execution.</p>
+<h3>Space Analysis</h3>
+<p><strong>Bedroom:</strong> This space was designed as an <strong>"Organized Retreat,"</strong> combining comfort with modern function. The main wall behind the bed is not just a backdrop but an architectural composition integrating the purity of the upholstered white panels with the warmth of hidden lighting, creating a calm focal point for the sleeping area with a seamlessly integrated office nook.</p>
+<p><strong>Closet & Corridor:</strong> The focus here was on <strong>Visual Continuity</strong> and clean lines. The closet corridor is transformed into a <strong>"Luxury Gallery Corridor"</strong> through continuous overhead lighting and mirrors that double the sense of expanse. The monotony is broken by an open display corner featuring a dramatic blue background for private collections.</p>
+<h3>Color Palette</h3>
+<p>A color palette based on <strong>Bold and Pure Contrast</strong> was adopted to enhance the sense of modernity and depth:</p>
+<p><strong>Primary Colors:</strong> Pure white or <strong>Off-White</strong> for the walls, architectural millwork, and cabinetry, creating an extremely bright, clean, and spacious backdrop.</p>
+<p><strong>Contrast Colors:</strong> Deep <strong>Sapphire Blue</strong> in the textiles (bedding, chair) and open shelf recesses, used to assert character and add a dramatic and vital dimension that breaks the white stillness.</p>
+<p><strong>Lighting as Color:</strong> <strong>Warm Light</strong> is the binding chromatic element here, generating a golden glow that balances the coolness of the white and blue and adds necessary warmth to the space.</p>
+<h3>Materials and Furniture</h3>
+<p>Materials were selected to establish a dialogue between architectural rigor and functional comfort:</p>
+<p><strong>Surfaces and Walls:</strong> Reliance on <strong>Matte Smooth Surfaces</strong> in the floor-to-ceiling white architectural millwork enhances the feeling of cleanliness and visual order.</p>
+<p><strong>Fabrics:</strong> Rich blue upholstery fabrics were chosen for the bed and office chair, adding a touch of sensory and chromatic comfort that breaks the rigidity of the large white surfaces.</p>
+<p><strong>Complementary Materials:</strong> Longitudinal mirrors are integrated to visually expand the space, and a warm wooden surface is used for the desk to connect the design to a natural touch, completed by a playful modern accent like a <strong>Neon Sign</strong>.</p>
+<h3>Lighting Engineering</h3>
+<p>The lighting scheme is not just functional; it is the <strong>"Definer of Features"</strong> that outlines the boundaries of the space:</p>
+<p><strong>Drawing with Light:</strong> Primary emphasis is placed on continuous <strong>Linear Architectural Lighting</strong> above the cabinets and behind the headboard panel, flowing as lines of warm light that define the architectural edges and highlight the purity of the design.</p>
+<p><strong>Dramatic Ambiance:</strong> Hidden lighting within the shelves is designed to spot-light collections and create depth in the blue recesses, while the neon sign above the desk adds a unique, personal, and modern touch, creating a visual focal point.</p>
+<h3>Conclusion</h3>
+<p>In this project, the room transforms into a symphony of purity and color, where serene white stillness blends with dramatic blue depth. It is a masterful dialogue between strict architectural lines and warm luminous touches that craft an atmosphere of refined modernity. Here, luxury lies in visual order and in the delicate balance between function and beauty that the space grants its occupant.</p>
+                    </div>
+                    <img class="cad-img" src="images/Crimson_Haven/sectionA.webp" alt="Project View">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: The Symphony of Warm Elegance -->
+        <div id="modal6" class="modal">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="modal-content modal-layout-showroom">
+                <div class="showroom-gallery">
+                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal6', -1)">&#10094;</button>
+                    <img id="modal6-img" src="images/The_Symphony_of_Warm_Elegance/1.webp" alt="Project View">
+                    <button class="gallery-btn gallery-next" onclick="changeImage('modal6', 1)">&#10095;</button>
+                </div>
+                <div class="showroom-details">
+                    <h2>The Symphony of Warm Elegance</h2>
+                    
+                    <div id="modal6-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                     <h3>Design Style</h3>
+<p>The design adopt a unique blend combining:</p>
+<p><strong>Modern Neoclassical:</strong> Evident in the delicate <strong>Wall Moldings</strong>, the symmetry of the lighting, and the high ceilings featuring simple cornices.</p>
+<p><strong>Japandi:</strong> Highlighted in the living rooms and public areas through the use of raw natural woods, low-profile furniture, and a deep connection to nature and light.</p>
+<h3>Color Palette</h3>
+<p>A warm and cohesive <strong>Monochromatic</strong> color palette was adopted:</p>
+<p><strong>Primary Colors:</strong> Sandy beige, creamy tones, and <strong>Off-White</strong> shades to create a bright, expansive foundation.</p>
+<p><strong>Contrast Colors:</strong> Dark <strong>Walnut</strong> wood and marble veined with brown and gold were used to add visual depth.</p>
+<p><strong>Accent Colors:</strong> Touches of <strong>Petroleum Blue</strong> and <strong>Burnt Orange</strong> were added in the cushions to break the monotony and introduce a vibrant accent.</p>
+<h3>Furniture & Materials</h3>
+<p>Every piece was selected with meticulous care to reflect quality craftsmanship and texture:</p>
+<p><strong>Fabrics:</strong> <strong>Bouclé</strong> and woven linen fabrics were used for the sofas, providing a rich and comforting texture.</p>
+<p><strong>Woods:</strong> A strong presence of natural Walnut wood in the circular tables and built-in libraries.</p>
+<p><strong>Marble and Stone:</strong> <strong>Arabescato</strong> or <strong>Calacatta</strong> marble with distinct veining was used in the entrances and side tables to impart a character of timeless luxury.</p>
+<p><strong>Metals:</strong> Touches of <strong>Brushed Gold</strong> in the sconces and chandeliers are used to enhance contemporary sophistication.</p>
+<h3>Space Analysis and Lighting Engineering</h3>
+<p>The spatial layout focuses on the concept of <strong>Fluidity</strong>:</p>
+<p><strong>Furniture Arrangement:</strong> <strong>Curved Furniture</strong> was adopted to follow the eye's movement and suggest comfort and containment.</p>
+<p><strong>Lighting:</strong> It is the <strong>"Unseen Hero"</strong> in my designs; I integrated bright natural light from large windows, dramatic concealed LED lighting in the shelves, and crystal/metal chandeliers that function as central sculptural art pieces.</p>
+<p><strong>Natural Elements:</strong> Tall plants and dried branches (<strong>Pampas Grass</strong>) are integrated to connect the interior design with the outside, granting the space a living spirit.</p>
+<h3>Conclusion</h3>
+<p>In this design, the unity of spirit and material converges; creamy walls adorned with classical paneling embrace luxurious curved Bouclé sofas, while a central circular wooden table reflects the warmth of the suspended golden lighting. From the bedroom that whispers serenity through its textured walls to the reception halls that celebrate marble and light, every corner is designed to be an artistic tableau inviting relaxation and aesthetic elevation.</p>   
+                    </div>
+                    <img class="cad-img" src="images/Symphony_Warm_Elegance/plan.webp" alt="Project View">
+                </div>
+            </div>
+        </div>
+
 <script>
-    // Data Structure: Array of Objects. Each object has 'src' (Image URL) and 'desc' (Text)
+    // Data Structure: Array of Objects. Each object has 'src' (Image URL)
     const galleryData = {
-                'modal1': [
-            {
-                src: 'images/Coffee_shop_final/1.webp',
-                desc: 'This view highlights the luxurious contrast between the deep plum velvet banquette and the soft, neutral palette of the surroundings. Above the seating, a natural, textural screen of dried pampas grass adds an organic touch, complemented by the warm glow of unique, woven-style pendant lights.'
-            },
-            {
-                src: 'images/Coffee_shop_final/2.webp',
-                desc: 'A close-up perspective showcases the dramatic curve of the channel-tufted velvet seating, defining an intimate, yet open, corner arrangement. Individual small side tables, each featuring a flickering candle, are paired with elegant, minimalist cream chairs, enhancing the spaces sophisticated ambiance.'
-            },
-            {
-                src: 'images/Coffee_shop_final/3.webp',
-                desc: 'The composition focuses on a central cluster of seating, emphasizing the interplay of light textures, from the woven pendant lamps to the pale, patterned wooden wall panels. The rich color of the curved velvet sofa anchors the foreground, creating a warm, inviting separation from the light wood doors in the background.'
-            },
-            {
-                src: 'images/Coffee_shop_final/4.webp',
-                desc: 'The interior space is elegantly set against a large picture window offering a serene, snow-covered outdoor view, bridging the cozy warmth inside with the winter landscape. Various seating zones are illuminated by dazzling crystal basket pendants, while the ribbed purple banquette and pampas grass create a focal point of texture and color.'
-            },
-            {
-                src: 'images/Coffee_shop_final/5.webp',
-                desc: 'This wider shot illustrates the designs commitment to balanced elegance, featuring multiple seating arrangements for different group sizes against a backdrop of sophisticated paneled dividers. Overhead, a sculptural cluster of organic, woven pendant lights draws the eye, radiating a soft, golden warmth across the rooms neutral tones.'
-            },
-            {
-                src: 'images/Coffee_shop_final/6.webp',
-                desc: 'This high-angle shot captures the intimate window seating area, defined by the rich, channel-tufted plum velvet banquette that curves around the corner. The pairing of light, textured fabric chairs with small, wooden side tables creates a cozy spot for enjoying a beverage while overlooking the snowy exterior.'
-            },
-            {
-                src: 'images/Coffee_shop_final/7.webp',
-                desc: 'A harmonious mix of light wood paneling and large windows anchors this space, offering a balanced blend of natural light and texture. The lounge features distinct seating arrangements, including low wooden armchairs and an elevated bar table, all centered around a serene view of the winter landscape.'
-            },
-            {
-                src: 'images/Coffee_shop_final/8.webp',
-                desc: 'This aerial perspective showcases the central lounge area, featuring contemporary wooden sofas upholstered in a soft, light neutral fabric. The grouping is illuminated by an organic cluster of woven pendant lights, which cast beautiful shadows and texture onto the terrazzo-style floor.'
-            },
-            {
-                src: 'images/Coffee_shop_final/9.webp',
-                desc: 'The floor-to-ceiling windows bathe this dining area in sunlight, highlighting the warm, natural materials used throughout the space. A combination of low banquette-style tables with built-in seating and conventional round tables offers varied dining experiences under decorative, open-weave pendant lighting.'
-            },
-            {
-                src: 'images/Coffee_shop_final/10.webp',
-                desc: 'A detailed vignette focuses on a low coffee table setting, styled with simple floral accents and glowing pillar candles for a warm effect. The clean lines of the wooden sofa and table are contrasted by the soft, curved upholstery and metal detailing of the accompanying guest chairs.'
-            },
-            {
-                src: 'images/Coffee_shop_final/11.webp',
-                desc: 'This wide perspective showcases the cafés blend of functional and lounge seating, with high-top tables near the service counter balancing the central low sofas and coffee tables. The repetition of woven pendant lights and vertical wood paneling creates a unified, serene design aesthetic across the entire space.'
-            },
-            {
-                src: 'images/Coffee_shop_final/12.webp',
-                desc: 'The detailed service counter features a recessed bar area with illuminated shelving that prominently displays the cafés offerings and branding, "Clay Chai." The use of warm, integrated lighting under the counter and shelves enhances the natural wood tones and highlights the displayed baked goods and beverages.'
-            },
-            {
-                src: 'images/Coffee_shop_final/13.webp',
-                desc: 'A macro shot focuses on the elegant tabletop styling, featuring a freshly baked pastry and coffee cup alongside a cluster of gently flickering candles and small vessels with dried lavender. The curve of the neutral-toned dining chairs and the oval table profile adds a sense of approachable sophistication.'
-            },
-            {
-                src: 'images/Coffee_shop_final/14.webp',
-                desc: 'This isometric floor plan rendering provides a comprehensive overview of the spatial layout, illustrating the dedicated bar area, various dining tables, and the distinctive curved purple banquette lounge. The organized flow and diverse seating options, highlighted by glowing pendant lights, are clearly presented.'
-            },
-            {
-                src: 'images/Coffee_shop_final/15.webp',
-                desc: 'An overhead floor plan view highlights the efficiency and variety of the seating configuration, from the large curved sofa on the left to the rectangular bar counter on the right. The arrangement includes multiple four-person dining tables and low lounge groupings, showcasing the designs flexible use of the available space.'
-            },
+        'modal1': [
+            { src: 'images/Clay_Chai/1.webp' },
+            { src: 'images/Clay_Chai/2.webp' },
+            { src: 'images/Clay_Chai/3.webp' },
+            { src: 'images/Clay_Chai/4.webp' },
+            { src: 'images/Clay_Chai/5.webp' },
+            { src: 'images/Clay_Chai/6.webp' },
+            { src: 'images/Clay_Chai/7.webp' },
+            { src: 'images/Clay_Chai/8.webp' },
+            { src: 'images/Clay_Chai/9.webp' },
+            { src: 'images/Clay_Chai/10.webp' },
+            { src: 'images/Clay_Chai/11.webp' },
+            { src: 'images/Clay_Chai/12.webp' },
+            { src: 'images/Clay_Chai/13.webp' },
+            { src: 'images/Clay_Chai/14.webp' },
+            { src: 'images/Clay_Chai/15.webp' },
         ],
         'modal2': [
-            {
-                src: 'images/Japandi_Style/1.webp',
-                desc: 'Space for image 1'
-            },
-            {
-                src: 'images/Japandi_Style/2.webp',
-                desc: 'Space for image 2'
-            },
-            {
-                src: 'images/Japandi_Style/3.webp',
-                desc: 'Space for image 3'
-            },
-            {
-                src: 'images/Japandi_Style/4.webp',
-                desc: 'Space for image 4'
-            }
+            { src: 'images/Oasis_of_Serenity/1.webp' },
+            { src: 'images/Oasis_of_Serenity/2.webp' },
+            { src: 'images/Oasis_of_Serenity/3.webp' },
+            { src: 'images/Oasis_of_Serenity/4.webp' }
         ],
         'modal3': [
-            {
-                src: 'images/Modern_Bedroom/1.webp',
-                desc: 'General workspace area. Acoustic panels are integrated into the ceiling design to reduce noise.'
-            },
-            {
-                src: 'images/Modern_Bedroom/2.webp',
-                desc: 'The biophilic vertical garden wall. It houses over 200 native plant species to improve air quality.'
-            },
-            {
-                src: 'images/Modern_Bedroom/3.webp',
-                desc: 'Ergonomic focus pods for private calls and deep work sessions.'
-            }
+            { src: 'images/Warm_Aura/2.webp' },
+            { src: 'images/Warm_Aura/1.webp' },
+            { src: 'images/Warm_Aura/3.webp' }
         ],
         'modal4': [
-            {
-                src: 'images/Boy_room/2.webp',
-                desc: 'Desc for image 2'
-            },
-            {
-                src: 'images/Boy_room/1.webp',
-                desc: 'Desc for image 1'
-            },
-            {
-                src: 'images/Boy_room/3.webp',
-                desc: 'Desc for image 3'
-            },
-            {
-                src: 'images/Boy_room/4.webp',
-                desc: 'Desc for image 4'
-            }
+            { src: 'images/Modern_Retreat/1.webp' },
+            { src: 'images/Modern_Retreat/2.webp' },
+            { src: 'images/Modern_Retreat/3.webp' },
+            { src: 'images/Modern_Retreat/4.webp' }
+        ]
+        ,
+        'modal5': [
+            { src: 'images/Crimson_Haven/1.webp' },
+            { src: 'images/Crimson_Haven/2.webp' },
+            { src: 'images/Crimson_Haven/3.webp' },
+            { src: 'images/Crimson_Haven/4.webp' }
+        ],
+        'modal6': [
+            { src: 'images/The_Symphony_of_Warm_Elegance/1.webp' },
+            { src: 'images/The_Symphony_of_Warm_Elegance/2.webp' },
+            { src: 'images/The_Symphony_of_Warm_Elegance/3.webp' },
+            { src: 'images/The_Symphony_of_Warm_Elegance/4.webp' }
         ]
     };
 
-    let currentIndex = { 'modal1': 0, 'modal2': 0, 'modal3': 0, 'modal4': 0 };
+    let currentIndex = { 'modal1': 0, 'modal2': 0, 'modal3': 0, 'modal4': 0, 'modal5': 0, 'modal6': 0 };
+
 
     // Gallery Logic with Preloading
     function changeImage(modalId, direction) {
@@ -338,7 +463,6 @@
         // This prevents the "blank white box" flash
         nextImg.onload = function() {
             imgElement.src = this.src; // Swap the source
-            descElement.innerText = images[currentIndex[modalId]].desc;
         };
 
         // Optional: You can keep the opacity transition if you want
@@ -370,12 +494,11 @@
 
     // Modal Logic
     function openModal(modalId) {
-        // Reset to first image/text when opening
+        // Reset to first image and show project-specific text when opening
         currentIndex[modalId] = 0;
         const firstData = galleryData[modalId][0];
 
         document.getElementById(modalId + '-img').src = firstData.src;
-        document.getElementById(modalId + '-desc').innerText = firstData.desc;
 
         document.getElementById(modalId).style.display = "block";
         setTimeout(() => document.getElementById(modalId).classList.add('show'), 10);
