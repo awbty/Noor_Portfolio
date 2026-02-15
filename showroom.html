@@ -45,7 +45,7 @@
 
         <div class="project-gallery" id="gallery">
 
-            <!-- Project 1 -->
+            <!-- Project 1: Clay Chai -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal1')">
                 <div class="project-visuals">
                     <img src="images/Clay_Chai/1.webp" alt="Japandi Style Coffee Shop">
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: Oasis of Serenity -->
             <div class="project-item" data-category="residential" onclick="openModal('modal2')">
                 <div class="project-visuals">
                     <img src="images/Oasis_of_Serenity/1.webp" alt="Japandi Style Living Room">
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3: Warm Aura -->
             <div class="project-item" data-category="residential" onclick="openModal('modal3')">
                 <div class="project-visuals">
                     <img src="images/Warm_Aura/2.webp" alt="Modern Room">
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <!-- Project 4 -->
+            <!-- Project 4: Modern Retreat -->
             <div class="project-item" data-category="residential" onclick="openModal('modal4')">
                 <div class="project-visuals">
                     <img src="images/Modern_Retreat/2.webp" alt="Boy Room">
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <!-- Project 5 -->
+            <!-- Project 5: Crimson Haven -->
             <div class="project-item" data-category="residential" onclick="openModal('modal5')">
                 <div class="project-visuals">
                     <img src="images/Crimson_Haven/1.webp" alt="Crimson Haven">
@@ -100,13 +100,57 @@
                 </div>
             </div>
 
-            <!-- Project 6 -->
+            <!-- Project 6: The Symphony of Warm Elegance -->
             <div class="project-item" data-category="residential" onclick="openModal('modal6')">
                 <div class="project-visuals">
                     <img src="images/The_Symphony_of_Warm_Elegance/1.webp" alt="The Symphony of Warm Elegance">
                 </div>
                 <div class="project-info">
                     <h3>The Symphony of Warm Elegance</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
+
+            <!-- Project 7: Airbnb -->
+            <div class="project-item" data-category="commercial" onclick="openModal('modal7')">
+                <div class="project-visuals">
+                    <img src="images\Airbnb\4.webp" alt="Airbnb">
+                </div>
+                <div class="project-info">
+                    <h3>Airbnb</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
+
+            <!-- Project 8: Experts Decision -->
+            <div class="project-item" data-category="commercial" onclick="openModal('modal8')">
+                <div class="project-visuals">
+                    <img src="images\experts_decision\2.webp" alt="Experts Decision">
+                </div>
+                <div class="project-info">
+                    <h3>Experts Decision</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
+
+            <!-- Project 9: Redbull -->
+            <div class="project-item" data-category="commercial" onclick="openModal('modal9')">
+                <div class="project-visuals">
+                    <img src="images\Redbull\3.webp" alt="Redbull">
+                </div>
+                <div class="project-info">
+                    <h3>Redbull</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
+
+            <!-- Project 10: Ultimate -->
+            <div class="project-item" data-category="commercial" onclick="openModal('modal10')">
+                <div class="project-visuals">
+                    <img src="images\Ultimate\2.webp" alt="Ultimate">
+                </div>
+                <div class="project-info">
+                    <h3>Ultimate</h3>
                     <span class="project-link">View Project Gallery & Description →</span>
                 </div>
             </div>
@@ -385,8 +429,104 @@
             </div>
         </div>
 
-<script>
-    // Data Structure: Array of Objects. Each object has 'src' (Image URL)
+        <!-- Modal 7: Airbnb -->
+        <div id="modal7" class="modal">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <div class="modal-content modal-layout-showroom">
+                <div class="showroom-gallery">
+                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal7', -1)">&#10094;</button>
+                    <img id="modal7-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Airbnb">
+                    <button class="gallery-btn gallery-next" onclick="changeImage('modal7', 1)">&#10095;</button>
+                </div>
+                <div class="showroom-details">
+                    <h2>Airbnb</h2>
+                    <div id="modal7-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                        <p>A modern, minimalist exhibition booth for Airbnb, designed with a focus on brand identity and spatial flow.</p>
+                        <h3>Key Features</h3>
+                        <p><strong>Architectural Branding:</strong> Features a massive 3D Bélo logo as a sculptural focal point and a floating header for high visibility.</p>
+                        <p><strong>Color Palette:</strong> Uses a high-contrast "Rausch" (pink-red) and White scheme to ensure a bold brand presence.</p>
+                        <p><strong>Functional Zones:</strong> Includes a sleek curved reception counter with LED under-lighting and a minimalist consultation area for networking.</p>
+                        <p><strong>Visual Storytelling:</strong> The back wall displays a global map graphic, emphasizing Airbnb’s concept of "Belonging Anywhere."</p>
+                        <p><strong>Modern Lighting:</strong> Utilizes recessed spotlights and ambient LED strips to create a clean, tech-forward atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 8: Experts Decision -->
+        <div id="modal8" class="modal">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <div class="modal-content modal-layout-showroom">
+                <div class="showroom-gallery">
+                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal8', -1)">&#10094;</button>
+                    <img id="modal8-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Experts Decision">
+                    <button class="gallery-btn gallery-next" onclick="changeImage('modal8', 1)">&#10095;</button>
+                </div>
+                <div class="showroom-details">
+                    <h2>Experts Decision</h2>
+                    <div id="modal8-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                        <p>This booth features a futuristic, neon-tech aesthetic with a semi-enclosed circular structure, designed to create an immersive digital experience for a data or consulting firm.</p>
+                        <h3>Key Features</h3>
+                        <p><strong>Immersive Architecture:</strong> The booth is framed by thick, rounded portals with integrated linear LED lighting that creates a "tunnel" effect toward the center.</p>
+                        <p><strong>Neon Branding:</strong> A vibrant cyberpunk color palette of cyan, magenta, and deep purple is used across the lighting and floor graphics to signal innovation.</p>
+                        <p><strong>Central Digital Hub:</strong> The back wall features a high-tech circuitry pattern and a large digital screen flanked by glowing neon rings, serving as the main presentation focal point.</p>
+                        <p><strong>Symmetrical Layout:</strong> The space is perfectly balanced with a comfortable lounge area on the left and a high-top consultation station on the right.</p>
+                        <p><strong>Luminous Branding:</strong> The front reception counter features the EXD logo with a soft purple under-glow, ensuring the brand is the first thing visitors see.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 9: Redbull -->
+        <div id="modal9" class="modal">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <div class="modal-content modal-layout-showroom">
+                <div class="showroom-gallery">
+                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal9', -1)">&#10094;</button>
+                    <img id="modal9-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Redbull">
+                    <button class="gallery-btn gallery-next" onclick="changeImage('modal9', 1)">&#10095;</button>
+                </div>
+                <div class="showroom-details">
+                    <h2>Redbull</h2>
+                    <div id="modal9-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                        <p>A high-energy, industrial-style exhibition booth for Red Bull, designed to showcase the brand's connection to motorsports and extreme sports.</p>
+                        <h3>Key Features</h3>
+                        <p><strong>Massive Branding:</strong> Features a large, illuminated header box with the iconic Red Bull logo for maximum long-distance visibility.</p>
+                        <p><strong>Motorsport Integration:</strong> Incorporates real racing wheels into the wall design, adding a tangible, authentic touch to the theme.</p>
+                        <p><strong>Action Gallery:</strong> A central visual hub of dynamic posters showcasing F1 and extreme sports, set against a deep navy blue background.</p>
+                        <p><strong>Spatial Hierarchy:</strong> Includes a textured concrete-finish counter on the left and a raised VIP lounge area with metallic stools on the right.</p>
+                        <p><strong>Professional Lighting:</strong> Uses black track spotlights to highlight graphics and integrated LED backlighting for a premium, glowy effect.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 10: Ultimate -->
+        <div id="modal10" class="modal">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <div class="modal-content modal-layout-showroom">
+                <div class="showroom-gallery">
+                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal10', -1)">&#10094;</button>
+                    <img id="modal10-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Ultimate">
+                    <button class="gallery-btn gallery-next" onclick="changeImage('modal10', 1)">&#10095;</button>
+                </div>
+                <div class="showroom-details">
+                    <h2>Ultimate</h2>
+                    <div id="modal10-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                        <p>This booth features a futuristic, fluid design with organic curves and a high-tech aesthetic, perfectly suited for a software or tech solutions provider.</p>
+                        <h3>Key Features</h3>
+                        <p><strong>Organic Architecture:</strong> The structure is defined by dynamic, flowing ribbons in blue and green that create a sense of movement and "connectivity."</p>
+                        <p><strong>Brand-Integrated Geometry:</strong> A prominent, abstract "A-frame" structure on the right incorporates the corporate logo, serving as a unique architectural anchor.</p>
+                        <p><strong>Illuminated Accents:</strong> Neon-style LED strip lighting follows the curved edges of the frame, enhancing the booth's modern, digital vibe.</p>
+                        <p><strong>Open Lounge Concept:</strong> The left side features a minimalist lounge area with sleek sofas and a low coffee table, designed for comfortable client consultations.</p>
+                        <p><strong>Tech-Focused Graphics:</strong> The back wall includes digital-themed graphics and tech icons, reinforcing the brand’s focus on business systems and transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Data Structure: Array of Objects. Each object has 'src' (Image URL)
     const galleryData = {
         'modal1': [
             { src: 'images/Clay_Chai/1.webp' },
@@ -433,10 +573,43 @@
             { src: 'images/The_Symphony_of_Warm_Elegance/2.webp' },
             { src: 'images/The_Symphony_of_Warm_Elegance/3.webp' },
             { src: 'images/The_Symphony_of_Warm_Elegance/4.webp' }
+        ],
+        'modal7': [
+            { src: 'images/Airbnb/4.webp' },
+            { src: 'images/Airbnb/3.webp' },
+            { src: 'images/Airbnb/2.webp' },
+            { src: 'images/Airbnb/1.webp' }
+        ],
+        'modal8': [
+            { src: 'images/experts_decision/2.webp' },
+            { src: 'images/experts_decision/1.webp' },
+            { src: 'images/experts_decision/3.webp' },
+            { src: 'images/experts_decision/4.webp' },
+            { src: 'images/experts_decision/5.webp' },
+            { src: 'images/experts_decision/6.webp' },
+            { src: 'images/experts_decision/7.webp' }
+        ],
+        'modal9': [
+            { src: 'images/Redbull/3.webp' },
+            { src: 'images/Redbull/1.webp' },
+            { src: 'images/Redbull/2.webp' },
+            { src: 'images/Redbull/6.webp' },
+            { src: 'images/Redbull/8.webp' },
+            { src: 'images/Redbull/9.webp' },
+            { src: 'images/Redbull/10.webp' }
+        ],
+        'modal10': [
+            { src: 'images/Ultimate/2.webp' },
+            { src: 'images/Ultimate/1.webp' },
+            { src: 'images/Ultimate/3.webp' },
+            { src: 'images/Ultimate/4.webp' },
+            { src: 'images/Ultimate/5.webp' },
+            { src: 'images/Ultimate/6.webp' },
+            { src: 'images/Ultimate/7.webp' }
         ]
     };
 
-    let currentIndex = { 'modal1': 0, 'modal2': 0, 'modal3': 0, 'modal4': 0, 'modal5': 0, 'modal6': 0 };
+    let currentIndex = { 'modal1': 0, 'modal2': 0, 'modal3': 0, 'modal4': 0, 'modal5': 0, 'modal6': 0, 'modal7': 0, 'modal8': 0, 'modal9': 0, 'modal10': 0 };
 
 
     // Gallery Logic with Preloading
