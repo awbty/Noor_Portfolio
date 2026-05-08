@@ -46,6 +46,16 @@
 
         <div class="project-gallery" id="gallery">
 
+            <!-- Project 0: Aria Restaurant and Café -->
+            <div class="project-item" data-category="commercial" onclick="openModal('modal0')">
+                <div class="project-visuals">
+                    <img src="images\ARIA_RC\1.webp" alt="Aria Restaurant and Café">
+                </div>
+                <div class="project-info">
+                    <h3>Aria Restaurant and Café</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>
+            </div>
             <!-- Project 1: Clay Chai -->
             <div class="project-item" data-category="commercial" onclick="openModal('modal1')">
                 <div class="project-visuals">
@@ -174,6 +184,51 @@
    MODALS WITH DYNAMIC TEXT
 -->
 
+<!-- Modal 0: Aria Restaurant and Café -->
+ <div id="modal0" class="modal">
+    <span class="close" onclick="closeModal('modal0')">&times;</span>
+    <div class="modal-content modal-layout-showroom">
+        <!-- Image Gallery Area -->
+        <div class="showroom-gallery">
+            <button class="gallery-btn gallery-prev" onclick="changeImage('modal0', -1)">&#10094;</button>
+            <img id="modal0-img" src="images\ARIA_RC\1.webp" alt="Project View">
+            <button class="gallery-btn gallery-next" onclick="changeImage('modal0', 1)">&#10095;</button>
+        </div>
+        <!-- Description Area -->
+        <div class="showroom-details">
+            <h2>Aria Restaurant and Café</h2>
+            
+
+            <!-- Static project description (moved from JS) -->
+            <div id="modal0-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                <h3>Location</h3>
+                <p>Riyadh, Saudi Arabia</p>
+                <h3>Design Style</h3>
+<p>Neo-Classical Modern Luxury. The design philosophy centers on a "Royal Harmony," merging the structural grandeur of classical architecture with the sleek, high-end finish of modern luxury. This approach is anchored by the rhythmic use of Illuminated Arches and a bold Chromatic Contrast. It represents a sophisticated fusion between the depth of deep midnight tones and the brilliance of metallic accents. The design moves away from traditional rigidity in favor of a "Lounge Identity" that balances authoritative elegance with an inviting, atmospheric warmth.</p>
+<h3>Space Analysis</h3>
+<p><strong>Main Seating Area:</strong> This zone was conceived as a Sophisticated Social Sanctuary. I utilized symmetrical wall compositions featuring deep-blue alcoves and rhythmic archways to create a sense of architectural permanence. The seating—a mix of plush velvet banquettes and sculptural armchairs—functions as more than just furniture; it is an arrangement of textures (velvet, marble, and gold) that provides sensory comfort while maintaining a high-visual-impact environment for guests.</p>
+<p><strong>Service Bar Area:</strong> The focus here was on creating a Monolithic Sculptural Anchor. The service counter is elevated to a Grand Focal Point through its curved, navy-blue facade and integrated "Order Here" brass lettering. I used concealed LED strip lighting at the base and top to give the counter a "floating" appearance, while the back-bar shelving acts as a luminous stage, artfully displaying products within a golden, architectural frame.</p>
+<h3>Color Palette</h3>
+<p>The color palette is founded upon a Prestigious Contrast to foster a sense of exclusivity and depth.</p>
+<p><strong>Primary Colors:</strong> Midnight Navy Blue serves as the dominant foundation for the walls and upholstery, providing a moody, tranquil backdrop. This is balanced by Polished Carrara Marble in the flooring, which introduces a bright, expansive atmosphere.</p>
+<p><strong>Metallic Accents: </strong> Champagne Gold is used as the essential connecting element, applied to the shelving, furniture frames, and architectural trims to introduce a refined, high-status gleam.</p>
+<p><strong>Neutral Balance:</strong> Tones of Cream and Pearl Grey are integrated into the accent seating and wall textures to soften the transition between the deep blues and the bright marble.</p>
+<h3>Materials and Furniture</h3>
+<p>Materials were selected to establish a dialogue between Tactile Softness and Architectural Rigor.</p>
+<p><strong>Surfaces and Walls:</strong> I relied on the contrast between Matte Navy Finishes and Lustrous Marble, reinforced by the use of Botanical Wallpaper inside the arches to add a layer of organic detail to the geometric structure.</p>
+<p><strong>Textiles:</strong> The selection features High-Pile Velvet, chosen for its ability to absorb light and sound, creating a quiet, luxurious atmosphere.</p>
+<p><strong>Complementary Materials:</strong> Polished gold-finished steel and tinted glass provide the "hard" luxury elements that frame the space, while indoor greenery is used to ground the design and breathe life into the corners.</p>
+<h3>Lighting Engineering</h3>
+<p>The lighting scheme is the "Invisible Architect" of this project, designed to define the spatial contours and mood.</p>
+<p><strong>Architectural Outlining:</strong> Primary emphasis is placed on Linear Cove Lighting and Arched Backlighting. This warm light flows as luminous halos around the structural curves, highlighting the texture of the walls and adding 3D depth to the lounge.</p>
+<p><strong>Focal & Task Lighting:</strong> Organic Branch-like Chandeliers serve as overhead sculptures, breaking the symmetry with fluid forms. On the tables, Orb Globe Lamps create intimate pools of light, ensuring that every seating pocket feels personal and private.</p>
+<h3>Conclusion</h3>
+<p>In this project, I transformed the cafe into a Symphony of Royal Tones and Architectural Grace, where the authority of midnight blue blends seamlessly with the brilliance of golden light. It represents a refined dialogue between classical arched silhouettes and contemporary high-end materials, forging an atmosphere of Regal Modernity. Here, luxury resides in the deliberate play of light and shadow, and in the balance between bold architectural statements and the intimate, enveloping comfort offered to every visitor.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Modal 1: Clay Chai -->
 <div id="modal1" class="modal">
     <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -545,6 +600,16 @@
         <script>
             // Data Structure: Array of Objects. Each object has 'src' (Image URL)
     const galleryData = {
+        'modal0': [
+            { src: 'images/ARIA_RC/1.webp' },
+            { src: 'images/ARIA_RC/2.webp' },
+            { src: 'images/ARIA_RC/3.webp' },
+            { src: 'images/ARIA_RC/4.webp' },
+            { src: 'images/ARIA_RC/5.webp' },
+            { src: 'images/ARIA_RC/6.webp' },
+            { src: 'images/ARIA_RC/7.webp' },
+            { src: 'images/ARIA_RC/Mood_new.webp' }
+        ],
         'modal1': [
             { src: 'images/Clay_Chai/1.webp' },
             { src: 'images/Clay_Chai/2.webp' },
