@@ -722,11 +722,19 @@ nav {
     }
 
     .modal-img {
+        /* 
+           FIX 2 (Option 2): Make image BIG on mobile.
+           We force it to be 60% of the screen height.
+        */
         height: 60vh; 
         flex: none;
     }
 
     .modal-img img {
+        /* 
+           FIX 3: Crop the image so it fills that big space.
+           It will look dynamic and cinematic.
+        */
         object-fit: cover; 
     }
 
@@ -735,15 +743,6 @@ nav {
         flex: none;
         width: 100%;
         padding: 30px;
-        padding-bottom: 45px; /* ← NEW: Extra space after last element */
-    }
-
-    /* ← NEW: Button styling to make it the snap target */
-    .modal-details .btn {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        display: block;
-        text-align: center;
     }
 }
 /* =========================================
