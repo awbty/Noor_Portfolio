@@ -743,6 +743,14 @@ nav {
         flex: none;
         width: 100%;
         padding: 30px;
+        padding-bottom: 45px; /* ← NEW-Test2: Extra space after last element */
+    }
+    /* ← NEW-Test2: Button styling to make it the snap target */
+    .modal-details .btn {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
     }
 }
 /* =========================================
