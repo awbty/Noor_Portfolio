@@ -746,9 +746,12 @@ nav {
         padding-bottom: 45px; /* ← NEW-Test2: Extra space after last element */
     }
     /* ← NEW-Test2: Button styling to make it the snap target */
-    .modal-button-wrapper {
+        .modal-button-wrapper {
         margin-top: 20px;
         margin-bottom: 10px;
+    }
+
+    .modal-button-wrapper .btn {
         display: block;
         text-align: center;
     }
