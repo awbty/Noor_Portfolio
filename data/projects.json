@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "summary": "Test Summary of this Project",
+      "thumbnail": "images/uploads/1.png",
+      "sections": [
+        {
+          "heading": "This",
+          "body": "Is a simple test to see what is happening here. "
+        }
+      ],
+      "style": "Classic Future",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "Master Room",
+      "images": [
+        "images/uploads/2.png",
+        "images/uploads/3.png"
+      ],
+      "id": "modal10",
+      "category": "residential",
+      "cadImages": [
+        "images/uploads/mood.png"
+      ]
+    },
+    {
       "summary": "This design vision transforms the cafe into a symphony of royal tones and architectural grace, where Neo-Classical Modern Luxury merges the structural grandeur of classical arches with sleek, high-end finishes. Anchored by a prestigious contrast of deep midnight navy and luminous champagne gold, the space evolves as a sophisticated social sanctuary—featuring velvet banquettes, Carrara marble, and sculptural lighting that includes organic branch-like chandeliers and warm linear cove lights. Every element, from the monolithic service bar with its floating illumination to the botanical wallpapers nestled within geometric arches, serves a refined dialogue between regal modernity and intimate comfort, crafting an atmosphere where authority and warmth exist in perfect harmony.",
       "inspiration": null,
       "thumbnail": "images/ARIA_RC/1.webp",
@@ -456,28 +478,6 @@
       "id": "modal9",
       "category": "booths",
       "cadImages": []
-    },
-    {
-      "summary": "Test Summary of this Project",
-      "thumbnail": "images/uploads/1.png",
-      "sections": [
-        {
-          "heading": "This",
-          "body": "Is a simple test to see what is happening here. "
-        }
-      ],
-      "style": "Classic Future",
-      "location": "Riyadh, Saudi Arabia",
-      "title": "Master Room",
-      "images": [
-        "images/uploads/2.png",
-        "images/uploads/3.png"
-      ],
-      "id": "modal10",
-      "category": "residential",
-      "cadImages": [
-        "images/uploads/mood.png"
-      ]
     }
   ]
 }
