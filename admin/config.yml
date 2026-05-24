@@ -4,6 +4,7 @@ backend:
   branch: cms-compatibility-update
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  site_domain: 32a21838-01ca-4c89-8a42-6d428fe97e7f.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "images/uploads"
