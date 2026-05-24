@@ -65,7 +65,8 @@
 
     fetch('data/projects.json')
         .then(res => res.json())
-        .then(projects => {
+        .then(data => {
+            const projects = data.projects;
             buildGallery(projects);
             buildModals(projects);
         })

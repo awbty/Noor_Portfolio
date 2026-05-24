@@ -243,7 +243,8 @@
 // Fetch latest 4 projects from the shared JSON
     fetch('data/projects.json')
         .then(res => res.json())
-        .then(projects => {
+        .then(data => {
+            const projects = data.projects;
             const latest = projects.slice(0, 4);
             buildHomeGallery(latest);
             buildHomeModals(latest);

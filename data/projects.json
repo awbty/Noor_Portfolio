@@ -1,4 +1,4 @@
-[
+{ "projects": [
   {
     "id": "modal0",
     "title": "Aria Restaurant and Café",
@@ -283,3 +283,4 @@
     "summary": []
   }
 ]
+}
