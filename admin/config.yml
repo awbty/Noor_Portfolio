@@ -5,6 +5,12 @@ backend:
 media_folder: "images/uploads"
 public_folder: "images/uploads"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: w6vdbotg
+    api_key: 535554982381373
+
 collections:
   - name: "projects"
     label: "Projects"
