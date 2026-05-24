@@ -4,3 +4,45 @@ backend:
   branch: cms-compatibility-update
   auth_type: implicit
   app_id: Ov23li0kYmH26quNaaLZ
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "all_projects"
+        label: "All Projects"
+        file: "data/projects.json"
+        fields:
+          - name: "projects"
+            label: "Projects"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - name: "category"
+                label: "Category"
+                widget: "select"
+                options: ["residential", "commercial", "booths"]
+              - { name: "thumbnail", label: "Thumbnail", widget: "image" }
+              - { name: "summary", label: "Homepage Summary", widget: "text" }
+              - { name: "location", label: "Location", widget: "string" }
+              - { name: "style", label: "Design Style", widget: "string" }
+              - { name: "inspiration", label: "Inspiration", widget: "string", required: false }
+              - name: "images"
+                label: "Project Images"
+                widget: "list"
+                field: { name: "src", label: "Image", widget: "image" }
+              - name: "sections"
+                label: "Description Sections"
+                widget: "list"
+                fields:
+                  - { name: "heading", label: "Heading", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+              - name: "cadImages"
+                label: "CAD Drawings"
+                widget: "list"
+                field: { name: "src", label: "CAD Image", widget: "image" }
+                required: false
