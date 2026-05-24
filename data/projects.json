@@ -2,7 +2,7 @@
   "projects": [
     {
       "summary": "Test Summary of this Project",
-      "thumbnail": "images/uploads/1.png",
+      "thumbnail": "images/uploads/1.webp",
       "sections": [
         {
           "heading": "This",
@@ -13,13 +13,21 @@
       "location": "Riyadh, Saudi Arabia",
       "title": "Master Room",
       "images": [
-        "images/uploads/2.png",
-        "images/uploads/3.png"
+        "images/uploads/2.webp",
+        "images/uploads/3.webp",
+        "images/uploads/5.webp",
+        "images/uploads/6.webp",
+        "images/uploads/7.webp",
+        "images/uploads/8.webp",
+        "images/uploads/9.webp",
+        "images/uploads/10.webp",
+        "images/uploads/11.webp",
+        "images/uploads/12.webp"
       ],
-      "id": "modal10",
+      "id": "MasterRoom",
       "category": "residential",
       "cadImages": [
-        "images/uploads/mood.png"
+        "images/uploads/mood.webp"
       ]
     },
     {
@@ -69,7 +77,7 @@
         "images/ARIA_RC/7.webp",
         "images/ARIA_RC/Mood_new.webp"
       ],
-      "id": "modal0",
+      "id": "AriaRestaurantandCafé",
       "category": "commercial",
       "cadImages": []
     },
@@ -122,7 +130,7 @@
         "images/Clay_Chai/13.webp",
         "images/Clay_Chai/14.webp"
       ],
-      "id": "modal1",
+      "id": "ClayChai",
       "category": "commercial",
       "cadImages": [
         "images/Clay_Chai/Section A.webp",
