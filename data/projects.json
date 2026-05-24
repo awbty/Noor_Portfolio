@@ -1,17 +1,37 @@
 {
   "projects": [
     {
-      "summary": "Test Summary of this Project",
+      "summary": "This design vision transforms the Riyadh residence into a sophisticated sanctuary of tailored modern luxury and deep comfort, where soft modern glamour seamlessly merges with elegant, romantic sensibilities.\n\nAnchored by a curated palette of creamy off-whites, textured taupe, and rich walnut, the space is punctuated by a dramatic symphony of deep aubergine, plum, and soft lavender, all balanced by polished gold and elegant veined marble. Natural light oak chevron flooring guides the eye through an integrated, flow-through layout defined by bespoke, tinted glass cabinetry, plush purple velvet, and a feature floral wall covering that introduces a poetic, layered intimacy. Every element—from the sculptural statement lighting and floor-to-ceiling sheer curtains to the refined brushed brass details—coheres into a rich, tactile retreat, crafting an atmosphere where bold, expressive hues and high-end finishes exist in perfect harmony.",
       "thumbnail": "images/uploads/1.webp",
       "sections": [
         {
-          "heading": "This",
-          "body": "Is a simple test to see what is happening here. "
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "A luxurious blend of soft modern glamour and elegant, tailored romanticism, featuring a rich, textured sanctuary with dramatic purple accents, sophisticated geometric patterns, and bespoke, built-in joinery."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A curated blend of creamy off-whites, textured taupe and gray, rich walnut wood, and striking accents of deep aubergine, plum, and soft lavender, balanced by polished gold and marble."
+        },
+        {
+          "heading": "Furniture & Materials",
+          "body": "A tactile symphony of plush purple velvet, geometric-patterned fabrics, natural light oak chevron flooring, elegant veined marble, tinted glass cabinetry, and refined brushed brass details."
+        },
+        {
+          "heading": "Space Analysis and Lighting",
+          "body": "An integrated, flow-through layout defined by sculptural statement lighting, tailored built-ins, and floor-to-ceiling sheer curtains, with layered ambient light and a feature floral wall covering creating a layered, intimate atmosphere."
+        },
+        {
+          "heading": "Conclusion",
+          "body": "This project represents a sophisticated retreat, where high-end finishes, bespoke cabinetry, and bold, poetic purple hues converge to create a perfectly balanced sanctuary of tailored modern luxury and deep comfort."
         }
       ],
       "style": "Classic Future",
       "location": "Riyadh, Saudi Arabia",
-      "title": "Master Room",
+      "title": "The Velvet Orchid",
       "images": [
         "images/uploads/2.webp",
         "images/uploads/3.webp",
@@ -24,7 +44,7 @@
         "images/uploads/11.webp",
         "images/uploads/12.webp"
       ],
-      "id": "MasterRoom",
+      "id": "TheVelvetOrchid",
       "category": "residential",
       "cadImages": [
         "images/uploads/mood.webp"
