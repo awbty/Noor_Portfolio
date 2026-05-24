@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: awbty/Noor_Portfolio
+  name: git-gateway
   branch: cms-compatibility-update
-  auth_type: implicit
-  app_id: Ov23li0kYmH26quNaaLZ
 
 media_folder: "images/uploads"
 public_folder: "images/uploads"
