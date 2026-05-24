@@ -222,7 +222,7 @@
       ]
     },
     {
-      "summary": [],
+      "summary": "Lorem Ipsum",
       "inspiration": null,
       "thumbnail": "images/Oasis_of_Serenity/1.webp",
       "sections": [
@@ -265,7 +265,7 @@
       "cadImages": []
     },
     {
-      "summary": [],
+      "summary": "Lorem Ipsum",
       "inspiration": null,
       "thumbnail": "images/Warm_Aura/2.webp",
       "sections": [
@@ -310,54 +310,7 @@
       ]
     },
     {
-      "summary": [],
-      "inspiration": "The Arabian Nights",
-      "thumbnail": "images/Modern_Retreat/1.webp",
-      "sections": [
-        {
-          "heading": "Location",
-          "body": "Cairo, Egypt"
-        },
-        {
-          "heading": "Design Style",
-          "body": "Pure Contemporary Modernism with bold contrast, clean white lines, and linear architectural lighting."
-        },
-        {
-          "heading": "Space Analysis",
-          "body": "The bedroom is an organized retreat with integrated lighting and office nook. The closet corridor becomes a gallery corridor with continuous lighting and mirrored expanses."
-        },
-        {
-          "heading": "Color Palette",
-          "body": "A bright white backdrop is contrasted with deep sapphire blue accents and warm illumination."
-        },
-        {
-          "heading": "Materials and Furniture",
-          "body": "Matte smooth surfaces, rich blue upholstery, mirrors, and warm wood surfaces deliver visual order and comfort."
-        },
-        {
-          "heading": "Lighting",
-          "body": "Linear architectural lighting defines edges, highlights recesses, and spotlights collections while a neon accent adds modern character."
-        }
-      ],
-      "style": "Pure Contemporary Modernism",
-      "location": "Cairo, Egypt",
-      "title": "Modern Retreat",
-      "images": [
-        "images/Modern_Retreat/1.webp",
-        "images/Modern_Retreat/2.webp",
-        "images/Modern_Retreat/3.webp",
-        "images/Modern_Retreat/4.webp"
-      ],
-      "id": "modal4",
-      "category": "residential",
-      "cadImages": [
-        "images/Modern_Retreat/section1.webp",
-        "images/Modern_Retreat/section2.webp",
-        "images/Modern_Retreat/section3.webp"
-      ]
-    },
-    {
-      "summary": [],
+      "summary": "Lorem Ipsum",
       "inspiration": null,
       "thumbnail": "images/Airbnb/4.webp",
       "sections": [
@@ -396,7 +349,7 @@
       "cadImages": []
     },
     {
-      "summary": [],
+      "summary": "Lorem Ipsum",
       "inspiration": null,
       "thumbnail": "images/experts_decision/2.webp",
       "sections": [
@@ -438,7 +391,7 @@
       "cadImages": []
     },
     {
-      "summary": [],
+      "summary": "Lorem Ipsum",
       "inspiration": null,
       "thumbnail": "images/Redbull/3.webp",
       "sections": [
