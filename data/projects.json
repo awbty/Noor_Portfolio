@@ -198,7 +198,7 @@
         "images/The_Symphony_of_Warm_Elegance/3.webp",
         "images/The_Symphony_of_Warm_Elegance/4.webp"
       ],
-      "id": "modal6",
+      "id": "TheSymphonyofWarmElegance",
       "category": "residential",
       "cadImages": [
         "images/Symphony_Warm_Elegance/plan.webp"
@@ -243,7 +243,7 @@
         "images/Crimson_Haven/3.webp",
         "images/Crimson_Haven/4.webp"
       ],
-      "id": "modal5",
+      "id": "CrimsonHaven",
       "category": "residential",
       "cadImages": [
         "images/Crimson_Haven/sectionA.webp"
@@ -288,7 +288,7 @@
         "images/Oasis_of_Serenity/3.webp",
         "images/Oasis_of_Serenity/4.webp"
       ],
-      "id": "modal2",
+      "id": "OasisofSerenity",
       "category": "residential",
       "cadImages": []
     },
@@ -330,7 +330,7 @@
         "images/Warm_Aura/1.webp",
         "images/Warm_Aura/3.webp"
       ],
-      "id": "modal3",
+      "id": "WarmAura",
       "category": "residential",
       "cadImages": [
         "images/Warm_Aura/4.webp",
@@ -372,7 +372,7 @@
         "images/Airbnb/2.webp",
         "images/Airbnb/1.webp"
       ],
-      "id": "modal7",
+      "id": "Airbnb",
       "category": "booths",
       "cadImages": []
     },
@@ -414,7 +414,7 @@
         "images/experts_decision/6.webp",
         "images/experts_decision/7.webp"
       ],
-      "id": "modal8",
+      "id": "ExpertsDecision",
       "category": "booths",
       "cadImages": []
     },
@@ -456,7 +456,7 @@
         "images/Redbull/9.webp",
         "images/Redbull/10.webp"
       ],
-      "id": "modal9",
+      "id": "Redbull",
       "category": "booths",
       "cadImages": []
     }
