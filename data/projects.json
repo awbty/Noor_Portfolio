@@ -1,286 +1,483 @@
-{ "projects": [
-  {
-    "id": "modal0",
-    "title": "Aria Restaurant and Café",
-    "category": "commercial",
-    "thumbnail": "images/ARIA_RC/1.webp",
-    "images": [
-      "images/ARIA_RC/1.webp",
-      "images/ARIA_RC/2.webp",
-      "images/ARIA_RC/3.webp",
-      "images/ARIA_RC/4.webp",
-      "images/ARIA_RC/5.webp",
-      "images/ARIA_RC/6.webp",
-      "images/ARIA_RC/7.webp",
-      "images/ARIA_RC/Mood_new.webp"
-    ],
-    "location": "Riyadh, Saudi Arabia",
-    "style": "Neo-Classical Modern Luxury",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Riyadh, Saudi Arabia" },
-      { "heading": "Design Style", "body": "Neo-Classical Modern Luxury. The design philosophy centers on a 'Royal Harmony,' merging the structural grandeur of classical architecture with the sleek, high-end finish of modern luxury. It emphasizes illuminated arches, bold chromatic contrast, deep midnight tones, and metallic accents to balance authoritative elegance with atmospheric warmth." },
-      { "heading": "Space Analysis", "body": "Main seating is conceived as a sophisticated social sanctuary with symmetrical wall compositions, deep-blue alcoves, rhythmic archways, plush velvet banquettes, and sculptural armchairs that provide sensory comfort and high visual impact. The service bar is designed as a monolithic sculptural anchor with a curved navy-blue facade, integrated brass lettering, and concealed LED strip lighting to create a floating appearance and luminous back-bar shelving." },
-      { "heading": "Color Palette", "body": "The palette is founded on prestigious contrast with midnight navy blue as the dominant foundation and polished Carrara marble introducing brightness. Champagne gold accents connect the design, while cream and pearl grey soften transitions and add depth." },
-      { "heading": "Materials and Furniture", "body": "Materials combine matte navy finishes, lustrous marble, botanical wallpaper, high-pile velvet, polished gold-finished steel, tinted glass, and indoor greenery to blend tactile softness with architectural rigor." },
-      { "heading": "Lighting Engineering", "body": "Lighting acts as the invisible architect, using linear cove and arched backlighting to define contours and mood. Organic branch-like chandeliers serve as overhead sculptures, while orb globe lamps create intimate pools of light at the tables." },
-      { "heading": "Conclusion", "body": "The project transforms the cafe into a symphony of royal tones and architectural grace, where midnight blue and golden light merge to create regal modernity. It balances bold architectural statements with intimate, enveloping comfort for every visitor." }
-    ],
-    "cadImages": [],
-    "summary": "This design vision transforms the cafe into a symphony of royal tones and architectural grace, where Neo-Classical Modern Luxury merges the structural grandeur of classical arches with sleek, high-end finishes. Anchored by a prestigious contrast of deep midnight navy and luminous champagne gold, the space evolves as a sophisticated social sanctuary—featuring velvet banquettes, Carrara marble, and sculptural lighting that includes organic branch-like chandeliers and warm linear cove lights. Every element, from the monolithic service bar with its floating illumination to the botanical wallpapers nestled within geometric arches, serves a refined dialogue between regal modernity and intimate comfort, crafting an atmosphere where authority and warmth exist in perfect harmony."
-  },
-  {
-    "id": "modal1",
-    "title": "Clay Chai",
-    "category": "commercial",
-    "thumbnail": "images/Clay_Chai/1.webp",
-    "images": [
-      "images/Clay_Chai/1.webp",
-      "images/Clay_Chai/2.webp",
-      "images/Clay_Chai/3.webp",
-      "images/Clay_Chai/4.webp",
-      "images/Clay_Chai/5.webp",
-      "images/Clay_Chai/6.webp",
-      "images/Clay_Chai/7.webp",
-      "images/Clay_Chai/8.webp",
-      "images/Clay_Chai/9.webp",
-      "images/Clay_Chai/10.webp",
-      "images/Clay_Chai/11.webp",
-      "images/Clay_Chai/12.webp",
-      "images/Clay_Chai/13.webp",
-      "images/Clay_Chai/14.webp"
-    ],
-    "location": "Dubai, United Arab Emirates",
-    "style": "Pure Organic Modernism",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Dubai, United Arab Emirates" },
-      { "heading": "Design Style", "body": "Pure Organic Modernism. The design adopts a Pure Modernism approach while incorporating warm natural touches and refined materials." },
-      { "heading": "Space Analysis", "body": "Main seating is conceived as a sensory retreat with natural, tactile materials. The service bar is sculptural, with clean lines and concealed lighting to create a refined focal point." },
-      { "heading": "Color Palette", "body": "Warm earthy tones, sandy beige, creamy off-white, light oak woods, and golden warm lighting create a serene, organic environment." },
-      { "heading": "Materials and Furniture", "body": "The selection combines matte textures, fluted wood panels, clay-inspired surfaces, dried botanicals, and subtle brass accents for an artisanal yet modern feel." },
-      { "heading": "Lighting Engineering", "body": "Continuous cove and shelf lighting define surfaces and highlight textures, while woven pendant units produce soft, intimate illumination." }
-    ],
-    "cadImages": [
-      "images/Clay_Chai/Section A.webp",
-      "images/Clay_Chai/Plan_page.webp",
-      "images/Clay_Chai/Section B.webp",
-      "images/Clay_Chai/Light Plan.webp"
-    ],
-    "summary": "The vision for \"Clay Chai\" is anchored in embracing the philosophy of \"Earthly Serenity\", establishing it as an \"Organic Sanctuary\" that warmly embraces the visitor with the comforting ambiance of nature, offering a retreat from the clamor of everyday life.\nMaterial Harmony\n\nThe design is built upon a \"Material Harmony,\" seamlessly blending earthy tones, light woods, and textured clay materials. These elements evoke a profound sense of belonging and tactile comfort, elegantly contrasted by the deep hue of \"Velvet Amethyst\" in the seating. Accents of dried wheat stalks further enhance a Contemporary Rustic spirit.\nLyrical Illumination\n\nThe concept of \"Lyrical Illumination\" plays a pivotal role. Warm, concealed lighting integrated within the shelving units merges with woven pendant fixtures and natural daylight, culminating in a \"Golden Halo\" that washes the space in an atmosphere of warmth, tranquility, and profound relaxation."
-  },
-  {
-    "id": "modal6",
-    "title": "The Symphony of Warm Elegance",
-    "category": "residential",
-    "thumbnail": "images/The_Symphony_of_Warm_Elegance/1.webp",
-    "images": [
-      "images/The_Symphony_of_Warm_Elegance/1.webp",
-      "images/The_Symphony_of_Warm_Elegance/2.webp",
-      "images/The_Symphony_of_Warm_Elegance/3.webp",
-      "images/The_Symphony_of_Warm_Elegance/4.webp"
-    ],
-    "location": "Riyadh, Saudi Arabia",
-    "style": "Modern Neoclassical and Japandi",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Riyadh, Saudi Arabia" },
-      { "heading": "Design Style", "body": "A blend of modern neoclassical formality and Japandi warmth, with delicate moldings, symmetry, natural wood, and light." },
-      { "heading": "Color Palette", "body": "A warm monochromatic palette of sandy beige, creamy off-white, walnut, marble veining, and accents of petroleum blue and burnt orange." },
-      { "heading": "Furniture & Materials", "body": "Bouclé and linen fabrics, natural walnut wood, marble and stone, and brushed gold details create luxurious tactile richness." },
-      { "heading": "Space Analysis and Lighting", "body": "Curved furniture supports fluid movement, while natural light, concealed LED shelves, and sculptural chandeliers bring warmth and drama." },
-      { "heading": "Conclusion", "body": "The design offers a refined, living interior where classical detail, soft textures, and layered lighting converge into a warm, elegant atmosphere." }
-    ],
-    "cadImages": [
-      "images/Symphony_Warm_Elegance/plan.webp"
-    ],
-    "summary": "This design weaves a tranquil dialogue between Modern Neoclassical refinement and Japandi warmth, where creamy off-white walls adorned with delicate moldings embrace the raw honesty of walnut wood and low-profile furniture. Anchored by a monochromatic palette of sandy beige and soft cream, the space gains depth from dark walnut, veined marble, and accents of petroleum blue and burnt orange in the cushions. Bouclé and linen sofas invite touch, while curved furniture guides the eye with fluid grace—natural light floods through tall windows, complemented by concealed LEDs and crystal chandeliers that act as sculptural anchors.\n\nTall plants and dried pampas grass breathe life into every corner, transforming the interior into an artistic tableau where serenity and sophistication meet. Here, the unity of spirit and material reigns: classical paneling whispers heritage, brushed gold glimmers with contemporary elegance, and every element—from the circular wooden table to the textured bedroom walls—is crafted to offer not just luxury, but a quiet, inviting elevation of the everyday."
-  },
-  {
-    "id": "modal5",
-    "title": "Crimson Haven",
-    "category": "residential",
-    "thumbnail": "images/Crimson_Haven/1.webp",
-    "images": [
-      "images/Crimson_Haven/1.webp",
-      "images/Crimson_Haven/2.webp",
-      "images/Crimson_Haven/3.webp",
-      "images/Crimson_Haven/4.webp"
-    ],
-    "location": "Riyadh, Saudi Arabia",
-    "style": "Pure Contemporary Modernism",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Riyadh, Saudi Arabia" },
-      { "heading": "Design Style", "body": "Pure Contemporary Modernism with dramatic contrast, architectural lighting, and a focus on spatial purity." },
-      { "heading": "Space Analysis", "body": "The bedroom is designed as an organized retreat with luxurious hidden lighting and a seamless office nook. The corridor emphasizes visual continuity and expansive geometry." },
-      { "heading": "Color Palette", "body": "Pure white and off-white are paired with sapphire blue accents and warm light for a refined contrast." },
-      { "heading": "Materials and Furniture", "body": "Smooth white surfaces, rich blue upholstery, warm wood accents, and mirrored elements create a calm yet striking interior." },
-      { "heading": "Lighting", "body": "Continuous linear lighting and hidden shelf lights highlight architectural form and create depth with warm, cinematic glow." }
-    ],
-    "cadImages": [
-      "images/Crimson_Haven/sectionA.webp"
-    ],
-    "summary": "The vision for this suite is anchored in the philosophy of Quiet Luxury, aimed at creating an intimate sanctuary that transcends its basic function to become a contemporary \"Cocoon\" that isolates the occupant from the outside world and invites deep tranquility and relaxation.\n\nThis design embraces Pure Contemporary Modernism with bold, dramatic flair—where crisp white architectural purity meets deep sapphire blue in a refined dialogue of contrast. The space unfolds as an \"Organized Retreat,\" from the upholstered white headboard composition with hidden warm lighting to the \"Luxury Gallery Corridor\" where continuous overhead lights and mirrors double the sense of expanse. Matte white millwork and off-white walls create an immaculate, spacious foundation, while rich blue upholstery and a dramatic blue display recess inject character and depth into the stillness.\n\nLighting serves as the true \"Definer of Features\"—linear architectural illumination traces the edges of cabinets and headboards like golden drawings on a white canvas, while hidden shelf lights spotlight collections and a playful neon sign adds a personal, modern signature. Warmth comes not from ornamentation but from the glow itself, balancing the cool purity of white and blue. A warm wooden desk surface and a tactile blue office chair ground the design in functional comfort. Here, luxury is visual order, quiet confidence, and the delicate harmony between strict lines and luminous warmth—a symphony where every element breathes refinement."
-  },
-  {
-    "id": "modal2",
-    "title": "Oasis of Serenity",
-    "category": "residential",
-    "thumbnail": "images/Oasis_of_Serenity/1.webp",
-    "images": [
-      "images/Oasis_of_Serenity/1.webp",
-      "images/Oasis_of_Serenity/2.webp",
-      "images/Oasis_of_Serenity/3.webp",
-      "images/Oasis_of_Serenity/4.webp"
-    ],
-    "location": "Dubai, United Arab Emirates",
-    "style": "Contemporary Zen Japandi",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Dubai, United Arab Emirates" },
-      { "heading": "Design Style", "body": "Contemporary Zen Japandi blending Japanese minimalism and Scandinavian functionality with natural materials and clean lines." },
-      { "heading": "Space Analysis", "body": "The living room is designed as a breathing space with a wooden library and balanced horizontal furniture. The bedroom uses symmetry and textured details to create ease and calm." },
-      { "heading": "Color Palette", "body": "A warm monochromatic palette of sandy beige, creamy off-white, warm gray, and dark walnut accents creates a soothing and elegant interior." },
-      { "heading": "Materials and Furniture", "body": "Natural wood, bouclé upholstery, raw linen, stoneware details, and brushed brass accents deliver a tactile, serene atmosphere." },
-      { "heading": "Lighting", "body": "Warm lighting is used as a chromatic element, with semi-sheer curtains for filtered daylight and backlit details to reinforce the serene mood." }
-    ],
-    "cadImages": [],
-    "summary": []
-  },
-  {
-    "id": "modal3",
-    "title": "Warm Aura",
-    "category": "residential",
-    "thumbnail": "images/Warm_Aura/2.webp",
-    "images": [
-      "images/Warm_Aura/2.webp",
-      "images/Warm_Aura/1.webp",
-      "images/Warm_Aura/3.webp"
-    ],
-    "location": "Riyadh, Saudi Arabia",
-    "style": "Contemporary Quiet Luxury",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Riyadh, Saudi Arabia" },
-      { "heading": "Design Style", "body": "Contemporary Quiet Luxury focuses on rich textures, concealed lighting, and material contrast rather than overt ornamentation." },
-      { "heading": "Space Analysis", "body": "The bedroom is treated as a cocoon with layered finishes and a powerful focal wall, while the dressing area extends material continuity for a hotel-suite experience." },
-      { "heading": "Color Palette", "body": "A high-contrast palette of greige stone tones and deep smoked walnut wood, softened by ultra warm lighting." },
-      { "heading": "Materials and Furniture", "body": "Dark wood panels, textured plaster, plush upholstery, and brushed gold accents create an intimate and luxurious setting." },
-      { "heading": "Lighting", "body": "Cove and architectural lighting sculpt the walls and ceiling, while dim warm illumination enhances the sense of calm and drama." }
-    ],
-    "cadImages": [
-      "images/Warm_Aura/4.webp",
-      "images/Warm_Aura/5.webp"
-    ],
-    "summary": []
-  },
-  {
-    "id": "modal4",
-    "title": "Modern Retreat",
-    "category": "residential",
-    "thumbnail": "images/Modern_Retreat/1.webp",
-    "images": [
-      "images/Modern_Retreat/1.webp",
-      "images/Modern_Retreat/2.webp",
-      "images/Modern_Retreat/3.webp",
-      "images/Modern_Retreat/4.webp"
-    ],
-    "location": "Cairo, Egypt",
-    "style": "Pure Contemporary Modernism",
-    "inspiration": "The Arabian Nights",
-    "sections": [
-      { "heading": "Location", "body": "Cairo, Egypt" },
-      { "heading": "Design Style", "body": "Pure Contemporary Modernism with bold contrast, clean white lines, and linear architectural lighting." },
-      { "heading": "Space Analysis", "body": "The bedroom is an organized retreat with integrated lighting and office nook. The closet corridor becomes a gallery corridor with continuous lighting and mirrored expanses." },
-      { "heading": "Color Palette", "body": "A bright white backdrop is contrasted with deep sapphire blue accents and warm illumination." },
-      { "heading": "Materials and Furniture", "body": "Matte smooth surfaces, rich blue upholstery, mirrors, and warm wood surfaces deliver visual order and comfort." },
-      { "heading": "Lighting", "body": "Linear architectural lighting defines edges, highlights recesses, and spotlights collections while a neon accent adds modern character." }
-    ],
-    "cadImages": [
-      "images/Modern_Retreat/section1.webp",
-      "images/Modern_Retreat/section2.webp",
-      "images/Modern_Retreat/section3.webp"
-    ],
-    "summary": []
-  },
-  {
-    "id": "modal7",
-    "title": "Airbnb",
-    "category": "booths",
-    "thumbnail": "images/Airbnb/4.webp",
-    "images": [
-      "images/Airbnb/4.webp",
-      "images/Airbnb/3.webp",
-      "images/Airbnb/2.webp",
-      "images/Airbnb/1.webp"
-    ],
-    "location": "Exhibition",
-    "style": "Modern Minimalist Exhibition Booth",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Exhibition" },
-      { "heading": "Design Style", "body": "Modern minimalist booth design focused on strong brand identity, spatial flow, and clean architectural expression." },
-      { "heading": "Key Features", "body": "A large 3D Bélo logo, floating header, curved reception counter with LED under-lighting, minimalist consultation area, and global map storytelling." },
-      { "heading": "Color Palette", "body": "High-contrast pink-red and white create a bold, contemporary brand presence." },
-      { "heading": "Lighting", "body": "Recessed spotlights and ambient LED strips deliver a clean, tech-forward atmosphere." }
-    ],
-    "cadImages": [],
-    "summary": []
-  },
-  {
-    "id": "modal8",
-    "title": "Experts Decision",
-    "category": "booths",
-    "thumbnail": "images/experts_decision/2.webp",
-    "images": [
-      "images/experts_decision/2.webp",
-      "images/experts_decision/1.webp",
-      "images/experts_decision/3.webp",
-      "images/experts_decision/4.webp",
-      "images/experts_decision/5.webp",
-      "images/experts_decision/6.webp",
-      "images/experts_decision/7.webp"
-    ],
-    "location": "Exhibition",
-    "style": "Futuristic Neon-Tech Exhibition Booth",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Exhibition" },
-      { "heading": "Design Style", "body": "Futuristic booth design with cyberpunk lighting, immersive architecture, and a digital presentation focus." },
-      { "heading": "Key Features", "body": "Rounded portals with linear LED lighting, neon branding, central digital hub, balanced lounge and consultation zones, and luminous reception." },
-      { "heading": "Color Palette", "body": "Cyan, magenta, and deep purple lighting highlight the high-tech and innovative character." },
-      { "heading": "Lighting", "body": "Integrated LED lighting creates a tunnel effect and emphasizes the immersive digital environment." }
-    ],
-    "cadImages": [],
-    "summary": []
-  },
-  {
-    "id": "modal9",
-    "title": "Redbull",
-    "category": "booths",
-    "thumbnail": "images/Redbull/3.webp",
-    "images": [
-      "images/Redbull/3.webp",
-      "images/Redbull/1.webp",
-      "images/Redbull/2.webp",
-      "images/Redbull/6.webp",
-      "images/Redbull/8.webp",
-      "images/Redbull/9.webp",
-      "images/Redbull/10.webp"
-    ],
-    "location": "Exhibition",
-    "style": "High-Energy Industrial Exhibition Booth",
-    "inspiration": null,
-    "sections": [
-      { "heading": "Location", "body": "Exhibition" },
-      { "heading": "Design Style", "body": "Industrial booth design inspired by motorsports, performance branding, and dynamic visual energy." },
-      { "heading": "Key Features", "body": "A large illuminated logo header, racing wheel wall details, action gallery, textured concrete-style counter, and VIP lounge elements." },
-      { "heading": "Color Palette", "body": "Deep navy with energetic red accents and metallic finishes communicates speed and brand identity." },
-      { "heading": "Lighting", "body": "Black track spotlights and LED backlighting enhance graphics and create a premium, high-energy atmosphere." }
-    ],
-    "cadImages": [],
-    "summary": []
-  }
-]
+{
+  "projects": [
+    {
+      "summary": "This design vision transforms the cafe into a symphony of royal tones and architectural grace, where Neo-Classical Modern Luxury merges the structural grandeur of classical arches with sleek, high-end finishes. Anchored by a prestigious contrast of deep midnight navy and luminous champagne gold, the space evolves as a sophisticated social sanctuary—featuring velvet banquettes, Carrara marble, and sculptural lighting that includes organic branch-like chandeliers and warm linear cove lights. Every element, from the monolithic service bar with its floating illumination to the botanical wallpapers nestled within geometric arches, serves a refined dialogue between regal modernity and intimate comfort, crafting an atmosphere where authority and warmth exist in perfect harmony.",
+      "inspiration": null,
+      "thumbnail": "images/ARIA_RC/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Neo-Classical Modern Luxury. The design philosophy centers on a 'Royal Harmony,' merging the structural grandeur of classical architecture with the sleek, high-end finish of modern luxury. It emphasizes illuminated arches, bold chromatic contrast, deep midnight tones, and metallic accents to balance authoritative elegance with atmospheric warmth."
+        },
+        {
+          "heading": "Space Analysis",
+          "body": "Main seating is conceived as a sophisticated social sanctuary with symmetrical wall compositions, deep-blue alcoves, rhythmic archways, plush velvet banquettes, and sculptural armchairs that provide sensory comfort and high visual impact. The service bar is designed as a monolithic sculptural anchor with a curved navy-blue facade, integrated brass lettering, and concealed LED strip lighting to create a floating appearance and luminous back-bar shelving."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "The palette is founded on prestigious contrast with midnight navy blue as the dominant foundation and polished Carrara marble introducing brightness. Champagne gold accents connect the design, while cream and pearl grey soften transitions and add depth."
+        },
+        {
+          "heading": "Materials and Furniture",
+          "body": "Materials combine matte navy finishes, lustrous marble, botanical wallpaper, high-pile velvet, polished gold-finished steel, tinted glass, and indoor greenery to blend tactile softness with architectural rigor."
+        },
+        {
+          "heading": "Lighting Engineering",
+          "body": "Lighting acts as the invisible architect, using linear cove and arched backlighting to define contours and mood. Organic branch-like chandeliers serve as overhead sculptures, while orb globe lamps create intimate pools of light at the tables."
+        },
+        {
+          "heading": "Conclusion",
+          "body": "The project transforms the cafe into a symphony of royal tones and architectural grace, where midnight blue and golden light merge to create regal modernity. It balances bold architectural statements with intimate, enveloping comfort for every visitor."
+        }
+      ],
+      "style": "Neo-Classical Modern Luxury",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "Aria Restaurant and Café",
+      "images": [
+        "images/ARIA_RC/1.webp",
+        "images/ARIA_RC/2.webp",
+        "images/ARIA_RC/3.webp",
+        "images/ARIA_RC/4.webp",
+        "images/ARIA_RC/5.webp",
+        "images/ARIA_RC/6.webp",
+        "images/ARIA_RC/7.webp",
+        "images/ARIA_RC/Mood_new.webp"
+      ],
+      "id": "modal0",
+      "category": "commercial",
+      "cadImages": []
+    },
+    {
+      "summary": "The vision for \"Clay Chai\" is anchored in embracing the philosophy of \"Earthly Serenity\", establishing it as an \"Organic Sanctuary\" that warmly embraces the visitor with the comforting ambiance of nature, offering a retreat from the clamor of everyday life.\nMaterial Harmony\n\nThe design is built upon a \"Material Harmony,\" seamlessly blending earthy tones, light woods, and textured clay materials. These elements evoke a profound sense of belonging and tactile comfort, elegantly contrasted by the deep hue of \"Velvet Amethyst\" in the seating. Accents of dried wheat stalks further enhance a Contemporary Rustic spirit.\nLyrical Illumination\n\nThe concept of \"Lyrical Illumination\" plays a pivotal role. Warm, concealed lighting integrated within the shelving units merges with woven pendant fixtures and natural daylight, culminating in a \"Golden Halo\" that washes the space in an atmosphere of warmth, tranquility, and profound relaxation.",
+      "inspiration": null,
+      "thumbnail": "images/Clay_Chai/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Dubai, United Arab Emirates"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Pure Organic Modernism. The design adopts a Pure Modernism approach while incorporating warm natural touches and refined materials."
+        },
+        {
+          "heading": "Space Analysis",
+          "body": "Main seating is conceived as a sensory retreat with natural, tactile materials. The service bar is sculptural, with clean lines and concealed lighting to create a refined focal point."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "Warm earthy tones, sandy beige, creamy off-white, light oak woods, and golden warm lighting create a serene, organic environment."
+        },
+        {
+          "heading": "Materials and Furniture",
+          "body": "The selection combines matte textures, fluted wood panels, clay-inspired surfaces, dried botanicals, and subtle brass accents for an artisanal yet modern feel."
+        },
+        {
+          "heading": "Lighting Engineering",
+          "body": "Continuous cove and shelf lighting define surfaces and highlight textures, while woven pendant units produce soft, intimate illumination."
+        }
+      ],
+      "style": "Pure Organic Modernism",
+      "location": "Dubai, United Arab Emirates",
+      "title": "Clay Chai",
+      "images": [
+        "images/Clay_Chai/1.webp",
+        "images/Clay_Chai/2.webp",
+        "images/Clay_Chai/3.webp",
+        "images/Clay_Chai/4.webp",
+        "images/Clay_Chai/5.webp",
+        "images/Clay_Chai/6.webp",
+        "images/Clay_Chai/7.webp",
+        "images/Clay_Chai/8.webp",
+        "images/Clay_Chai/9.webp",
+        "images/Clay_Chai/10.webp",
+        "images/Clay_Chai/11.webp",
+        "images/Clay_Chai/12.webp",
+        "images/Clay_Chai/13.webp",
+        "images/Clay_Chai/14.webp"
+      ],
+      "id": "modal1",
+      "category": "commercial",
+      "cadImages": [
+        "images/Clay_Chai/Section A.webp",
+        "images/Clay_Chai/Plan_page.webp",
+        "images/Clay_Chai/Section B.webp",
+        "images/Clay_Chai/Light Plan.webp"
+      ]
+    },
+    {
+      "summary": "This design weaves a tranquil dialogue between Modern Neoclassical refinement and Japandi warmth, where creamy off-white walls adorned with delicate moldings embrace the raw honesty of walnut wood and low-profile furniture. Anchored by a monochromatic palette of sandy beige and soft cream, the space gains depth from dark walnut, veined marble, and accents of petroleum blue and burnt orange in the cushions. Bouclé and linen sofas invite touch, while curved furniture guides the eye with fluid grace—natural light floods through tall windows, complemented by concealed LEDs and crystal chandeliers that act as sculptural anchors.\n\nTall plants and dried pampas grass breathe life into every corner, transforming the interior into an artistic tableau where serenity and sophistication meet. Here, the unity of spirit and material reigns: classical paneling whispers heritage, brushed gold glimmers with contemporary elegance, and every element—from the circular wooden table to the textured bedroom walls—is crafted to offer not just luxury, but a quiet, inviting elevation of the everyday.",
+      "inspiration": null,
+      "thumbnail": "images/The_Symphony_of_Warm_Elegance/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "A blend of modern neoclassical formality and Japandi warmth, with delicate moldings, symmetry, natural wood, and light."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A warm monochromatic palette of sandy beige, creamy off-white, walnut, marble veining, and accents of petroleum blue and burnt orange."
+        },
+        {
+          "heading": "Furniture & Materials",
+          "body": "Bouclé and linen fabrics, natural walnut wood, marble and stone, and brushed gold details create luxurious tactile richness."
+        },
+        {
+          "heading": "Space Analysis and Lighting",
+          "body": "Curved furniture supports fluid movement, while natural light, concealed LED shelves, and sculptural chandeliers bring warmth and drama."
+        },
+        {
+          "heading": "Conclusion",
+          "body": "The design offers a refined, living interior where classical detail, soft textures, and layered lighting converge into a warm, elegant atmosphere."
+        }
+      ],
+      "style": "Modern Neoclassical and Japandi",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "The Symphony of Warm Elegance",
+      "images": [
+        "images/The_Symphony_of_Warm_Elegance/1.webp",
+        "images/The_Symphony_of_Warm_Elegance/2.webp",
+        "images/The_Symphony_of_Warm_Elegance/3.webp",
+        "images/The_Symphony_of_Warm_Elegance/4.webp"
+      ],
+      "id": "modal6",
+      "category": "residential",
+      "cadImages": [
+        "images/Symphony_Warm_Elegance/plan.webp"
+      ]
+    },
+    {
+      "summary": "The vision for this suite is anchored in the philosophy of Quiet Luxury, aimed at creating an intimate sanctuary that transcends its basic function to become a contemporary \"Cocoon\" that isolates the occupant from the outside world and invites deep tranquility and relaxation.\n\nThis design embraces Pure Contemporary Modernism with bold, dramatic flair—where crisp white architectural purity meets deep sapphire blue in a refined dialogue of contrast. The space unfolds as an \"Organized Retreat,\" from the upholstered white headboard composition with hidden warm lighting to the \"Luxury Gallery Corridor\" where continuous overhead lights and mirrors double the sense of expanse. Matte white millwork and off-white walls create an immaculate, spacious foundation, while rich blue upholstery and a dramatic blue display recess inject character and depth into the stillness.\n\nLighting serves as the true \"Definer of Features\"—linear architectural illumination traces the edges of cabinets and headboards like golden drawings on a white canvas, while hidden shelf lights spotlight collections and a playful neon sign adds a personal, modern signature. Warmth comes not from ornamentation but from the glow itself, balancing the cool purity of white and blue. A warm wooden desk surface and a tactile blue office chair ground the design in functional comfort. Here, luxury is visual order, quiet confidence, and the delicate harmony between strict lines and luminous warmth—a symphony where every element breathes refinement.",
+      "inspiration": null,
+      "thumbnail": "images/Crimson_Haven/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Pure Contemporary Modernism with dramatic contrast, architectural lighting, and a focus on spatial purity."
+        },
+        {
+          "heading": "Space Analysis",
+          "body": "The bedroom is designed as an organized retreat with luxurious hidden lighting and a seamless office nook. The corridor emphasizes visual continuity and expansive geometry."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "Pure white and off-white are paired with sapphire blue accents and warm light for a refined contrast."
+        },
+        {
+          "heading": "Materials and Furniture",
+          "body": "Smooth white surfaces, rich blue upholstery, warm wood accents, and mirrored elements create a calm yet striking interior."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Continuous linear lighting and hidden shelf lights highlight architectural form and create depth with warm, cinematic glow."
+        }
+      ],
+      "style": "Pure Contemporary Modernism",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "Crimson Haven",
+      "images": [
+        "images/Crimson_Haven/1.webp",
+        "images/Crimson_Haven/2.webp",
+        "images/Crimson_Haven/3.webp",
+        "images/Crimson_Haven/4.webp"
+      ],
+      "id": "modal5",
+      "category": "residential",
+      "cadImages": [
+        "images/Crimson_Haven/sectionA.webp"
+      ]
+    },
+    {
+      "summary": [],
+      "inspiration": null,
+      "thumbnail": "images/Oasis_of_Serenity/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Dubai, United Arab Emirates"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Contemporary Zen Japandi blending Japanese minimalism and Scandinavian functionality with natural materials and clean lines."
+        },
+        {
+          "heading": "Space Analysis",
+          "body": "The living room is designed as a breathing space with a wooden library and balanced horizontal furniture. The bedroom uses symmetry and textured details to create ease and calm."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A warm monochromatic palette of sandy beige, creamy off-white, warm gray, and dark walnut accents creates a soothing and elegant interior."
+        },
+        {
+          "heading": "Materials and Furniture",
+          "body": "Natural wood, bouclé upholstery, raw linen, stoneware details, and brushed brass accents deliver a tactile, serene atmosphere."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Warm lighting is used as a chromatic element, with semi-sheer curtains for filtered daylight and backlit details to reinforce the serene mood."
+        }
+      ],
+      "style": "Contemporary Zen Japandi",
+      "location": "Dubai, United Arab Emirates",
+      "title": "Oasis of Serenity",
+      "images": [
+        "images/Oasis_of_Serenity/1.webp",
+        "images/Oasis_of_Serenity/2.webp",
+        "images/Oasis_of_Serenity/3.webp",
+        "images/Oasis_of_Serenity/4.webp"
+      ],
+      "id": "modal2",
+      "category": "residential",
+      "cadImages": []
+    },
+    {
+      "summary": [],
+      "inspiration": null,
+      "thumbnail": "images/Warm_Aura/2.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Contemporary Quiet Luxury focuses on rich textures, concealed lighting, and material contrast rather than overt ornamentation."
+        },
+        {
+          "heading": "Space Analysis",
+          "body": "The bedroom is treated as a cocoon with layered finishes and a powerful focal wall, while the dressing area extends material continuity for a hotel-suite experience."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A high-contrast palette of greige stone tones and deep smoked walnut wood, softened by ultra warm lighting."
+        },
+        {
+          "heading": "Materials and Furniture",
+          "body": "Dark wood panels, textured plaster, plush upholstery, and brushed gold accents create an intimate and luxurious setting."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Cove and architectural lighting sculpt the walls and ceiling, while dim warm illumination enhances the sense of calm and drama."
+        }
+      ],
+      "style": "Contemporary Quiet Luxury",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "Warm Aura",
+      "images": [
+        "images/Warm_Aura/2.webp",
+        "images/Warm_Aura/1.webp",
+        "images/Warm_Aura/3.webp"
+      ],
+      "id": "modal3",
+      "category": "residential",
+      "cadImages": [
+        "images/Warm_Aura/4.webp",
+        "images/Warm_Aura/5.webp"
+      ]
+    },
+    {
+      "summary": [],
+      "inspiration": "The Arabian Nights",
+      "thumbnail": "images/Modern_Retreat/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Cairo, Egypt"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Pure Contemporary Modernism with bold contrast, clean white lines, and linear architectural lighting."
+        },
+        {
+          "heading": "Space Analysis",
+          "body": "The bedroom is an organized retreat with integrated lighting and office nook. The closet corridor becomes a gallery corridor with continuous lighting and mirrored expanses."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A bright white backdrop is contrasted with deep sapphire blue accents and warm illumination."
+        },
+        {
+          "heading": "Materials and Furniture",
+          "body": "Matte smooth surfaces, rich blue upholstery, mirrors, and warm wood surfaces deliver visual order and comfort."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Linear architectural lighting defines edges, highlights recesses, and spotlights collections while a neon accent adds modern character."
+        }
+      ],
+      "style": "Pure Contemporary Modernism",
+      "location": "Cairo, Egypt",
+      "title": "Modern Retreat",
+      "images": [
+        "images/Modern_Retreat/1.webp",
+        "images/Modern_Retreat/2.webp",
+        "images/Modern_Retreat/3.webp",
+        "images/Modern_Retreat/4.webp"
+      ],
+      "id": "modal4",
+      "category": "residential",
+      "cadImages": [
+        "images/Modern_Retreat/section1.webp",
+        "images/Modern_Retreat/section2.webp",
+        "images/Modern_Retreat/section3.webp"
+      ]
+    },
+    {
+      "summary": [],
+      "inspiration": null,
+      "thumbnail": "images/Airbnb/4.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Exhibition"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Modern minimalist booth design focused on strong brand identity, spatial flow, and clean architectural expression."
+        },
+        {
+          "heading": "Key Features",
+          "body": "A large 3D Bélo logo, floating header, curved reception counter with LED under-lighting, minimalist consultation area, and global map storytelling."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "High-contrast pink-red and white create a bold, contemporary brand presence."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Recessed spotlights and ambient LED strips deliver a clean, tech-forward atmosphere."
+        }
+      ],
+      "style": "Modern Minimalist Exhibition Booth",
+      "location": "Exhibition",
+      "title": "Airbnb",
+      "images": [
+        "images/Airbnb/4.webp",
+        "images/Airbnb/3.webp",
+        "images/Airbnb/2.webp",
+        "images/Airbnb/1.webp"
+      ],
+      "id": "modal7",
+      "category": "booths",
+      "cadImages": []
+    },
+    {
+      "summary": [],
+      "inspiration": null,
+      "thumbnail": "images/experts_decision/2.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Exhibition"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Futuristic booth design with cyberpunk lighting, immersive architecture, and a digital presentation focus."
+        },
+        {
+          "heading": "Key Features",
+          "body": "Rounded portals with linear LED lighting, neon branding, central digital hub, balanced lounge and consultation zones, and luminous reception."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "Cyan, magenta, and deep purple lighting highlight the high-tech and innovative character."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Integrated LED lighting creates a tunnel effect and emphasizes the immersive digital environment."
+        }
+      ],
+      "style": "Futuristic Neon-Tech Exhibition Booth",
+      "location": "Exhibition",
+      "title": "Experts Decision",
+      "images": [
+        "images/experts_decision/2.webp",
+        "images/experts_decision/1.webp",
+        "images/experts_decision/3.webp",
+        "images/experts_decision/4.webp",
+        "images/experts_decision/5.webp",
+        "images/experts_decision/6.webp",
+        "images/experts_decision/7.webp"
+      ],
+      "id": "modal8",
+      "category": "booths",
+      "cadImages": []
+    },
+    {
+      "summary": [],
+      "inspiration": null,
+      "thumbnail": "images/Redbull/3.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Exhibition"
+        },
+        {
+          "heading": "Design Style",
+          "body": "Industrial booth design inspired by motorsports, performance branding, and dynamic visual energy."
+        },
+        {
+          "heading": "Key Features",
+          "body": "A large illuminated logo header, racing wheel wall details, action gallery, textured concrete-style counter, and VIP lounge elements."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "Deep navy with energetic red accents and metallic finishes communicates speed and brand identity."
+        },
+        {
+          "heading": "Lighting",
+          "body": "Black track spotlights and LED backlighting enhance graphics and create a premium, high-energy atmosphere."
+        }
+      ],
+      "style": "High-Energy Industrial Exhibition Booth",
+      "location": "Exhibition",
+      "title": "Redbull",
+      "images": [
+        "images/Redbull/3.webp",
+        "images/Redbull/1.webp",
+        "images/Redbull/2.webp",
+        "images/Redbull/6.webp",
+        "images/Redbull/8.webp",
+        "images/Redbull/9.webp",
+        "images/Redbull/10.webp"
+      ],
+      "id": "modal9",
+      "category": "booths",
+      "cadImages": []
+    },
+    {
+      "summary": "Test Summary of this Project",
+      "thumbnail": "images/uploads/1.png",
+      "sections": [
+        {
+          "heading": "This",
+          "body": "Is a simple test to see what is happening here. "
+        }
+      ],
+      "style": "Classic Future",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "Master Room",
+      "images": [
+        "images/uploads/2.png",
+        "images/uploads/3.png"
+      ],
+      "id": "modal10",
+      "category": "residential",
+      "cadImages": [
+        "images/uploads/mood.png"
+      ]
+    }
+  ]
 }
