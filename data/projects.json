@@ -494,18 +494,18 @@
       "location": "Riyadh, Saudi Arabia",
       "title": "Ultimate",
       "images": [
-        "images/Ultimate/ultimate3.webp",
-        "images/Ultimate/ultimate1.webp",
-        "images/Ultimate/ultimate2.webp",
-        "images/Ultimate/ultimate4.webp",
-        "images/Ultimate/ultimate5.webp",
-        "images/Ultimate/ultimate6.webp",
-        "images/Ultimate/ultimate7.webp"
+        "images/Ultimate/Ultimate3.webp",
+        "images/Ultimate/Ultimate1.webp",
+        "images/Ultimate/Ultimate2.webp",
+        "images/Ultimate/Ultimate4.webp",
+        "images/Ultimate/Ultimate5.webp",
+        "images/Ultimate/Ultimate6.webp",
+        "images/Ultimate/Ultimate7.webp"
       ],
       "id": "Ultimate",
       "category": "booths",
       "cadImages": [
-        "images/Ultimate/ultimate_drawing.png"
+        "images/Ultimate/Ultimate_plan.webp",
       ]
     }
   ]
