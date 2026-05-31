@@ -201,9 +201,7 @@
       ],
       "id": "TheSymphonyofWarmElegance",
       "category": "residential",
-      "cadImages": [
-        "images/Symphony_Warm_Elegance/plan.webp"
-      ]
+      "cadImages": []
     },
     {
       "summary": "The vision for this suite is anchored in the philosophy of Quiet Luxury, aimed at creating an intimate sanctuary that transcends its basic function to become a contemporary \"Cocoon\" that isolates the occupant from the outside world and invites deep tranquility and relaxation.\n\nThis design embraces Pure Contemporary Modernism with bold, dramatic flair—where crisp white architectural purity meets deep sapphire blue in a refined dialogue of contrast. The space unfolds as an \"Organized Retreat,\" from the upholstered white headboard composition with hidden warm lighting to the \"Luxury Gallery Corridor\" where continuous overhead lights and mirrors double the sense of expanse. Matte white millwork and off-white walls create an immaculate, spacious foundation, while rich blue upholstery and a dramatic blue display recess inject character and depth into the stillness.\n\nLighting serves as the true \"Definer of Features\"—linear architectural illumination traces the edges of cabinets and headboards like golden drawings on a white canvas, while hidden shelf lights spotlight collections and a playful neon sign adds a personal, modern signature. Warmth comes not from ornamentation but from the glow itself, balancing the cool purity of white and blue. A warm wooden desk surface and a tactile blue office chair ground the design in functional comfort. Here, luxury is visual order, quiet confidence, and the delicate harmony between strict lines and luminous warmth—a symphony where every element breathes refinement.",
@@ -246,9 +244,7 @@
       ],
       "id": "CrimsonHaven",
       "category": "residential",
-      "cadImages": [
-        "images/Crimson_Haven/sectionA.webp"
-      ]
+      "cadImages": []
     },
     {
       "summary": "Lorem Ipsum",
@@ -505,7 +501,7 @@
       "id": "Ultimate",
       "category": "booths",
       "cadImages": [
-        "images/Ultimate/Ultimate_plan.webp"
+        "images/Ultimate/Ultimate_Drawing.png"
       ]
     }
   ]
