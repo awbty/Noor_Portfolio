@@ -2,7 +2,7 @@
   "projects": [
     {
       "summary": "This design vision transforms the Riyadh residence into a sophisticated sanctuary of tailored modern luxury and deep comfort, where soft modern glamour seamlessly merges with elegant, romantic sensibilities.\n\nAnchored by a curated palette of creamy off-whites, textured taupe, and rich walnut, the space is punctuated by a dramatic symphony of deep aubergine, plum, and soft lavender, all balanced by polished gold and elegant veined marble. Natural light oak chevron flooring guides the eye through an integrated, flow-through layout defined by bespoke, tinted glass cabinetry, plush purple velvet, and a feature floral wall covering that introduces a poetic, layered intimacy. Every element—from the sculptural statement lighting and floor-to-ceiling sheer curtains to the refined brushed brass details—coheres into a rich, tactile retreat, crafting an atmosphere where bold, expressive hues and high-end finishes exist in perfect harmony.",
-      "thumbnail": "images/uploads/1.webp",
+      "thumbnail": "images/The_Velvet_Orchid/1.webp",
       "sections": [
         {
           "heading": "Location",
@@ -33,22 +33,22 @@
       "location": "Riyadh, Saudi Arabia",
       "title": "The Velvet Orchid",
       "images": [
-        "images/uploads/1.webp",
-        "images/uploads/2.webp",
-        "images/uploads/3.webp",
-        "images/uploads/5.webp",
-        "images/uploads/6.webp",
-        "images/uploads/7.webp",
-        "images/uploads/8.webp",
-        "images/uploads/9.webp",
-        "images/uploads/10.webp",
-        "images/uploads/11.webp",
-        "images/uploads/12.webp"
+        "images/The_Velvet_Orchid/1.webp",
+        "images/The_Velvet_Orchid/2.webp",
+        "images/The_Velvet_Orchid/3.webp",
+        "images/The_Velvet_Orchid/5.webp",
+        "images/The_Velvet_Orchid/6.webp",
+        "images/The_Velvet_Orchid/7.webp",
+        "images/The_Velvet_Orchid/8.webp",
+        "images/The_Velvet_Orchid/9.webp",
+        "images/The_Velvet_Orchid/10.webp",
+        "images/The_Velvet_Orchid/11.webp",
+        "images/The_Velvet_Orchid/12.webp"
       ],
       "id": "TheVelvetOrchid",
       "category": "residential",
       "cadImages": [
-        "images/uploads/mood.webp"
+        "images/The_Velvet_Orchid/mood.webp"
       ]
     },
     {
@@ -463,7 +463,7 @@
     },
     {
       "summary": "This design vision transforms the exhibition booth into a dynamic sanctuary of futuristic innovation and high-tech connectivity, where organic architecture seamlessly merges with a sleek digital aesthetic.\n\nAnchored by fluid, flowing ribbons of blue and green that symbolize movement, the structure is anchored by a prominent, abstract \"A-frame\" that integrates the corporate logo as a unique architectural centerpiece. Neon-style LED strip lighting traces the curved edges of the frame to cast a luminous, modern glow, while tech-focused graphics and digital-themed icons on the back wall reinforce the brand's core focus on business transformation. Balancing high-impact tech with welcoming hospitality, the space evolves into a sophisticated professional lounge—featuring minimalist sofas and a low coffee table that craft an atmosphere where cutting-edge authority and comfortable, client-focused dialogue exist in perfect harmony.",
-      "thumbnail": "images/uploads/ultimate3.webp",
+      "thumbnail": "images/Ultimate/ultimate3.webp",
       "sections": [
         {
           "heading": "Design Style",
@@ -494,18 +494,18 @@
       "location": "Riyadh, Saudi Arabia",
       "title": "Ultimate",
       "images": [
-        "images/uploads/ultimate3.webp",
-        "images/uploads/ultimate1.webp",
-        "images/uploads/ultimate2.webp",
-        "images/uploads/ultimate4.webp",
-        "images/uploads/ultimate5.webp",
-        "images/uploads/ultimate6.webp",
-        "images/uploads/ultimate7.webp"
+        "images/Ultimate/ultimate3.webp",
+        "images/Ultimate/ultimate1.webp",
+        "images/Ultimate/ultimate2.webp",
+        "images/Ultimate/ultimate4.webp",
+        "images/Ultimate/ultimate5.webp",
+        "images/Ultimate/ultimate6.webp",
+        "images/Ultimate/ultimate7.webp"
       ],
       "id": "Ultimate",
       "category": "booths",
       "cadImages": [
-        "images/uploads/ultimate_drawing.png"
+        "images/Ultimate/ultimate_drawing.png"
       ]
     }
   ]
