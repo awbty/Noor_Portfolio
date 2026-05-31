@@ -46,129 +46,7 @@
 
         <div class="project-gallery" id="gallery">
 
-            <!-- Project 0: Aria Restaurant and Café -->
-            <div class="project-item" data-category="commercial" onclick="openModal('modal0')">
-                <div class="project-visuals">
-                    <img src="images\ARIA_RC\1.webp" alt="Aria Restaurant and Café">
-                </div>
-                <div class="project-info">
-                    <h3>Aria Restaurant and Café</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-            <!-- Project 1: Clay Chai -->
-            <div class="project-item" data-category="commercial" onclick="openModal('modal1')">
-                <div class="project-visuals">
-                    <img src="images/Clay_Chai/1.webp" alt="Japandi Style Coffee Shop">
-                </div>
-                <div class="project-info">
-                    <h3>Clay Chai</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-            
-            <!-- Project 6: The Symphony of Warm Elegance -->
-            <div class="project-item" data-category="residential" onclick="openModal('modal6')">
-                <div class="project-visuals">
-                    <img src="images/The_Symphony_of_Warm_Elegance/1.webp" alt="The Symphony of Warm Elegance">
-                </div>
-                <div class="project-info">
-                    <h3>The Symphony of Warm Elegance</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 5: Crimson Haven -->
-            <div class="project-item" data-category="residential" onclick="openModal('modal5')">
-                <div class="project-visuals">
-                    <img src="images/Crimson_Haven/1.webp" alt="Crimson Haven">
-                </div>
-                <div class="project-info">
-                    <h3>Crimson Haven</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 2: Oasis of Serenity -->
-            <div class="project-item" data-category="residential" onclick="openModal('modal2')">
-                <div class="project-visuals">
-                    <img src="images/Oasis_of_Serenity/1.webp" alt="Japandi Style Living Room">
-                </div>
-                <div class="project-info">
-                    <h3>Oasis of Serenity</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 3: Warm Aura -->
-            <div class="project-item" data-category="residential" onclick="openModal('modal3')">
-                <div class="project-visuals">
-                    <img src="images/Warm_Aura/2.webp" alt="Modern Room">
-                </div>
-                <div class="project-info">
-                    <h3>Warm Aura</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 4: Modern Retreat -->
-            <div class="project-item" data-category="residential" onclick="openModal('modal4')">
-                <div class="project-visuals">
-                    <img src="images/Modern_Retreat/2.webp" alt="Boy Room">
-                </div>
-                <div class="project-info">
-                    <h3>Modern Retreat</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            
-
-            
-
-            <!-- Project 7: Airbnb -->
-            <div class="project-item" data-category="booths" onclick="openModal('modal7')">
-                <div class="project-visuals">
-                    <img src="images\Airbnb\4.webp" alt="Airbnb">
-                </div>
-                <div class="project-info">
-                    <h3>Airbnb</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 8: Experts Decision -->
-            <div class="project-item" data-category="booths" onclick="openModal('modal8')">
-                <div class="project-visuals">
-                    <img src="images\experts_decision\2.webp" alt="Experts Decision">
-                </div>
-                <div class="project-info">
-                    <h3>Experts Decision</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 9: Redbull -->
-            <div class="project-item" data-category="booths" onclick="openModal('modal9')">
-                <div class="project-visuals">
-                    <img src="images\Redbull\3.webp" alt="Redbull">
-                </div>
-                <div class="project-info">
-                    <h3>Redbull</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div>
-
-            <!-- Project 10: Ultimate -->
-            <!-- <div class="project-item" data-category="booths" onclick="openModal('modal10')">
-                <div class="project-visuals">
-                    <img src="images\Ultimate\2.webp" alt="Ultimate">
-                </div>
-                <div class="project-info">
-                    <h3>Ultimate</h3>
-                    <span class="project-link">View Project Gallery & Description →</span>
-                </div>
-            </div> -->
+            <!-- Projects are injected here dynamically by JS -->
 
         </div>
     </div>
@@ -180,526 +58,80 @@
     </div>
 </footer>
 
-<!--
-   MODALS WITH DYNAMIC TEXT
--->
+<script>
 
-<!-- Modal 0: Aria Restaurant and Café -->
- <div id="modal0" class="modal">
-    <span class="close" onclick="closeModal('modal0')">&times;</span>
-    <div class="modal-content modal-layout-showroom">
-        <!-- Image Gallery Area -->
-        <div class="showroom-gallery">
-            <button class="gallery-btn gallery-prev" onclick="changeImage('modal0', -1)">&#10094;</button>
-            <img id="modal0-img" src="images\ARIA_RC\1.webp" alt="Project View">
-            <button class="gallery-btn gallery-next" onclick="changeImage('modal0', 1)">&#10095;</button>
-        </div>
-        <!-- Description Area -->
-        <div class="showroom-details">
-            <h2>Aria Restaurant and Café</h2>
-            
+    let galleryData = {};
+    let currentIndex = {};
 
-            <!-- Static project description (moved from JS) -->
-            <div id="modal0-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                <h3>Location</h3>
-                <p>Riyadh, Saudi Arabia</p>
-                <h3>Design Style</h3>
-<p>Neo-Classical Modern Luxury. The design philosophy centers on a "Royal Harmony," merging the structural grandeur of classical architecture with the sleek, high-end finish of modern luxury. This approach is anchored by the rhythmic use of Illuminated Arches and a bold Chromatic Contrast. It represents a sophisticated fusion between the depth of deep midnight tones and the brilliance of metallic accents. The design moves away from traditional rigidity in favor of a "Lounge Identity" that balances authoritative elegance with an inviting, atmospheric warmth.</p>
-<h3>Space Analysis</h3>
-<p><strong>Main Seating Area:</strong> This zone was conceived as a Sophisticated Social Sanctuary. I utilized symmetrical wall compositions featuring deep-blue alcoves and rhythmic archways to create a sense of architectural permanence. The seating—a mix of plush velvet banquettes and sculptural armchairs—functions as more than just furniture; it is an arrangement of textures (velvet, marble, and gold) that provides sensory comfort while maintaining a high-visual-impact environment for guests.</p>
-<p><strong>Service Bar Area:</strong> The focus here was on creating a Monolithic Sculptural Anchor. The service counter is elevated to a Grand Focal Point through its curved, navy-blue facade and integrated "Order Here" brass lettering. I used concealed LED strip lighting at the base and top to give the counter a "floating" appearance, while the back-bar shelving acts as a luminous stage, artfully displaying products within a golden, architectural frame.</p>
-<h3>Color Palette</h3>
-<p>The color palette is founded upon a Prestigious Contrast to foster a sense of exclusivity and depth.</p>
-<p><strong>Primary Colors:</strong> Midnight Navy Blue serves as the dominant foundation for the walls and upholstery, providing a moody, tranquil backdrop. This is balanced by Polished Carrara Marble in the flooring, which introduces a bright, expansive atmosphere.</p>
-<p><strong>Metallic Accents: </strong> Champagne Gold is used as the essential connecting element, applied to the shelving, furniture frames, and architectural trims to introduce a refined, high-status gleam.</p>
-<p><strong>Neutral Balance:</strong> Tones of Cream and Pearl Grey are integrated into the accent seating and wall textures to soften the transition between the deep blues and the bright marble.</p>
-<h3>Materials and Furniture</h3>
-<p>Materials were selected to establish a dialogue between Tactile Softness and Architectural Rigor.</p>
-<p><strong>Surfaces and Walls:</strong> I relied on the contrast between Matte Navy Finishes and Lustrous Marble, reinforced by the use of Botanical Wallpaper inside the arches to add a layer of organic detail to the geometric structure.</p>
-<p><strong>Textiles:</strong> The selection features High-Pile Velvet, chosen for its ability to absorb light and sound, creating a quiet, luxurious atmosphere.</p>
-<p><strong>Complementary Materials:</strong> Polished gold-finished steel and tinted glass provide the "hard" luxury elements that frame the space, while indoor greenery is used to ground the design and breathe life into the corners.</p>
-<h3>Lighting Engineering</h3>
-<p>The lighting scheme is the "Invisible Architect" of this project, designed to define the spatial contours and mood.</p>
-<p><strong>Architectural Outlining:</strong> Primary emphasis is placed on Linear Cove Lighting and Arched Backlighting. This warm light flows as luminous halos around the structural curves, highlighting the texture of the walls and adding 3D depth to the lounge.</p>
-<p><strong>Focal & Task Lighting:</strong> Organic Branch-like Chandeliers serve as overhead sculptures, breaking the symmetry with fluid forms. On the tables, Orb Globe Lamps create intimate pools of light, ensuring that every seating pocket feels personal and private.</p>
-<h3>Conclusion</h3>
-<p>In this project, I transformed the cafe into a Symphony of Royal Tones and Architectural Grace, where the authority of midnight blue blends seamlessly with the brilliance of golden light. It represents a refined dialogue between classical arched silhouettes and contemporary high-end materials, forging an atmosphere of Regal Modernity. Here, luxury resides in the deliberate play of light and shadow, and in the balance between bold architectural statements and the intimate, enveloping comfort offered to every visitor.</p>
+    fetch('data/projects.json')
+        .then(res => res.json())
+        .then(data => {
+            const projects = data.projects;
+            buildGallery(projects);
+            buildModals(projects);
+        })
+        .catch(err => console.error('Failed to load projects:', err));
 
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal 1: Clay Chai -->
-<div id="modal1" class="modal">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <div class="modal-content modal-layout-showroom">
-        <!-- Image Gallery Area -->
-        <div class="showroom-gallery">
-            <button class="gallery-btn gallery-prev" onclick="changeImage('modal1', -1)">&#10094;</button>
-            <img id="modal1-img" src="images/Clay_Chai/5.webp" alt="Project View">
-            <button class="gallery-btn gallery-next" onclick="changeImage('modal1', 1)">&#10095;</button>
-        </div>
-        <!-- Description Area -->
-        <div class="showroom-details">
-            <h2>Clay Chai</h2>
-            
-
-            <!-- Static project description (moved from JS) -->
-            <div id="modal1-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                <h3>Location</h3>
-                <p>Dubai, United Arab Emirates</p>
-                <h3>Design Style</h3>
-<p>Pure Organic Modernism. The design adopts a Pure Modernism approach yet incorporates a warm, organic touch derived from nature. It represents a refined fusion between the architectural purity of clean lines and the tactile richness of natural materials. This ethos is manifested in the Monochromatic Harmony of earthy colors and a complete reliance on multi-layered warm lighting to create a serene Identity for the space. The design intentionally moves away from visual clutter in favor of spatial clarity and the quality of palpable materials.</p>
-<h3>Space Analysis</h3>
-<p><strong>Main Seating Area:</strong> This space was designed as a Sensory Retreat, balancing social comfort with organic tranquility. Walls, whether clad in fluted wooden panels or finished with a clay-textured paint, function as more than mere backdrops; they are architectural compositions integrating the warmth of the material with interspersed dried botanical elements, establishing a calm focal point for coffee enjoyment.</p>
-<p><strong>Service Bar Area:</strong> The focus here was on achieving a Sculptural Presence and seamless, streamlined function. The service counter is elevated to a Luxurious Focal Point through concealed shelving lighting that artfully displays products. Clean lines are maintained throughout to enhance a sense of order and refined craftsmanship.</p>
-<h3>Color Palette</h3>
-<p>The color palette is founded upon a Warm Earthy Harmony to foster a pervasive sense of belonging and tranquility.</p>
-<p><strong>Primary Colors:</strong> Gradients of sandy beige, creamy off-white, and Light Oak woods for the walls, ceilings, and main furniture pieces, creating an enveloping, bright, and warm backdrop.</p>
-<p><strong>Soft Contrast Colors:</strong> Slightly deeper tones of natural wood or oatmeal-colored woven fabrics in the seating are used to add visual depth without disrupting the overall monochromatic calm.</p>
-<p><strong>Lighting as Color:</strong> Golden Warm Light is the essential connecting chromatic element, generating a Solar Aura that highlights the aesthetics of the surfaces and provides necessary warmth throughout the space.</p>
-<h3>Materials and Furniture</h3>
-<p>Materials were selected to establish a dialogue between contemporary architectural rigor and artisanal warmth.</p>
-<p><strong>Surfaces and Walls:</strong> A reliance on Matte Textured Surfaces, such as fluted woods and clay-finished walls, reinforces a sense of authenticity and palpable depth.</p>
-<p><strong>Complementary Materials:</strong> Dried wheat stalks and botanicals are used as architectural elements to ground the design, alongside subtle brass or gold accents in the lighting to introduce an understated gleam of luxury.</p>
-<p><strong>Fabrics and Fibers:</strong> The selection includes light, soft upholstery fabrics, integrated with hand-woven elements like Rattan or straw in lighting fixtures and chairs, adding a layer of sensory comfort and connection to the natural world.</p>
-<h3>Lighting Engineering</h3>
-<p>The lighting scheme is not just functional; it acts as an Atmospheric Sculptor that defines the spatial contours.</p>
-<p><strong>Drawing with Light:</strong> Primary emphasis is placed on continuous Cove and Shelf Architectural Lighting integrated within display niches and behind fixed seating. This warm light flows as luminous lines, defining edges and highlighting the texture of the walls.</p>
-<p><strong>Dramatic/Intimate Ambiance:</strong> Large pendant units crafted from woven fibers are designed as Luminous Sculptures, casting soft, artistic shadows and defining seating zones. This adds a unique, handcrafted touch, creating an overhead visual anchor.</p>
-<h3>Conclusion</h3>
-<p>In this project, the cafe is transformed into a symphony of earthen gradients and natural textures, where the warmth of light wood blends seamlessly with the softness of sandy colors. It represents a refined dialogue between clean architectural lines and warm organic touches, forging an atmosphere of Serene Modernism. Here, luxury resides in sensory tranquility and in the delicate balance between contemporary simplicity and the enveloping warmth the space offers its visitor.</p>
-
-            </div>
-
-            <!-- <div class="feedback-section">
-                <p class="feedback-quote">"Alex transformed our chaotic space into a sanctuary of peace."</p>
-                <p class="feedback-author">- Mr. Al-Faisal, Homeowner</p>
-            </div> -->
-            <!--THIS SECTION IS FOR CAD-DRAWINGS-->
-            <img class="cad-img" src="images/Clay_Chai/Section A.webp" alt="Project View">
-            <img class="cad-img" src="images/Clay_Chai/Plan_page.webp" alt="Project View">
-            <img class="cad-img" src="images/Clay_Chai/Section B.webp" alt="Project View">
-            <img class="cad-img" src="images/Clay_Chai\Light Plan.webp" alt="Project View">
-            
-        </div>
-    </div>
-</div>
-
-<!-- Modal 2: Oasis of Serenity -->
-<div id="modal2" class="modal">
-    <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <div class="modal-content modal-layout-showroom">
-        <div class="showroom-gallery">
-            <button class="gallery-btn gallery-prev" onclick="changeImage('modal2', -1)">&#10094;</button>
-            <img id="modal2-img" src="images/Oasis_of_Serenity/1.webp" alt="Project View">
-            <button class="gallery-btn gallery-next" onclick="changeImage('modal2', 1)">&#10095;</button>
-        </div>
-        <div class="showroom-details">
-            <h2>Oasis of Serenity</h2>
-            <div id="modal2-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                <h3>Location</h3>
-                <p>Dubai, United Arab Emirates</p>
-                <h3>Design Style</h3>
-<p>Contemporary Zen Japandi. The design is a captivating blend of Japanese Minimalism (Zen) and Scandinavian functionality. This spirit is evident in the selection of clean lines, low-profile furniture, and a deep connection to nature through wood, botanicals, and natural light.</p>
-<h3>Space Analysis</h3>
-<p><strong>Living Room:</strong> This space was designed as a <strong>"Breathing Space."</strong> The built-in wooden library is not just a storage unit but an architectural component that adds depth to the room. The horizontal arrangement of the furniture enhances the sense of spaciousness and balance.</p>
-<p><strong>Bedroom:</strong> The focus here was on <strong>Symmetry</strong> to create an immediate sense of psychological ease. The textured <strong>Accent Wall</strong> subtly breaks the softness and adds a sensory dimension to the room.</p>
-<h3>Color Palette</h3>
-<p>A warm, earth-inspired <strong>Monochromatic</strong> color palette was adopted:</p>
-<p><strong>Primary Colors:</strong> Sandy beige, creamy off-white, and warm gray.</p>
-<p><strong>Contrast Colors:</strong> Dark brown (walnut or teak wood) used to provide definition and sophistication to corners.</p>
-<p><strong>Lighting as Color:</strong> Warm lighting (3000K) is utilized as a chromatic element, adding a golden glow to the materials.</p>
-<h3>Materials and Furniture</h3>
-<p>Materials were selected to engage the senses:</p>
-<p><strong>Woods:</strong> Natural wood is the protagonist, featured in the flooring, walls, and the <strong>"Wooden Mass"</strong> that forms the unique coffee table.</p>
-<p><strong>Fabrics:</strong> <strong>Bouclé</strong> and raw linen were chosen for the sofas and the bed ottoman, selected for their ability to deliver a rich, soft texture.</p>
-<p><strong>Metals:</strong> Subtle touches of <strong>Brushed Brass</strong> in the wall sconces are used to add a quiet shimmer of luxury.</p>
-<p><strong>Stones/Pottery:</strong> Earthenware vessels and artifacts with a stoneware texture enhance the <strong>Zen</strong> character.</p>
-<h3>Lighting Engineering and Natural Light</h3>
-<p><strong>Light as a Structural Element:</strong> In the living room, the curtains were designed to be semi-sheer, allowing <strong>"Filtered Light"</strong> to pass through, painting soft shadows onto the furniture.</p>
-<p><strong>Dramatic Lighting:</strong> In the bedroom, <strong>Backlit</strong> elements above the bed and vertical illuminated lines act as threads of light, defining the wall's contours and emphasizing its texture.</p>
-<h3>Conclusion</h3>
-<p>In this design, the unity of spirit and material converges; the generous creamy sofas embrace the warmth of natural wood, and the shadows of plants dance on walls that narrate a never-ending story of peace. Every piece of furniture is designed to be part of a visual symphony that redefines luxury as a state of psychological comfort and aesthetic elevation.</p>    
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 3: Riyadh Tech Hub -->
-<div id="modal3" class="modal">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <div class="modal-content modal-layout-showroom">
-        <div class="showroom-gallery">
-            <button class="gallery-btn gallery-prev" onclick="changeImage('modal3', -1)">&#10094;</button>
-            <img id="modal3-img" src="images/Warm_Aura/2.webp" alt="Project View">
-            <button class="gallery-btn gallery-next" onclick="changeImage('modal3', 1)">&#10095;</button>
-        </div>
-        <div class="showroom-details">
-            <h2>Warm Aura</h2>
-            
-            <div id="modal3-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-             <h3>Location</h3>
-            <p>Riyadh, Saudi Arabia</p>
-             <h3>Design Style</h3>
-<p>Contemporary Quiet Luxury. The design adopts the Quiet Luxury approach with a contemporary and dramatic touch. It is a refined blend of architectural sobriety and profound sensory warmth. This ethos is evident in the bold contrast between materials, a complete reliance on concealed architectural lighting to establish the <strong>"Mood,"</strong> and a focus on the richness of textures and quality of execution over ostentation.</p>
-<h3>Space Analysis</h3>
-<p><strong>Bedroom:</strong> This space was designed as a <strong>"Cocoon"</strong> for complete isolation and rest. The main wall behind the bed is not merely a backdrop but an architectural tableau that harmonizes the coolness of the stone texture with the warmth of the wood panels, creating visual depth and a powerful focal point for the sleeping area.</p>
-<p><strong>Dressing Area:</strong> The focus here was on <strong>Visual Continuity</strong> by extending the main room's material palette, enhancing the feeling of unity and expanse. The vanity and closet corridor are transformed into a luxurious, serene nook that complements the overall hotel-suite experience.</p>
-<h3>Color Palette</h3>
-<p>A color palette based on <strong>High Contrast</strong> was chosen to enhance the sense of luxury and depth:</p>
-<p><strong>Primary Colors:</strong> Light <strong>Greige</strong> or stone-like beige for the textured walls, creating a serene and sober backdrop.</p>
-<p><strong>Contrast Colors:</strong> Deep, dark brown (such as smoked walnut wood) in the vertical wood panels to assert character and add warmth.</p>
-<p><strong>Lighting as Color:</strong> <strong>Ultra Warm Light</strong> is the most crucial chromatic element, blurring the distinctions between materials and enveloping the space in a golden, poetic glow.</p>
-<h3>Materials and Furniture</h3>
-<p>Materials were selected to establish a sensory dialogue between structure and softness:</p>
-<p><strong>Woods and Walls:</strong> The deliberate pairing of <strong>dark wood panels</strong> with strict vertical lines and <strong>Textured Plaster</strong> with an organic, prominent finish is the core of the design.</p>
-<p><strong>Fabrics:</strong> Rich and plush upholstery fabrics (such as heavy linen or matte velvet) were chosen for the bed and bench to break the rigidity of the walls and enhance the feeling of hotel-level comfort.</p>
-<p><strong>Metals:</strong> The use of <strong>Brushed Gold/Brass</strong> in the sculptural lighting units acts as precise <strong>"Jewelry,"</strong> adding a modern, luxurious shimmer.</p>
-<h3>Lighting Engineering</h3>
-<p>The lighting scheme is not just functional; it is the <strong>"Sculptor"</strong> that shapes the space:</p>
-<p><strong>Sculpting with Light:</strong> Near-total reliance on <strong>Cove & Architectural Lighting</strong> in the ceilings and along the walls, flowing like luminous cascades that expertly highlight the rough textures of the stone and the depth of the wood.</p>
-<p><strong>Dramatic Ambiance:</strong> Lighting levels are designed to be dim, warm, and focused, creating soft shadows and transforming the room into an intimate and enchanting retreat at night, with sculptural wall and floor fixtures serving as visual anchors.</p>
-<h3>Conclusion</h3>
-<p>In this project, the room transforms into an ode to shadow and light, where the clamor of the outside world dissolves at the threshold of this sanctuary. It is a masterful dialogue between the sobriety of dark wood and the softness of stone texture, immersed in warm lighting that crafts an atmosphere of luxurious serenity. Here, luxury is not just in what the eye sees but in the profound feeling of containment and tranquility the space grants its occupant.</p>   
-            </div>
-            <!--THIS SECTION IS FOR CAD-DRAWINGS-->
-            <img class="cad-img" src="images/Warm_Aura/4.webp" alt="Project View">
-            <img class="cad-img" src="images/Warm_Aura/5.webp" alt="Project View">
-        </div>
-    </div>
-</div>
-
-<!-- Modal 4: Boutique Hotel Lobby -->
-<div id="modal4" class="modal">
-    <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <div class="modal-content modal-layout-showroom">
-        <div class="showroom-gallery">
-            <button class="gallery-btn gallery-prev" onclick="changeImage('modal4', -1)">&#10094;</button>
-            <img id="modal4-img" src="images/Modern_Retreat/1.webp" alt="Project View">
-            <button class="gallery-btn gallery-next" onclick="changeImage('modal4', 1)">&#10095;</button>
-        </div>
-        <div class="showroom-details">
-            <h2>Modern Retreat</h2>
-            <p class="inspiration-text"><strong>Inspiration:</strong> The Arabian Nights.</p>
-            <div id="modal4-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                <h3>Location</h3>
-                <p>Cairo, Egypt</p>
-                <h3>Design Style</h3>
-<p>Pure Contemporary Modernism. The design adopts the Pure Modernism approach with a bold, dramatic touch. It is a refined blend of the architectural purity of clean white lines and a daring chromatic depth. This ethos is evident in the strong contrast between colors, a complete reliance on <strong>Linear Architectural Lighting</strong> to create the space's <strong>"Identity,"</strong> and a shift away from ornamentation in favor of spatial purity and quality of execution.</p>
-<h3>Space Analysis</h3>
-<p><strong>Bedroom:</strong> This space was designed as an <strong>"Organized Retreat,"</strong> combining comfort with modern function. The main wall behind the bed is not just a backdrop but an architectural composition integrating the purity of the upholstered white panels with the warmth of hidden lighting, creating a calm focal point for the sleeping area with a seamlessly integrated office nook.</p>
-<p><strong>Closet & Corridor:</strong> The focus here was on <strong>Visual Continuity</strong> and clean lines. The closet corridor is transformed into a <strong>"Luxury Gallery Corridor"</strong> through continuous overhead lighting and mirrors that double the sense of expanse. The monotony is broken by an open display corner featuring a dramatic blue background for private collections.</p>
-<h3>Color Palette</h3>
-<p>A color palette based on <strong>Bold and Pure Contrast</strong> was adopted to enhance the sense of modernity and depth:</p>
-<p><strong>Primary Colors:</strong> Pure white or <strong>Off-White</strong> for the walls, architectural millwork, and cabinetry, creating an extremely bright, clean, and spacious backdrop.</p>
-<p><strong>Contrast Colors:</strong> Deep <strong>Sapphire Blue</strong> in the textiles (bedding, chair) and open shelf recesses, used to assert character and add a dramatic and vital dimension that breaks the white stillness.</p>
-<p><strong>Lighting as Color:</strong> <strong>Warm Light</strong> is the binding chromatic element here, generating a golden glow that balances the coolness of the white and blue and adds necessary warmth to the space.</p>
-<h3>Materials and Furniture</h3>
-<p>Materials were selected to establish a dialogue between architectural rigor and functional comfort:</p>
-<p><strong>Surfaces and Walls:</strong> Reliance on <strong>Matte Smooth Surfaces</strong> in the floor-to-ceiling white architectural millwork enhances the feeling of cleanliness and visual order.</p>
-<p><strong>Fabrics:</strong> Rich blue upholstery fabrics were chosen for the bed and office chair, adding a touch of sensory and chromatic comfort that breaks the rigidity of the large white surfaces.</p>
-<p><strong>Complementary Materials:</strong> Longitudinal mirrors are integrated to visually expand the space, and a warm wooden surface is used for the desk to connect the design to a natural touch, completed by a playful modern accent like a <strong>Neon Sign</strong>.</p>
-<h3>Lighting Engineering</h3>
-<p>The lighting scheme is not just functional; it is the <strong>"Definer of Features"</strong> that outlines the boundaries of the space:</p>
-<p><strong>Drawing with Light:</strong> Primary emphasis is placed on continuous <strong>Linear Architectural Lighting</strong> above the cabinets and behind the headboard panel, flowing as lines of warm light that define the architectural edges and highlight the purity of the design.</p>
-<p><strong>Dramatic Ambiance:</strong> Hidden lighting within the shelves is designed to spot-light collections and create depth in the blue recesses, while the neon sign above the desk adds a unique, personal, and modern touch, creating a visual focal point.</p>
-<h3>Conclusion</h3>
-<p>In this project, the room transforms into a symphony of purity and color, where serene white stillness blends with dramatic blue depth. It is a masterful dialogue between strict architectural lines and warm luminous touches that craft an atmosphere of refined modernity. Here, luxury lies in visual order and in the delicate balance between function and beauty that the space grants its occupant.</p>    
-            </div>
-            <!--THIS SECTION IS FOR CAD-DRAWINGS-->
-            <img class="cad-img" src="images/Modern_Retreat/section1.webp" alt="Project View">
-            <img class="cad-img" src="images/Modern_Retreat/section2.webp" alt="Project View">
-            <img class="cad-img" src="images/Modern_Retreat/section3.webp" alt="Project View">
-        </div>
-    </div>
-</div>
-
-        <!-- Modal 5: Crimson Haven -->
-        <div id="modal5" class="modal">
-            <span class="close" onclick="closeModal('modal5')">&times;</span>
-            <div class="modal-content modal-layout-showroom">
-                <div class="showroom-gallery">
-                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal5', -1)">&#10094;</button>
-                    <img id="modal5-img" src="images/Crimson_Haven/1.webp" alt="Project View">
-                    <button class="gallery-btn gallery-next" onclick="changeImage('modal5', 1)">&#10095;</button>
+    function buildGallery(projects) {
+        const gallery = document.getElementById('gallery');
+        projects.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'project-item';
+            card.setAttribute('data-category', p.category);
+            card.onclick = () => openModal(p.id);
+            card.innerHTML = `
+                <div class="project-visuals">
+                    <img src="${p.thumbnail}" alt="${p.title}">
                 </div>
-                <div class="showroom-details">
-                    <h2>Crimson Haven</h2>
-                    
-                    <div id="modal5-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                        <h3>Location</h3>
-                        <p>Riyadh, Saudi Arabia</p>
-                        <h3>Design Style</h3>
-<p>Pure Contemporary Modernism. The design adopts the Pure Modernism approach with a bold, dramatic touch. It is a refined blend of the architectural purity of clean white lines and a daring chromatic depth. This ethos is evident in the strong contrast between colors, a complete reliance on <strong>Linear Architectural Lighting</strong> to create the space's <strong>"Identity,"</strong> and a shift away from ornamentation in favor of spatial purity and quality of execution.</p>
-<h3>Space Analysis</h3>
-<p><strong>Bedroom:</strong> This space was designed as an <strong>"Organized Retreat,"</strong> combining comfort with modern function. The main wall behind the bed is not just a backdrop but an architectural composition integrating the purity of the upholstered white panels with the warmth of hidden lighting, creating a calm focal point for the sleeping area with a seamlessly integrated office nook.</p>
-<p><strong>Closet & Corridor:</strong> The focus here was on <strong>Visual Continuity</strong> and clean lines. The closet corridor is transformed into a <strong>"Luxury Gallery Corridor"</strong> through continuous overhead lighting and mirrors that double the sense of expanse. The monotony is broken by an open display corner featuring a dramatic blue background for private collections.</p>
-<h3>Color Palette</h3>
-<p>A color palette based on <strong>Bold and Pure Contrast</strong> was adopted to enhance the sense of modernity and depth:</p>
-<p><strong>Primary Colors:</strong> Pure white or <strong>Off-White</strong> for the walls, architectural millwork, and cabinetry, creating an extremely bright, clean, and spacious backdrop.</p>
-<p><strong>Contrast Colors:</strong> Deep <strong>Sapphire Blue</strong> in the textiles (bedding, chair) and open shelf recesses, used to assert character and add a dramatic and vital dimension that breaks the white stillness.</p>
-<p><strong>Lighting as Color:</strong> <strong>Warm Light</strong> is the binding chromatic element here, generating a golden glow that balances the coolness of the white and blue and adds necessary warmth to the space.</p>
-<h3>Materials and Furniture</h3>
-<p>Materials were selected to establish a dialogue between architectural rigor and functional comfort:</p>
-<p><strong>Surfaces and Walls:</strong> Reliance on <strong>Matte Smooth Surfaces</strong> in the floor-to-ceiling white architectural millwork enhances the feeling of cleanliness and visual order.</p>
-<p><strong>Fabrics:</strong> Rich blue upholstery fabrics were chosen for the bed and office chair, adding a touch of sensory and chromatic comfort that breaks the rigidity of the large white surfaces.</p>
-<p><strong>Complementary Materials:</strong> Longitudinal mirrors are integrated to visually expand the space, and a warm wooden surface is used for the desk to connect the design to a natural touch, completed by a playful modern accent like a <strong>Neon Sign</strong>.</p>
-<h3>Lighting Engineering</h3>
-<p>The lighting scheme is not just functional; it is the <strong>"Definer of Features"</strong> that outlines the boundaries of the space:</p>
-<p><strong>Drawing with Light:</strong> Primary emphasis is placed on continuous <strong>Linear Architectural Lighting</strong> above the cabinets and behind the headboard panel, flowing as lines of warm light that define the architectural edges and highlight the purity of the design.</p>
-<p><strong>Dramatic Ambiance:</strong> Hidden lighting within the shelves is designed to spot-light collections and create depth in the blue recesses, while the neon sign above the desk adds a unique, personal, and modern touch, creating a visual focal point.</p>
-<h3>Conclusion</h3>
-<p>In this project, the room transforms into a symphony of purity and color, where serene white stillness blends with dramatic blue depth. It is a masterful dialogue between strict architectural lines and warm luminous touches that craft an atmosphere of refined modernity. Here, luxury lies in visual order and in the delicate balance between function and beauty that the space grants its occupant.</p>
+                <div class="project-info">
+                    <h3>${p.title}</h3>
+                    <span class="project-link">View Project Gallery & Description →</span>
+                </div>`;
+            gallery.appendChild(card);
+
+            galleryData[p.id] = p.images.map(src => ({ src }));
+            currentIndex[p.id] = 0;
+        });
+    }
+
+    function buildModals(projects) {
+        projects.forEach(p => {
+            const cadHTML = (p.cadImages || [])
+                .map(src => `<img class="cad-img" src="${src}" alt="CAD Drawing">`)
+                .join('');
+
+            const sectionsHTML = (p.sections || [])
+                .map(s => `<h3>${s.heading}</h3><p>${s.body}</p>`)
+                .join('');
+
+            const modal = document.createElement('div');
+            modal.id = p.id;
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <span class="close" onclick="closeModal('${p.id}')">&times;</span>
+                <div class="modal-content modal-layout-showroom">
+                    <div class="showroom-gallery">
+                        <button class="gallery-btn gallery-prev" onclick="changeImage('${p.id}', -1)">&#10094;</button>
+                        <img id="${p.id}-img" src="${p.images[0]}" alt="Project View">
+                        <button class="gallery-btn gallery-next" onclick="changeImage('${p.id}', 1)">&#10095;</button>
                     </div>
-                    <img class="cad-img" src="images/Crimson_Haven/sectionA.webp" alt="Project View">
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 6: The Symphony of Warm Elegance -->
-        <div id="modal6" class="modal">
-            <span class="close" onclick="closeModal('modal6')">&times;</span>
-            <div class="modal-content modal-layout-showroom">
-                <div class="showroom-gallery">
-                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal6', -1)">&#10094;</button>
-                    <img id="modal6-img" src="images/The_Symphony_of_Warm_Elegance/1.webp" alt="Project View">
-                    <button class="gallery-btn gallery-next" onclick="changeImage('modal6', 1)">&#10095;</button>
-                </div>
-                <div class="showroom-details">
-                    <h2>The Symphony of Warm Elegance</h2>
-                    
-                    <div id="modal6-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                     <h3>Location</h3>
-                        <p>Riyadh, Saudi Arabia</p>
-                        <h3>Design Style</h3>
-<p>The design adopt a unique blend combining:</p>
-<p><strong>Modern Neoclassical:</strong> Evident in the delicate <strong>Wall Moldings</strong>, the symmetry of the lighting, and the high ceilings featuring simple cornices.</p>
-<p><strong>Japandi:</strong> Highlighted in the living rooms and public areas through the use of raw natural woods, low-profile furniture, and a deep connection to nature and light.</p>
-<h3>Color Palette</h3>
-<p>A warm and cohesive <strong>Monochromatic</strong> color palette was adopted:</p>
-<p><strong>Primary Colors:</strong> Sandy beige, creamy tones, and <strong>Off-White</strong> shades to create a bright, expansive foundation.</p>
-<p><strong>Contrast Colors:</strong> Dark <strong>Walnut</strong> wood and marble veined with brown and gold were used to add visual depth.</p>
-<p><strong>Accent Colors:</strong> Touches of <strong>Petroleum Blue</strong> and <strong>Burnt Orange</strong> were added in the cushions to break the monotony and introduce a vibrant accent.</p>
-<h3>Furniture & Materials</h3>
-<p>Every piece was selected with meticulous care to reflect quality craftsmanship and texture:</p>
-<p><strong>Fabrics:</strong> <strong>Bouclé</strong> and woven linen fabrics were used for the sofas, providing a rich and comforting texture.</p>
-<p><strong>Woods:</strong> A strong presence of natural Walnut wood in the circular tables and built-in libraries.</p>
-<p><strong>Marble and Stone:</strong> <strong>Arabescato</strong> or <strong>Calacatta</strong> marble with distinct veining was used in the entrances and side tables to impart a character of timeless luxury.</p>
-<p><strong>Metals:</strong> Touches of <strong>Brushed Gold</strong> in the sconces and chandeliers are used to enhance contemporary sophistication.</p>
-<h3>Space Analysis and Lighting Engineering</h3>
-<p>The spatial layout focuses on the concept of <strong>Fluidity</strong>:</p>
-<p><strong>Furniture Arrangement:</strong> <strong>Curved Furniture</strong> was adopted to follow the eye's movement and suggest comfort and containment.</p>
-<p><strong>Lighting:</strong> It is the <strong>"Unseen Hero"</strong> in my designs; I integrated bright natural light from large windows, dramatic concealed LED lighting in the shelves, and crystal/metal chandeliers that function as central sculptural art pieces.</p>
-<p><strong>Natural Elements:</strong> Tall plants and dried branches (<strong>Pampas Grass</strong>) are integrated to connect the interior design with the outside, granting the space a living spirit.</p>
-<h3>Conclusion</h3>
-<p>In this design, the unity of spirit and material converges; creamy walls adorned with classical paneling embrace luxurious curved Bouclé sofas, while a central circular wooden table reflects the warmth of the suspended golden lighting. From the bedroom that whispers serenity through its textured walls to the reception halls that celebrate marble and light, every corner is designed to be an artistic tableau inviting relaxation and aesthetic elevation.</p>   
+                    <div class="showroom-details">
+                        <h2>${p.title}</h2>
+                        ${p.inspiration ? `<p class="inspiration-text"><strong>Inspiration:</strong> ${p.inspiration}</p>` : ''}
+                        <div id="${p.id}-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
+                            ${sectionsHTML}
+                        </div>
+                        ${cadHTML}
                     </div>
-                    <img class="cad-img" src="images/Symphony_Warm_Elegance/plan.webp" alt="Project View">
-                </div>
-            </div>
-        </div>
+                </div>`;
+            document.body.appendChild(modal);
+        });
+    }
 
-        <!-- Modal 7: Airbnb -->
-        <div id="modal7" class="modal">
-            <span class="close" onclick="closeModal('modal7')">&times;</span>
-            <div class="modal-content modal-layout-showroom">
-                <div class="showroom-gallery">
-                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal7', -1)">&#10094;</button>
-                    <img id="modal7-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Airbnb">
-                    <button class="gallery-btn gallery-next" onclick="changeImage('modal7', 1)">&#10095;</button>
-                </div>
-                <div class="showroom-details">
-                    <h2>Airbnb</h2>
-                    <div id="modal7-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                        <p>A modern, minimalist exhibition booth for Airbnb, designed with a focus on brand identity and spatial flow.</p>
-                        <h3>Key Features</h3>
-                        <p><strong>Architectural Branding:</strong> Features a massive 3D Bélo logo as a sculptural focal point and a floating header for high visibility.</p>
-                        <p><strong>Color Palette:</strong> Uses a high-contrast "Rausch" (pink-red) and White scheme to ensure a bold brand presence.</p>
-                        <p><strong>Functional Zones:</strong> Includes a sleek curved reception counter with LED under-lighting and a minimalist consultation area for networking.</p>
-                        <p><strong>Visual Storytelling:</strong> The back wall displays a global map graphic, emphasizing Airbnb’s concept of "Belonging Anywhere."</p>
-                        <p><strong>Modern Lighting:</strong> Utilizes recessed spotlights and ambient LED strips to create a clean, tech-forward atmosphere.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 8: Experts Decision -->
-        <div id="modal8" class="modal">
-            <span class="close" onclick="closeModal('modal8')">&times;</span>
-            <div class="modal-content modal-layout-showroom">
-                <div class="showroom-gallery">
-                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal8', -1)">&#10094;</button>
-                    <img id="modal8-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Experts Decision">
-                    <button class="gallery-btn gallery-next" onclick="changeImage('modal8', 1)">&#10095;</button>
-                </div>
-                <div class="showroom-details">
-                    <h2>Experts Decision</h2>
-                    <div id="modal8-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                        <p>This booth features a futuristic, neon-tech aesthetic with a semi-enclosed circular structure, designed to create an immersive digital experience for a data or consulting firm.</p>
-                        <h3>Key Features</h3>
-                        <p><strong>Immersive Architecture:</strong> The booth is framed by thick, rounded portals with integrated linear LED lighting that creates a "tunnel" effect toward the center.</p>
-                        <p><strong>Neon Branding:</strong> A vibrant cyberpunk color palette of cyan, magenta, and deep purple is used across the lighting and floor graphics to signal innovation.</p>
-                        <p><strong>Central Digital Hub:</strong> The back wall features a high-tech circuitry pattern and a large digital screen flanked by glowing neon rings, serving as the main presentation focal point.</p>
-                        <p><strong>Symmetrical Layout:</strong> The space is perfectly balanced with a comfortable lounge area on the left and a high-top consultation station on the right.</p>
-                        <p><strong>Luminous Branding:</strong> The front reception counter features the EXD logo with a soft purple under-glow, ensuring the brand is the first thing visitors see.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 9: Redbull -->
-        <div id="modal9" class="modal">
-            <span class="close" onclick="closeModal('modal9')">&times;</span>
-            <div class="modal-content modal-layout-showroom">
-                <div class="showroom-gallery">
-                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal9', -1)">&#10094;</button>
-                    <img id="modal9-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Redbull">
-                    <button class="gallery-btn gallery-next" onclick="changeImage('modal9', 1)">&#10095;</button>
-                </div>
-                <div class="showroom-details">
-                    <h2>Redbull</h2>
-                    <div id="modal9-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                        <p>A high-energy, industrial-style exhibition booth for Red Bull, designed to showcase the brand's connection to motorsports and extreme sports.</p>
-                        <h3>Key Features</h3>
-                        <p><strong>Massive Branding:</strong> Features a large, illuminated header box with the iconic Red Bull logo for maximum long-distance visibility.</p>
-                        <p><strong>Motorsport Integration:</strong> Incorporates real racing wheels into the wall design, adding a tangible, authentic touch to the theme.</p>
-                        <p><strong>Action Gallery:</strong> A central visual hub of dynamic posters showcasing F1 and extreme sports, set against a deep navy blue background.</p>
-                        <p><strong>Spatial Hierarchy:</strong> Includes a textured concrete-finish counter on the left and a raised VIP lounge area with metallic stools on the right.</p>
-                        <p><strong>Professional Lighting:</strong> Uses black track spotlights to highlight graphics and integrated LED backlighting for a premium, glowy effect.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 10: Ultimate -->
-       <!--  <div id="modal10" class="modal">
-            <span class="close" onclick="closeModal('modal10')">&times;</span>
-            <div class="modal-content modal-layout-showroom">
-                <div class="showroom-gallery">
-                    <button class="gallery-btn gallery-prev" onclick="changeImage('modal10', -1)">&#10094;</button>
-                    <img id="modal10-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Ultimate">
-                    <button class="gallery-btn gallery-next" onclick="changeImage('modal10', 1)">&#10095;</button>
-                </div>
-                <div class="showroom-details">
-                    <h2>Ultimate</h2>
-                    <div id="modal10-desc" style="margin-top: 20px; font-size: 1.05rem; color: var(--text-main);">
-                        <p>This booth features a futuristic, fluid design with organic curves and a high-tech aesthetic, perfectly suited for a software or tech solutions provider.</p>
-                        <h3>Key Features</h3>
-                        <p><strong>Organic Architecture:</strong> The structure is defined by dynamic, flowing ribbons in blue and green that create a sense of movement and "connectivity."</p>
-                        <p><strong>Brand-Integrated Geometry:</strong> A prominent, abstract "A-frame" structure on the right incorporates the corporate logo, serving as a unique architectural anchor.</p>
-                        <p><strong>Illuminated Accents:</strong> Neon-style LED strip lighting follows the curved edges of the frame, enhancing the booth's modern, digital vibe.</p>
-                        <p><strong>Open Lounge Concept:</strong> The left side features a minimalist lounge area with sleek sofas and a low coffee table, designed for comfortable client consultations.</p>
-                        <p><strong>Tech-Focused Graphics:</strong> The back wall includes digital-themed graphics and tech icons, reinforcing the brand’s focus on business systems and transformation.</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <script>
-            // Data Structure: Array of Objects. Each object has 'src' (Image URL)
-    const galleryData = {
-        'modal0': [
-            { src: 'images/ARIA_RC/1.webp' },
-            { src: 'images/ARIA_RC/2.webp' },
-            { src: 'images/ARIA_RC/3.webp' },
-            { src: 'images/ARIA_RC/4.webp' },
-            { src: 'images/ARIA_RC/5.webp' },
-            { src: 'images/ARIA_RC/6.webp' },
-            { src: 'images/ARIA_RC/7.webp' },
-            { src: 'images/ARIA_RC/Mood_new.webp' }
-        ],
-        'modal1': [
-            { src: 'images/Clay_Chai/1.webp' },
-            { src: 'images/Clay_Chai/2.webp' },
-            { src: 'images/Clay_Chai/3.webp' },
-            { src: 'images/Clay_Chai/4.webp' },
-            { src: 'images/Clay_Chai/5.webp' },
-            { src: 'images/Clay_Chai/6.webp' },
-            { src: 'images/Clay_Chai/7.webp' },
-            { src: 'images/Clay_Chai/8.webp' },
-            { src: 'images/Clay_Chai/9.webp' },
-            { src: 'images/Clay_Chai/10.webp' },
-            { src: 'images/Clay_Chai/11.webp' },
-            { src: 'images/Clay_Chai/12.webp' },
-            { src: 'images/Clay_Chai/13.webp' },
-            { src: 'images/Clay_Chai/14.webp' }
-        ],
-        'modal2': [
-            { src: 'images/Oasis_of_Serenity/1.webp' },
-            { src: 'images/Oasis_of_Serenity/2.webp' },
-            { src: 'images/Oasis_of_Serenity/3.webp' },
-            { src: 'images/Oasis_of_Serenity/4.webp' }
-        ],
-        'modal3': [
-            { src: 'images/Warm_Aura/2.webp' },
-            { src: 'images/Warm_Aura/1.webp' },
-            { src: 'images/Warm_Aura/3.webp' }
-        ],
-        'modal4': [
-            { src: 'images/Modern_Retreat/1.webp' },
-            { src: 'images/Modern_Retreat/2.webp' },
-            { src: 'images/Modern_Retreat/3.webp' },
-            { src: 'images/Modern_Retreat/4.webp' }
-        ]
-        ,
-        'modal5': [
-            { src: 'images/Crimson_Haven/1.webp' },
-            { src: 'images/Crimson_Haven/2.webp' },
-            { src: 'images/Crimson_Haven/3.webp' },
-            { src: 'images/Crimson_Haven/4.webp' }
-        ],
-        'modal6': [
-            { src: 'images/The_Symphony_of_Warm_Elegance/1.webp' },
-            { src: 'images/The_Symphony_of_Warm_Elegance/2.webp' },
-            { src: 'images/The_Symphony_of_Warm_Elegance/3.webp' },
-            { src: 'images/The_Symphony_of_Warm_Elegance/4.webp' }
-        ],
-        'modal7': [
-            { src: 'images/Airbnb/4.webp' },
-            { src: 'images/Airbnb/3.webp' },
-            { src: 'images/Airbnb/2.webp' },
-            { src: 'images/Airbnb/1.webp' }
-        ],
-        'modal8': [
-            { src: 'images/experts_decision/2.webp' },
-            { src: 'images/experts_decision/1.webp' },
-            { src: 'images/experts_decision/3.webp' },
-            { src: 'images/experts_decision/4.webp' },
-            { src: 'images/experts_decision/5.webp' },
-            { src: 'images/experts_decision/6.webp' },
-            { src: 'images/experts_decision/7.webp' }
-        ],
-        'modal9': [
-            { src: 'images/Redbull/3.webp' },
-            { src: 'images/Redbull/1.webp' },
-            { src: 'images/Redbull/2.webp' },
-            { src: 'images/Redbull/6.webp' },
-            { src: 'images/Redbull/8.webp' },
-            { src: 'images/Redbull/9.webp' },
-            { src: 'images/Redbull/10.webp' }
-        ],
-        /* 'modal10': [
-            { src: 'images/Ultimate/2.webp' },
-            { src: 'images/Ultimate/1.webp' },
-            { src: 'images/Ultimate/3.webp' },
-            { src: 'images/Ultimate/4.webp' },
-            { src: 'images/Ultimate/5.webp' },
-            { src: 'images/Ultimate/6.webp' },
-            { src: 'images/Ultimate/7.webp' }
-        ] */
-    };
-
-    let currentIndex = { 'modal1': 0, 'modal2': 0, 'modal3': 0, 'modal4': 0, 'modal5': 0, 'modal6': 0, 'modal7': 0, 'modal8': 0, 'modal9': 0, 'modal10': 0 };
-
-
-    // Gallery Logic with Preloading
     function changeImage(modalId, direction) {
         const images = galleryData[modalId];
         currentIndex[modalId] += direction;
 
-        // Loop back to start or end
         if (currentIndex[modalId] >= images.length) {
             currentIndex[modalId] = 0;
         } else if (currentIndex[modalId] < 0) {
@@ -707,26 +139,14 @@
         }
 
         const imgElement = document.getElementById(modalId + '-img');
-        const descElement = document.getElementById(modalId + '-desc');
-        
-        // Create a new image object to load in the background
         const nextImg = new Image();
         nextImg.src = images[currentIndex[modalId]].src;
-
-        // Only update the view once the new image is fully loaded
-        // This prevents the "blank white box" flash
         nextImg.onload = function() {
-            imgElement.src = this.src; // Swap the source
+            imgElement.src = this.src;
         };
-
-        // Optional: You can keep the opacity transition if you want
-        imgElement.style.opacity = 0.8; // Slight dim while loading
-        imgElement.style.opacity = 1; // Reset opacity
     }
 
-    // Filter Logic
     function filterProjects(category, btn) {
-        // Style buttons
         const buttons = document.querySelectorAll('#showroom .btn');
         buttons.forEach(b => {
             b.style.background = 'transparent';
@@ -735,7 +155,6 @@
         btn.style.background = 'var(--text-main)';
         btn.style.color = 'var(--white)';
 
-        // Filter items
         const items = document.querySelectorAll('.project-item');
         items.forEach(item => {
             if (category === 'all' || item.getAttribute('data-category') === category) {
@@ -746,29 +165,26 @@
         });
     }
 
-    // Modal Logic
     function openModal(modalId) {
-        // Reset to first image and show project-specific text when opening
         currentIndex[modalId] = 0;
-        const firstData = galleryData[modalId][0];
-
-        document.getElementById(modalId + '-img').src = firstData.src;
-
-        document.getElementById(modalId).style.display = "block";
+        document.getElementById(modalId + '-img').src = galleryData[modalId][0].src;
+        document.getElementById(modalId).style.display = 'block';
         setTimeout(() => document.getElementById(modalId).classList.add('show'), 10);
     }
 
     function closeModal(modalId) {
         document.getElementById(modalId).classList.remove('show');
-        setTimeout(() => document.getElementById(modalId).style.display = "none", 300);
+        setTimeout(() => document.getElementById(modalId).style.display = 'none', 300);
     }
 
     window.onclick = function(event) {
         if (event.target.classList.contains('modal')) {
             event.target.classList.remove('show');
-            setTimeout(() => event.target.style.display = "none", 300);
+            setTimeout(() => event.target.style.display = 'none', 300);
         }
-    }
+    };
+
+
 </script>
 <script>
     // Mobile nav toggle (hamburger)
