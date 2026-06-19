@@ -1,6 +1,78 @@
 {
   "projects": [
     {
+      "summary": "This design delivers an elevated and immersive hospitality experience. <br> The project combines contemporary sophistication with subtle neo-classical influences through grand architectural arches, refined detailing, and a carefully curated material palette. \n\nThe interior is defined by rich walnut wood finishes, marble surfaces, warm neutral tones, forest-green accents, and brass details, all enhanced by layered ambient lighting that creates a welcoming yet upscale atmosphere. Thoughtfully planned zoning includes a prominent reception area, a streamlined ordering counter, and a variety of seating arrangements ranging from intimate individual settings to communal social spaces.\n\nA key feature of the design is its extensive use of concealed lighting, illuminated shelving, and decorative pendant fixtures, which work together to emphasize architectural elements and establish a warm evening ambiance. Large glazed openings and arched frames strengthen the connection between the interior and surrounding outdoor greenery, adding depth and visual openness to the space.",
+      "inspiration": null,
+      "thumbnail": "images\\SOLENE_Coffee\\4.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "This project adopts a <strong>Luxury Contemporary design style with Neo-Classical undertones.</strong> The design is defined by its elegant lines, large geometric arches, and high reliance on recessed and hidden warm lighting that adds a dramatic yet welcoming touch to the atmosphere. This harmonious blend is particularly evident in the large arches overlooking the outdoor garden and the vertical striped patterns on the walls"
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A rich and earthy composition of walnut and espresso wood tones, creamy beige, warm gray, forest green, and luminous brass accents. The palette is enhanced by warm ambient lighting that adds depth, elegance, and visual warmth to every corner of the café."
+        },
+        {
+          "heading": "Furniture & Materials",
+          "body": "Premium marble flooring, dark wood wall cladding, fluted and striped surface treatments, expansive glazing, and brushed brass details establish a refined material language. Curved velvet armchairs, marble-topped tables, custom banquette seating, and elegant metallic accents combine comfort with contemporary luxury."
+        },
+        {
+          "heading": "Space Analysis and Lighting",
+          "body": "The layout is carefully zoned to provide intuitive circulation and varied social experiences, from the welcoming reception area to the streamlined ordering counter and multiple seating environments. Large glazed openings strengthen the connection to the outdoor landscape, while concealed LED lighting, illuminated shelving, under-counter lighting, decorative pendants, and intimate table lamps create a layered atmosphere that transitions seamlessly from day to evening."
+        },
+        {
+          "heading": "Conclusion",
+          "body": "The design of SOLENE Coffee & Bakery delivers an immersive hospitality experience where luxury, warmth, and functionality coexist effortlessly. Through sophisticated materials, carefully curated furnishings, and a masterful lighting strategy, the space achieves a timeless elegance that reflects Riyadh’s contemporary social culture while offering guests a memorable and inviting environment."
+        }
+      ],
+      "style": "Modern Neoclassical and Japandi",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "SOLENE Coffee & Bakery",
+      "images": [
+        "images/SOLENE_Coffee/1.webp",
+        "images/SOLENE_Coffee/2.webp",
+        "images/SOLENE_Coffee/3.webp",
+        "images/SOLENE_Coffee/4.webp",
+        "images/SOLENE_Coffee/5.webp",
+        "images/SOLENE_Coffee/6.webp",
+        "images/SOLENE_Coffee/7.webp",
+        "images/SOLENE_Coffee/8.webp",
+        "images/SOLENE_Coffee/9.webp",
+        "images/SOLENE_Coffee/10.webp",
+        "images/SOLENE_Coffee/11.webp",
+        "images/SOLENE_Coffee/12.webp",
+        "images/SOLENE_Coffee/13.webp",
+        "images/SOLENE_Coffee/14.webp",
+        "images/SOLENE_Coffee/15.webp",
+        "images/SOLENE_Coffee/16.webp",
+        "images/SOLENE_Coffee/17.webp",
+        "images/SOLENE_Coffee/18.webp",
+        "images/SOLENE_Coffee/19.webp",
+        "images/SOLENE_Coffee/20.webp",
+        "images/SOLENE_Coffee/21.webp",
+        "images/SOLENE_Coffee/22.webp",
+        "images/SOLENE_Coffee/23.webp",
+        "images/SOLENE_Coffee/24.webp",
+        "images/SOLENE_Coffee/25.webp",
+        "images/SOLENE_Coffee/26.webp"
+      ],
+      "id": "SOLENECoffeeBakery",
+      "category": "residential",
+      "cadImages": [
+        "images/SOLENE_Coffee/PLAN1.webp",
+        "images/SOLENE_Coffee/Mood_Board.webp",
+        "images/SOLENE_Coffee/Section_A.webp",
+        "images/SOLENE_Coffee/Section_B.webp",
+        "images/SOLENE_Coffee/Section_A-A-A.webp",
+        "images/SOLENE_Coffee/Section_C.webp"
+      ]
+    },
+    {
       "summary": "This design vision transforms the Riyadh residence into a sophisticated sanctuary of tailored modern luxury and deep comfort, where soft modern glamour seamlessly merges with elegant, romantic sensibilities.\n\nAnchored by a curated palette of creamy off-whites, textured taupe, and rich walnut, the space is punctuated by a dramatic symphony of deep aubergine, plum, and soft lavender, all balanced by polished gold and elegant veined marble. Natural light oak chevron flooring guides the eye through an integrated, flow-through layout defined by bespoke, tinted glass cabinetry, plush purple velvet, and a feature floral wall covering that introduces a poetic, layered intimacy. Every element—from the sculptural statement lighting and floor-to-ceiling sheer curtains to the refined brushed brass details—coheres into a rich, tactile retreat, crafting an atmosphere where bold, expressive hues and high-end finishes exist in perfect harmony.",
       "thumbnail": "images/The_Velvet_Orchid/1.webp",
       "sections": [
