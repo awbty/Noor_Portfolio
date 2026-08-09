@@ -1,6 +1,74 @@
 {
   "projects": [
     {
+      "summary": "<strong>Modern Romance</strong> is a sophisticated, modern eclectic bedroom design that beautifully merges intimate warmth with contemporary luxury. The space features a dramatic palette of deep burgundy and rich maroon contrasted against creamy off-whites, warm walnut woods, and polished brass highlights. Tactile materials define the room, showcasing a curved bouclé bed, marble-topped furniture, and elegant architectural mouldings framed by textured drapery. This balanced Riyadh retreat maximizes natural light and ambient illumination to highlight custom artwork, creating an elegant and deeply comforting portfolio piece.",
+      "inspiration": null,
+      "thumbnail": "images/Red_Bedroom/1.webp",
+      "sections": [
+        {
+          "heading": "Location",
+          "body": "Riyadh, Saudi Arabia"
+        },
+        {
+          "heading": "Design Style",
+          "body": "A sophisticated modern eclectic bedroom design featuring dramatic deep red and burgundy feature walls, balanced vertical striped panels, curated abstract art pieces, and a refined blend of contemporary and classic architectural mouldings."
+        },
+        {
+          "heading": "Color Palette",
+          "body": "A rich and dramatic contrast built on creamy off-whites and neutral linens, paired with deep burgundy, rich maroon accents, warm walnut wood tones, and subtle polished gold and brass highlights."
+        },
+        {
+          "heading": "Furniture & Materials",
+          "body": "An elegant composition including an upholstered curved bouclé bed, a matching statement bench with distinct striped fabric, a marble-topped wooden side table and credenza, textured woven drapery, and warm metallic details."
+        },
+        {
+          "heading": "Space Analysis and Lighting",
+          "body": "A balanced, symmetrical bedroom layout defined by a central bed alignment, large floor-to-ceiling sheer and textured drapery framing the natural light, artistic pendant and bedside lamps, and warm ambient illumination that highlights the rich wall textures."
+        },
+        {
+          "heading": "Conclusion",
+          "body": "This project is a beautifully composed, intimate bedroom retreat where deep burgundy tones, tactile fabrics, and custom art pieces merge to create an atmosphere of warmth, elegance, and modern luxury"
+        }
+      ],
+      "style": "Modern Eclectic",
+      "location": "Riyadh, Saudi Arabia",
+      "title": "Modern Romance",
+      "images": [
+        "images/Red_Bedroom/1.webp",
+        "images/Red_Bedroom/2.webp",
+        "images/Red_Bedroom/3.webp",
+        "images/Red_Bedroom/4.webp",
+        "images/Red_Bedroom/5.webp",
+        "images/Red_Bedroom/6.webp",
+        "images/Red_Bedroom/7.webp",
+        "images/Red_Bedroom/8.webp",
+        "images/Red_Bedroom/9.webp",
+        "images/Red_Bedroom/10.webp",
+        "images/Red_Bedroom/11.webp",
+        "images/Red_Bedroom/1112.webp",
+        "images/Red_Bedroom/INS1.webp",
+        "images/Red_Bedroom/INS2.webp",
+        "images/Red_Bedroom/INS3.webp",
+        "images/Red_Bedroom/INS4.webp",
+        "images/Red_Bedroom/INS5.webp",
+        "images/Red_Bedroom/INS6.webp",
+        "images/Red_Bedroom/INS7.webp",
+        "images/Red_Bedroom/INS8.webp",
+        "images/Red_Bedroom/INS9.webp",
+        "images/Red_Bedroom/INS10.webp",
+        "images/Red_Bedroom/INS11.webp",
+        "images/Red_Bedroom/INS12.webp",
+        "images/Red_Bedroom/INS13.webp",
+        "images/Red_Bedroom/INS14.webp",
+        "images/Red_Bedroom/INS15.webp"
+      ],
+      "id": "ModernRomance",
+      "category": "residential",
+      "cadImages": [
+        
+      ]
+    },
+    {
       "summary": "This design delivers an elevated and immersive hospitality experience. <br> The project combines contemporary sophistication with subtle neo-classical influences through grand architectural arches, refined detailing, and a carefully curated material palette. \n\nThe interior is defined by rich walnut wood finishes, marble surfaces, warm neutral tones, forest-green accents, and brass details, all enhanced by layered ambient lighting that creates a welcoming yet upscale atmosphere. Thoughtfully planned zoning includes a prominent reception area, a streamlined ordering counter, and a variety of seating arrangements ranging from intimate individual settings to communal social spaces.\n\nA key feature of the design is its extensive use of concealed lighting, illuminated shelving, and decorative pendant fixtures, which work together to emphasize architectural elements and establish a warm evening ambiance. Large glazed openings and arched frames strengthen the connection between the interior and surrounding outdoor greenery, adding depth and visual openness to the space.",
       "inspiration": null,
       "thumbnail": "images\\SOLENE_Coffee\\4.webp",
